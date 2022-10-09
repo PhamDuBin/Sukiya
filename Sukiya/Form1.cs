@@ -18,5 +18,9 @@ namespace Sukiya
             InitializeComponent();
         }
 
+        private void ceDanhMucMonAn_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

@@ -152,9 +152,16 @@
             this.ceThemMon,
             this.ceSuaMon,
             this.ceXoaMon});
+            this.ceDanhMucMonAn.Expanded = true;
+            this.ceDanhMucMonAn.HeaderTemplate.AddRange(new DevExpress.XtraBars.Navigation.HeaderElementInfo[] {
+            new DevExpress.XtraBars.Navigation.HeaderElementInfo(DevExpress.XtraBars.Navigation.HeaderElementType.Image),
+            new DevExpress.XtraBars.Navigation.HeaderElementInfo(DevExpress.XtraBars.Navigation.HeaderElementType.HeaderControl),
+            new DevExpress.XtraBars.Navigation.HeaderElementInfo(DevExpress.XtraBars.Navigation.HeaderElementType.ContextButtons),
+            new DevExpress.XtraBars.Navigation.HeaderElementInfo(DevExpress.XtraBars.Navigation.HeaderElementType.Text, DevExpress.XtraBars.Navigation.HeaderElementAlignment.Right)});
             this.ceDanhMucMonAn.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("ceDanhMucMonAn.ImageOptions.SvgImage")));
             this.ceDanhMucMonAn.Name = "ceDanhMucMonAn";
             this.ceDanhMucMonAn.Text = "Danh Mục Món Ăn";
+            this.ceDanhMucMonAn.Click += new System.EventHandler(this.ceDanhMucMonAn_Click);
             // 
             // ceThemMon
             // 
