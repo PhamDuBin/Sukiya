@@ -22,5 +22,10 @@ namespace Sukiya
         {
             //SSS
         }
+
+        private void ceQuanLiNhanVien_Click(object sender, EventArgs e)
+        {
+            //Nhớ xóa nhaaaa
+        }
     }
 }
