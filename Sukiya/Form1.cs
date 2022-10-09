@@ -14,6 +14,7 @@ namespace Sukiya
     {
         public Form1()
         {
+            Console.WriteLine("Hello");
             InitializeComponent();
         }
 
