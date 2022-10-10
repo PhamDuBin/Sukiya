@@ -32,17 +32,11 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.fluentDesignFormControl1 = new DevExpress.XtraBars.FluentDesignSystem.FluentDesignFormControl();
             this.fluentFormDefaultManager1 = new DevExpress.XtraBars.FluentDesignSystem.FluentFormDefaultManager(this.components);
-            this.fdfcTrangHienThi = new DevExpress.XtraBars.FluentDesignSystem.FluentDesignFormContainer();
-            this.ceQuanLiNhanVien = new DevExpress.XtraBars.Navigation.AccordionControlElement();
-            this.ceThemNhanVien = new DevExpress.XtraBars.Navigation.AccordionControlElement();
-            this.ceSuaNhanVien = new DevExpress.XtraBars.Navigation.AccordionControlElement();
-            this.ceXoaNhanVien = new DevExpress.XtraBars.Navigation.AccordionControlElement();
+            this.TrangHienThiConterner = new DevExpress.XtraBars.FluentDesignSystem.FluentDesignFormContainer();
             this.accordionControl1 = new DevExpress.XtraBars.Navigation.AccordionControl();
             this.ceTrangChu = new DevExpress.XtraBars.Navigation.AccordionControlElement();
-            this.ceDanhMucMonAn = new DevExpress.XtraBars.Navigation.AccordionControlElement();
-            this.ceThemMon = new DevExpress.XtraBars.Navigation.AccordionControlElement();
-            this.ceSuaMon = new DevExpress.XtraBars.Navigation.AccordionControlElement();
-            this.ceXoaMon = new DevExpress.XtraBars.Navigation.AccordionControlElement();
+            this.ceDanhMucMon = new DevExpress.XtraBars.Navigation.AccordionControlElement();
+            this.ceQuanLiNhanVien = new DevExpress.XtraBars.Navigation.AccordionControlElement();
             this.ceBaoCaoDoanhThu = new DevExpress.XtraBars.Navigation.AccordionControlElement();
             this.ceBaoCaoDT = new DevExpress.XtraBars.Navigation.AccordionControlElement();
             this.ceXemDT = new DevExpress.XtraBars.Navigation.AccordionControlElement();
@@ -80,50 +74,22 @@
             // 
             this.fluentFormDefaultManager1.Form = this;
             // 
-            // fdfcTrangHienThi
+            // TrangHienThiConterner
             // 
-            this.fdfcTrangHienThi.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
-            this.fdfcTrangHienThi.Appearance.Options.UseBackColor = true;
-            this.fdfcTrangHienThi.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.fdfcTrangHienThi.Location = new System.Drawing.Point(260, 31);
-            this.fdfcTrangHienThi.Name = "fdfcTrangHienThi";
-            this.fdfcTrangHienThi.Size = new System.Drawing.Size(656, 509);
-            this.fdfcTrangHienThi.TabIndex = 0;
-            // 
-            // ceQuanLiNhanVien
-            // 
-            this.ceQuanLiNhanVien.Elements.AddRange(new DevExpress.XtraBars.Navigation.AccordionControlElement[] {
-            this.ceThemNhanVien,
-            this.ceSuaNhanVien,
-            this.ceXoaNhanVien});
-            this.ceQuanLiNhanVien.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("ceQuanLiNhanVien.ImageOptions.SvgImage")));
-            this.ceQuanLiNhanVien.Name = "ceQuanLiNhanVien";
-            this.ceQuanLiNhanVien.Text = "Quản Lí Nhân Viên";
-            // 
-            // ceThemNhanVien
-            // 
-            this.ceThemNhanVien.Name = "ceThemNhanVien";
-            this.ceThemNhanVien.Style = DevExpress.XtraBars.Navigation.ElementStyle.Item;
-            this.ceThemNhanVien.Text = "Thêm Nhân Viên";
-            // 
-            // ceSuaNhanVien
-            // 
-            this.ceSuaNhanVien.Name = "ceSuaNhanVien";
-            this.ceSuaNhanVien.Style = DevExpress.XtraBars.Navigation.ElementStyle.Item;
-            this.ceSuaNhanVien.Text = "Sửa Thông Tin Nhân Viên";
-            // 
-            // ceXoaNhanVien
-            // 
-            this.ceXoaNhanVien.Name = "ceXoaNhanVien";
-            this.ceXoaNhanVien.Style = DevExpress.XtraBars.Navigation.ElementStyle.Item;
-            this.ceXoaNhanVien.Text = "Xóa Nhân Viên";
+            this.TrangHienThiConterner.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
+            this.TrangHienThiConterner.Appearance.Options.UseBackColor = true;
+            this.TrangHienThiConterner.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.TrangHienThiConterner.Location = new System.Drawing.Point(260, 31);
+            this.TrangHienThiConterner.Name = "TrangHienThiConterner";
+            this.TrangHienThiConterner.Size = new System.Drawing.Size(656, 509);
+            this.TrangHienThiConterner.TabIndex = 0;
             // 
             // accordionControl1
             // 
             this.accordionControl1.Dock = System.Windows.Forms.DockStyle.Left;
             this.accordionControl1.Elements.AddRange(new DevExpress.XtraBars.Navigation.AccordionControlElement[] {
             this.ceTrangChu,
-            this.ceDanhMucMonAn,
+            this.ceDanhMucMon,
             this.ceQuanLiNhanVien,
             this.ceBaoCaoDoanhThu,
             this.ceQuanLiKhoHang,
@@ -146,33 +112,21 @@
             this.ceTrangChu.Style = DevExpress.XtraBars.Navigation.ElementStyle.Item;
             this.ceTrangChu.Text = "Trang Chủ";
             // 
-            // ceDanhMucMonAn
+            // ceDanhMucMon
             // 
-            this.ceDanhMucMonAn.Elements.AddRange(new DevExpress.XtraBars.Navigation.AccordionControlElement[] {
-            this.ceThemMon,
-            this.ceSuaMon,
-            this.ceXoaMon});
-            this.ceDanhMucMonAn.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("ceDanhMucMonAn.ImageOptions.SvgImage")));
-            this.ceDanhMucMonAn.Name = "ceDanhMucMonAn";
-            this.ceDanhMucMonAn.Text = "Danh Mục Món Ăn";
+            this.ceDanhMucMon.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("ceDanhMucMon.ImageOptions.SvgImage")));
+            this.ceDanhMucMon.Name = "ceDanhMucMon";
+            this.ceDanhMucMon.Style = DevExpress.XtraBars.Navigation.ElementStyle.Item;
+            this.ceDanhMucMon.Text = "Danh Mục Món Ăn";
+            this.ceDanhMucMon.Click += new System.EventHandler(this.ceDanhMucMon_Click);
             // 
-            // ceThemMon
+            // ceQuanLiNhanVien
             // 
-            this.ceThemMon.Name = "ceThemMon";
-            this.ceThemMon.Style = DevExpress.XtraBars.Navigation.ElementStyle.Item;
-            this.ceThemMon.Text = "Thêm Món";
-            // 
-            // ceSuaMon
-            // 
-            this.ceSuaMon.Name = "ceSuaMon";
-            this.ceSuaMon.Style = DevExpress.XtraBars.Navigation.ElementStyle.Item;
-            this.ceSuaMon.Text = "Sửa Món";
-            // 
-            // ceXoaMon
-            // 
-            this.ceXoaMon.Name = "ceXoaMon";
-            this.ceXoaMon.Style = DevExpress.XtraBars.Navigation.ElementStyle.Item;
-            this.ceXoaMon.Text = "Xóa Món";
+            this.ceQuanLiNhanVien.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("ceQuanLiNhanVien.ImageOptions.SvgImage")));
+            this.ceQuanLiNhanVien.Name = "ceQuanLiNhanVien";
+            this.ceQuanLiNhanVien.Style = DevExpress.XtraBars.Navigation.ElementStyle.Item;
+            this.ceQuanLiNhanVien.Text = "Quản Lí Nhân Viên";
+            this.ceQuanLiNhanVien.Click += new System.EventHandler(this.ceQuanLiNhanVien_Click);
             // 
             // ceBaoCaoDoanhThu
             // 
@@ -253,27 +207,32 @@
             // 
             // ceLienHe
             // 
+            this.ceLienHe.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("ceLienHe.ImageOptions.SvgImage")));
             this.ceLienHe.Name = "ceLienHe";
             this.ceLienHe.Style = DevExpress.XtraBars.Navigation.ElementStyle.Item;
             this.ceLienHe.Text = "Liên Hệ";
             // 
             // ceGioiThieu
             // 
+            this.ceGioiThieu.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("ceGioiThieu.ImageOptions.SvgImage")));
             this.ceGioiThieu.Name = "ceGioiThieu";
             this.ceGioiThieu.Style = DevExpress.XtraBars.Navigation.ElementStyle.Item;
             this.ceGioiThieu.Text = "Giới Thiệu";
             // 
             // ceUpdate
             // 
+            this.ceUpdate.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("ceUpdate.ImageOptions.SvgImage")));
             this.ceUpdate.Name = "ceUpdate";
             this.ceUpdate.Style = DevExpress.XtraBars.Navigation.ElementStyle.Item;
             this.ceUpdate.Text = "Update";
             // 
             // ceDangXuat
             // 
+            this.ceDangXuat.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("ceDangXuat.ImageOptions.SvgImage")));
             this.ceDangXuat.Name = "ceDangXuat";
             this.ceDangXuat.Style = DevExpress.XtraBars.Navigation.ElementStyle.Item;
             this.ceDangXuat.Text = "Đăng Xuất";
+            this.ceDangXuat.Click += new System.EventHandler(this.ceDangXuat_Click);
             // 
             // accordionControlElement4
             // 
@@ -296,8 +255,8 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(916, 540);
-            this.ControlContainer = this.fdfcTrangHienThi;
-            this.Controls.Add(this.fdfcTrangHienThi);
+            this.ControlContainer = this.TrangHienThiConterner;
+            this.Controls.Add(this.TrangHienThiConterner);
             this.Controls.Add(this.accordionControl1);
             this.Controls.Add(this.fluentDesignFormControl1);
             this.FluentDesignFormControl = this.fluentDesignFormControl1;
@@ -315,18 +274,11 @@
         #endregion
         private DevExpress.XtraBars.FluentDesignSystem.FluentDesignFormControl fluentDesignFormControl1;
         private DevExpress.XtraBars.FluentDesignSystem.FluentFormDefaultManager fluentFormDefaultManager1;
-        private DevExpress.XtraBars.FluentDesignSystem.FluentDesignFormContainer fdfcTrangHienThi;
+        private DevExpress.XtraBars.FluentDesignSystem.FluentDesignFormContainer TrangHienThiConterner;
         private DevExpress.XtraBars.Navigation.AccordionControl accordionControl1;
-        private DevExpress.XtraBars.Navigation.AccordionControlElement ceQuanLiNhanVien;
-        private DevExpress.XtraBars.Navigation.AccordionControlElement ceDanhMucMonAn;
         private DevExpress.XtraBars.Navigation.AccordionControlElement accordionControlElement4;
         private DevExpress.XtraBars.Navigation.AccordionControlElement accordionControlElement3;
         private DevExpress.XtraBars.Navigation.AccordionControlElement accordionControlElement2;
-        private DevExpress.XtraBars.Navigation.AccordionControlElement ceThemNhanVien;
-        private DevExpress.XtraBars.Navigation.AccordionControlElement ceXoaNhanVien;
-        private DevExpress.XtraBars.Navigation.AccordionControlElement ceThemMon;
-        private DevExpress.XtraBars.Navigation.AccordionControlElement ceSuaMon;
-        private DevExpress.XtraBars.Navigation.AccordionControlElement ceXoaMon;
         private DevExpress.XtraBars.Navigation.AccordionControlElement ceQuanLiKhoHang;
         private DevExpress.XtraBars.Navigation.AccordionControlElement ceBangKiemHang;
         private DevExpress.XtraBars.Navigation.AccordionControlElement ceSPLoss;
@@ -343,7 +295,8 @@
         private DevExpress.XtraBars.Navigation.AccordionControlElement ceSuaXoaLich;
         private DevExpress.XtraBars.Navigation.AccordionControlElement ceTinhLuong;
         private DevExpress.XtraBars.Navigation.AccordionControlElement ceTrangChu;
-        private DevExpress.XtraBars.Navigation.AccordionControlElement ceSuaNhanVien;
+        private DevExpress.XtraBars.Navigation.AccordionControlElement ceDanhMucMon;
+        private DevExpress.XtraBars.Navigation.AccordionControlElement ceQuanLiNhanVien;
     }
 }
 
