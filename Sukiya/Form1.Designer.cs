@@ -71,7 +71,7 @@
             this.fluentDesignFormControl1.FluentDesignForm = this;
             this.fluentDesignFormControl1.Location = new System.Drawing.Point(0, 0);
             this.fluentDesignFormControl1.Manager = this.fluentFormDefaultManager1;
-            this.fluentDesignFormControl1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.fluentDesignFormControl1.Margin = new System.Windows.Forms.Padding(4);
             this.fluentDesignFormControl1.Name = "fluentDesignFormControl1";
             this.fluentDesignFormControl1.Size = new System.Drawing.Size(1069, 39);
             this.fluentDesignFormControl1.TabIndex = 2;
@@ -87,7 +87,7 @@
             this.fdfcTrangHienThi.Appearance.Options.UseBackColor = true;
             this.fdfcTrangHienThi.Dock = System.Windows.Forms.DockStyle.Fill;
             this.fdfcTrangHienThi.Location = new System.Drawing.Point(303, 39);
-            this.fdfcTrangHienThi.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.fdfcTrangHienThi.Margin = new System.Windows.Forms.Padding(4);
             this.fdfcTrangHienThi.Name = "fdfcTrangHienThi";
             this.fdfcTrangHienThi.Size = new System.Drawing.Size(766, 626);
             this.fdfcTrangHienThi.TabIndex = 0;
@@ -136,7 +136,7 @@
             this.ceUpdate,
             this.ceDangXuat});
             this.accordionControl1.Location = new System.Drawing.Point(0, 39);
-            this.accordionControl1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.accordionControl1.Margin = new System.Windows.Forms.Padding(4);
             this.accordionControl1.Name = "accordionControl1";
             this.accordionControl1.ScrollBarMode = DevExpress.XtraBars.Navigation.ScrollBarMode.Touch;
             this.accordionControl1.Size = new System.Drawing.Size(303, 626);
@@ -215,6 +215,7 @@
             this.ceQuanLiKhoHang.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("ceQuanLiKhoHang.ImageOptions.SvgImage")));
             this.ceQuanLiKhoHang.Name = "ceQuanLiKhoHang";
             this.ceQuanLiKhoHang.Text = "Quản Lí Kho Hàng";
+            this.ceQuanLiKhoHang.Click += new System.EventHandler(this.ceQuanLiKhoHang_Click);
             // 
             // ceBangKiemHang
             // 
@@ -313,7 +314,7 @@
             this.Controls.Add(this.fluentDesignFormControl1);
             this.FluentDesignFormControl = this.fluentDesignFormControl1;
             this.IconOptions.Image = ((System.Drawing.Image)(resources.GetObject("Form1.IconOptions.Image")));
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "Form1";
             this.NavigationControl = this.accordionControl1;
             this.Text = "Quản Lí Nhà Hàng Sukiya";

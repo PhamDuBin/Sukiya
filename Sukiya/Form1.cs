@@ -28,5 +28,10 @@ namespace Sukiya
             
 
         }
+
+        private void ceQuanLiKhoHang_Click(object sender, EventArgs e)
+        {
+            //Nhớ xóa
+        }
     }
 }
