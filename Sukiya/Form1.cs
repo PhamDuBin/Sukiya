@@ -17,21 +17,5 @@ namespace Sukiya
             Console.WriteLine("Hello");
             InitializeComponent();
         }
-
-        private void ceDanhMucMonAn_Click(object sender, EventArgs e)
-        {
-            //SSS
-        }
-
-        private void ceQuanLiNhanVien_Click(object sender, EventArgs e)
-        {
-            
-
-        }
-
-        private void ceQuanLiKhoHang_Click(object sender, EventArgs e)
-        {
-            //Nhớ xóa
-        }
     }
 }
