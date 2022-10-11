@@ -172,7 +172,6 @@
             this.SDT,
             this.DiaChi,
             this.SoCCCD});
-            this.dgvNhanVien.Dock = System.Windows.Forms.DockStyle.Fill;
             this.dgvNhanVien.Location = new System.Drawing.Point(0, 24);
             this.dgvNhanVien.Name = "dgvNhanVien";
             this.dgvNhanVien.ReadOnly = true;

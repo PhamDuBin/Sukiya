@@ -11,9 +11,9 @@ using System.Windows.Forms;
 
 namespace Sukiya
 {
-    public partial class Form1 : DevExpress.XtraBars.FluentDesignSystem.FluentDesignForm
+    public partial class FormMain : DevExpress.XtraBars.FluentDesignSystem.FluentDesignForm
     {
-        public Form1()
+        public FormMain()
         {
 
             InitializeComponent();
@@ -54,5 +54,6 @@ namespace Sukiya
                 ucMon.BringToFront();
             }
         }
+
     }
 }

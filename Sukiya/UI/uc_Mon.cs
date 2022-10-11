@@ -43,6 +43,5 @@ namespace Sukiya.UI
                 dgvMon.Rows[index].Cells[4].Value = item.Size;
             }
         }
-
     }
 }

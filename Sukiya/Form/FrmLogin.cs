@@ -11,11 +11,12 @@ using System.Windows.Forms;
 
 namespace Sukiya.Form
 {
-    public partial class FrmLogin : DevExpress.XtraEditors.XtraForm
+    public partial class Form1 : DevExpress.XtraEditors.XtraForm
     {
-        public FrmLogin()
+        public Form1()
         {
             InitializeComponent();
         }
+
     }
 }

@@ -44,11 +44,11 @@
             this.barDockControlLeft = new DevExpress.XtraBars.BarDockControl();
             this.barDockControlRight = new DevExpress.XtraBars.BarDockControl();
             this.dgvMon = new System.Windows.Forms.DataGridView();
-            this.MaMon = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.MaLM = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.TenMon = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Gia = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.KichThuoc = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.MaNV = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.MaCV = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.HoTen = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.GioiTinh = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.SDT = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.barManager1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgvMon)).BeginInit();
             this.SuspendLayout();
@@ -179,46 +179,46 @@
             this.dgvMon.AllowUserToDeleteRows = false;
             this.dgvMon.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvMon.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.MaMon,
-            this.MaLM,
-            this.TenMon,
-            this.Gia,
-            this.KichThuoc});
-            this.dgvMon.Location = new System.Drawing.Point(3, 171);
+            this.MaNV,
+            this.MaCV,
+            this.HoTen,
+            this.GioiTinh,
+            this.SDT});
+            this.dgvMon.Location = new System.Drawing.Point(0, 111);
             this.dgvMon.Name = "dgvMon";
             this.dgvMon.ReadOnly = true;
-            this.dgvMon.Size = new System.Drawing.Size(607, 293);
-            this.dgvMon.TabIndex = 11;
+            this.dgvMon.Size = new System.Drawing.Size(613, 356);
+            this.dgvMon.TabIndex = 17;
             // 
-            // MaMon
+            // MaNV
             // 
-            this.MaMon.HeaderText = "Mã Món";
-            this.MaMon.Name = "MaMon";
-            this.MaMon.ReadOnly = true;
+            this.MaNV.HeaderText = "Mã Nhân Viên";
+            this.MaNV.Name = "MaNV";
+            this.MaNV.ReadOnly = true;
             // 
-            // MaLM
+            // MaCV
             // 
-            this.MaLM.HeaderText = "Mã Loại Món";
-            this.MaLM.Name = "MaLM";
-            this.MaLM.ReadOnly = true;
+            this.MaCV.HeaderText = "Mã Chức Vụ";
+            this.MaCV.Name = "MaCV";
+            this.MaCV.ReadOnly = true;
             // 
-            // TenMon
+            // HoTen
             // 
-            this.TenMon.HeaderText = "Tên Món";
-            this.TenMon.Name = "TenMon";
-            this.TenMon.ReadOnly = true;
+            this.HoTen.HeaderText = "Họ Tên";
+            this.HoTen.Name = "HoTen";
+            this.HoTen.ReadOnly = true;
             // 
-            // Gia
+            // GioiTinh
             // 
-            this.Gia.HeaderText = "Giá";
-            this.Gia.Name = "Gia";
-            this.Gia.ReadOnly = true;
+            this.GioiTinh.HeaderText = "Giới Tính";
+            this.GioiTinh.Name = "GioiTinh";
+            this.GioiTinh.ReadOnly = true;
             // 
-            // KichThuoc
+            // SDT
             // 
-            this.KichThuoc.HeaderText = "Kích Thước";
-            this.KichThuoc.Name = "KichThuoc";
-            this.KichThuoc.ReadOnly = true;
+            this.SDT.HeaderText = "SDT";
+            this.SDT.Name = "SDT";
+            this.SDT.ReadOnly = true;
             // 
             // uc_Mon
             // 
@@ -232,6 +232,7 @@
             this.Controls.Add(this.barDockControl1);
             this.Name = "uc_Mon";
             this.Size = new System.Drawing.Size(613, 467);
+            this.Load += new System.EventHandler(this.uc_Mon_Load);
             ((System.ComponentModel.ISupportInitialize)(this.barManager1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgvMon)).EndInit();
             this.ResumeLayout(false);
@@ -255,10 +256,10 @@
         private DevExpress.XtraBars.BarDockControl barDockControlLeft;
         private DevExpress.XtraBars.BarDockControl barDockControlRight;
         private System.Windows.Forms.DataGridView dgvMon;
-        private System.Windows.Forms.DataGridViewTextBoxColumn MaMon;
-        private System.Windows.Forms.DataGridViewTextBoxColumn MaLM;
-        private System.Windows.Forms.DataGridViewTextBoxColumn TenMon;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Gia;
-        private System.Windows.Forms.DataGridViewTextBoxColumn KichThuoc;
+        private System.Windows.Forms.DataGridViewTextBoxColumn MaNV;
+        private System.Windows.Forms.DataGridViewTextBoxColumn MaCV;
+        private System.Windows.Forms.DataGridViewTextBoxColumn HoTen;
+        private System.Windows.Forms.DataGridViewTextBoxColumn GioiTinh;
+        private System.Windows.Forms.DataGridViewTextBoxColumn SDT;
     }
 }

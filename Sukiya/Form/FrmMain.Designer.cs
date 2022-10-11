@@ -1,6 +1,6 @@
 ﻿namespace Sukiya
 {
-    partial class Form1
+    partial class FormMain
     {
         /// <summary>
         /// Required designer variable.
@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormMain));
             this.fluentDesignFormControl1 = new DevExpress.XtraBars.FluentDesignSystem.FluentDesignFormControl();
             this.fluentFormDefaultManager1 = new DevExpress.XtraBars.FluentDesignSystem.FluentFormDefaultManager(this.components);
             this.TrangHienThiConterner = new DevExpress.XtraBars.FluentDesignSystem.FluentDesignFormContainer();
@@ -65,9 +65,8 @@
             this.fluentDesignFormControl1.FluentDesignForm = this;
             this.fluentDesignFormControl1.Location = new System.Drawing.Point(0, 0);
             this.fluentDesignFormControl1.Manager = this.fluentFormDefaultManager1;
-            this.fluentDesignFormControl1.Margin = new System.Windows.Forms.Padding(4);
             this.fluentDesignFormControl1.Name = "fluentDesignFormControl1";
-            this.fluentDesignFormControl1.Size = new System.Drawing.Size(1069, 39);
+            this.fluentDesignFormControl1.Size = new System.Drawing.Size(785, 31);
             this.fluentDesignFormControl1.TabIndex = 2;
             this.fluentDesignFormControl1.TabStop = false;
             // 
@@ -82,16 +81,8 @@
             this.TrangHienThiConterner.Dock = System.Windows.Forms.DockStyle.Fill;
             this.TrangHienThiConterner.Location = new System.Drawing.Point(260, 31);
             this.TrangHienThiConterner.Name = "TrangHienThiConterner";
-            this.TrangHienThiConterner.Size = new System.Drawing.Size(656, 509);
+            this.TrangHienThiConterner.Size = new System.Drawing.Size(525, 408);
             this.TrangHienThiConterner.TabIndex = 0;
-            this.fdfcTrangHienThi.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
-            this.fdfcTrangHienThi.Appearance.Options.UseBackColor = true;
-            this.fdfcTrangHienThi.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.fdfcTrangHienThi.Location = new System.Drawing.Point(303, 39);
-            this.fdfcTrangHienThi.Margin = new System.Windows.Forms.Padding(4);
-            this.fdfcTrangHienThi.Name = "fdfcTrangHienThi";
-            this.fdfcTrangHienThi.Size = new System.Drawing.Size(766, 626);
-            this.fdfcTrangHienThi.TabIndex = 0;
             // 
             // accordionControl1
             // 
@@ -107,11 +98,10 @@
             this.ceGioiThieu,
             this.ceUpdate,
             this.ceDangXuat});
-            this.accordionControl1.Location = new System.Drawing.Point(0, 39);
-            this.accordionControl1.Margin = new System.Windows.Forms.Padding(4);
+            this.accordionControl1.Location = new System.Drawing.Point(0, 31);
             this.accordionControl1.Name = "accordionControl1";
             this.accordionControl1.ScrollBarMode = DevExpress.XtraBars.Navigation.ScrollBarMode.Touch;
-            this.accordionControl1.Size = new System.Drawing.Size(303, 626);
+            this.accordionControl1.Size = new System.Drawing.Size(260, 408);
             this.accordionControl1.TabIndex = 1;
             this.accordionControl1.ViewType = DevExpress.XtraBars.Navigation.AccordionControlViewType.HamburgerMenu;
             // 
@@ -122,23 +112,7 @@
             this.ceTrangChu.Style = DevExpress.XtraBars.Navigation.ElementStyle.Item;
             this.ceTrangChu.Text = "Trang Chủ";
             // 
-            // ceDanhMucMonAn
-            // 
-            this.ceDanhMucMonAn.Elements.AddRange(new DevExpress.XtraBars.Navigation.AccordionControlElement[] {
-            this.ceThemMon,
-            this.ceSuaMon,
-            this.ceXoaMon});
-            this.ceDanhMucMonAn.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("ceDanhMucMonAn.ImageOptions.SvgImage")));
-            this.ceDanhMucMonAn.Name = "ceDanhMucMonAn";
-            this.ceDanhMucMonAn.Text = "Danh Mục Món Ăn";
-            // 
-            // ceThemMon
-            // 
-            this.ceThemMon.Name = "ceThemMon";
-            this.ceThemMon.Style = DevExpress.XtraBars.Navigation.ElementStyle.Item;
-            this.ceThemMon.Text = "Thêm Món";
-            // 
-            // ceSuaMon
+            // ceDanhMucMon
             // 
             this.ceDanhMucMon.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("ceDanhMucMon.ImageOptions.SvgImage")));
             this.ceDanhMucMon.Name = "ceDanhMucMon";
@@ -276,19 +250,18 @@
             this.accordionControlElement2.Name = "accordionControlElement2";
             this.accordionControlElement2.Text = "Element2";
             // 
-            // Form1
+            // FormMain
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(916, 540);
-            this.ControlContainer = this.fdfcTrangHienThi;
-            this.Controls.Add(this.fdfcTrangHienThi);
+            this.ClientSize = new System.Drawing.Size(785, 439);
+            this.ControlContainer = this.TrangHienThiConterner;
+            this.Controls.Add(this.TrangHienThiConterner);
             this.Controls.Add(this.accordionControl1);
             this.Controls.Add(this.fluentDesignFormControl1);
             this.FluentDesignFormControl = this.fluentDesignFormControl1;
-            this.IconOptions.Image = ((System.Drawing.Image)(resources.GetObject("Form1.IconOptions.Image")));
-            this.Margin = new System.Windows.Forms.Padding(4);
-            this.Name = "Form1";
+            this.IconOptions.Image = ((System.Drawing.Image)(resources.GetObject("FormMain.IconOptions.Image")));
+            this.Name = "FormMain";
             this.NavigationControl = this.accordionControl1;
             this.Text = "Quản Lí Nhà Hàng Sukiya";
             ((System.ComponentModel.ISupportInitialize)(this.fluentDesignFormControl1)).EndInit();
