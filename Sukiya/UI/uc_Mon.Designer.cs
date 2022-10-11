@@ -36,7 +36,6 @@
             this.barManager1 = new DevExpress.XtraBars.BarManager(this.components);
             this.bar4 = new DevExpress.XtraBars.Bar();
             this.barButtonItem1 = new DevExpress.XtraBars.BarButtonItem();
-            this.barButtonItem2 = new DevExpress.XtraBars.BarButtonItem();
             this.barButtonItem3 = new DevExpress.XtraBars.BarButtonItem();
             this.barButtonItem4 = new DevExpress.XtraBars.BarButtonItem();
             this.barDockControl1 = new DevExpress.XtraBars.BarDockControl();
@@ -57,6 +56,8 @@
             this.txtKichThuoc = new System.Windows.Forms.TextBox();
             this.txtGia = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
+            this.txtMaLoaiMon = new System.Windows.Forms.MaskedTextBox();
+            this.label5 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.barManager1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgvMon)).BeginInit();
             this.SuspendLayout();
@@ -100,7 +101,6 @@
             this.barManager1.Form = this;
             this.barManager1.Items.AddRange(new DevExpress.XtraBars.BarItem[] {
             this.barButtonItem1,
-            this.barButtonItem2,
             this.barButtonItem3,
             this.barButtonItem4});
             this.barManager1.MainMenu = this.bar4;
@@ -114,7 +114,6 @@
             this.bar4.DockStyle = DevExpress.XtraBars.BarDockStyle.Top;
             this.bar4.LinksPersistInfo.AddRange(new DevExpress.XtraBars.LinkPersistInfo[] {
             new DevExpress.XtraBars.LinkPersistInfo(DevExpress.XtraBars.BarLinkUserDefines.PaintStyle, this.barButtonItem1, DevExpress.XtraBars.BarItemPaintStyle.CaptionGlyph),
-            new DevExpress.XtraBars.LinkPersistInfo(DevExpress.XtraBars.BarLinkUserDefines.PaintStyle, this.barButtonItem2, DevExpress.XtraBars.BarItemPaintStyle.CaptionGlyph),
             new DevExpress.XtraBars.LinkPersistInfo(DevExpress.XtraBars.BarLinkUserDefines.PaintStyle, this.barButtonItem3, DevExpress.XtraBars.BarItemPaintStyle.CaptionGlyph),
             new DevExpress.XtraBars.LinkPersistInfo(DevExpress.XtraBars.BarLinkUserDefines.PaintStyle, this.barButtonItem4, DevExpress.XtraBars.BarItemPaintStyle.CaptionGlyph)});
             this.bar4.OptionsBar.MultiLine = true;
@@ -123,17 +122,11 @@
             // 
             // barButtonItem1
             // 
-            this.barButtonItem1.Caption = "Thêm";
+            this.barButtonItem1.Caption = "Thêm/ Sửa";
             this.barButtonItem1.Id = 0;
             this.barButtonItem1.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("barButtonItem1.ImageOptions.SvgImage")));
             this.barButtonItem1.Name = "barButtonItem1";
-            // 
-            // barButtonItem2
-            // 
-            this.barButtonItem2.Caption = "Sửa";
-            this.barButtonItem2.Id = 1;
-            this.barButtonItem2.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("barButtonItem2.ImageOptions.SvgImage")));
-            this.barButtonItem2.Name = "barButtonItem2";
+            this.barButtonItem1.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.barButtonItem1_ItemClick);
             // 
             // barButtonItem3
             // 
@@ -141,6 +134,7 @@
             this.barButtonItem3.Id = 2;
             this.barButtonItem3.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("barButtonItem3.ImageOptions.SvgImage")));
             this.barButtonItem3.Name = "barButtonItem3";
+            this.barButtonItem3.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.barButtonItem3_ItemClick);
             // 
             // barButtonItem4
             // 
@@ -192,11 +186,12 @@
             this.TenMon,
             this.Gia,
             this.KichThuoc});
-            this.dgvMon.Location = new System.Drawing.Point(0, 195);
+            this.dgvMon.Location = new System.Drawing.Point(0, 242);
             this.dgvMon.Name = "dgvMon";
             this.dgvMon.ReadOnly = true;
-            this.dgvMon.Size = new System.Drawing.Size(967, 435);
+            this.dgvMon.Size = new System.Drawing.Size(967, 388);
             this.dgvMon.TabIndex = 17;
+            this.dgvMon.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvMon_CellClick);
             // 
             // MaMon
             // 
@@ -240,7 +235,7 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(217, 135);
+            this.label2.Location = new System.Drawing.Point(217, 172);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(23, 13);
             this.label2.TabIndex = 24;
@@ -249,7 +244,7 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(217, 95);
+            this.label3.Location = new System.Drawing.Point(217, 132);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(50, 13);
             this.label3.TabIndex = 25;
@@ -264,21 +259,21 @@
             // 
             // txtTenMon
             // 
-            this.txtTenMon.Location = new System.Drawing.Point(308, 88);
+            this.txtTenMon.Location = new System.Drawing.Point(308, 125);
             this.txtTenMon.Name = "txtTenMon";
             this.txtTenMon.Size = new System.Drawing.Size(276, 20);
             this.txtTenMon.TabIndex = 27;
             // 
             // txtKichThuoc
             // 
-            this.txtKichThuoc.Location = new System.Drawing.Point(308, 172);
+            this.txtKichThuoc.Location = new System.Drawing.Point(308, 209);
             this.txtKichThuoc.Name = "txtKichThuoc";
             this.txtKichThuoc.Size = new System.Drawing.Size(276, 20);
             this.txtKichThuoc.TabIndex = 28;
             // 
             // txtGia
             // 
-            this.txtGia.Location = new System.Drawing.Point(308, 128);
+            this.txtGia.Location = new System.Drawing.Point(308, 165);
             this.txtGia.Name = "txtGia";
             this.txtGia.Size = new System.Drawing.Size(276, 20);
             this.txtGia.TabIndex = 29;
@@ -286,17 +281,35 @@
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(217, 179);
+            this.label4.Location = new System.Drawing.Point(217, 216);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(64, 13);
             this.label4.TabIndex = 30;
             this.label4.Text = "Kích Thước";
+            // 
+            // txtMaLoaiMon
+            // 
+            this.txtMaLoaiMon.Location = new System.Drawing.Point(308, 89);
+            this.txtMaLoaiMon.Name = "txtMaLoaiMon";
+            this.txtMaLoaiMon.Size = new System.Drawing.Size(276, 20);
+            this.txtMaLoaiMon.TabIndex = 37;
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Location = new System.Drawing.Point(217, 96);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(69, 13);
+            this.label5.TabIndex = 36;
+            this.label5.Text = "Mã Loại Món";
             // 
             // uc_Mon
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
+            this.Controls.Add(this.txtMaLoaiMon);
+            this.Controls.Add(this.label5);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.txtGia);
             this.Controls.Add(this.txtKichThuoc);
@@ -329,7 +342,6 @@
         private DevExpress.XtraBars.BarManager barManager1;
         private DevExpress.XtraBars.Bar bar4;
         private DevExpress.XtraBars.BarButtonItem barButtonItem1;
-        private DevExpress.XtraBars.BarButtonItem barButtonItem2;
         private DevExpress.XtraBars.BarButtonItem barButtonItem3;
         private DevExpress.XtraBars.BarButtonItem barButtonItem4;
         private DevExpress.XtraBars.BarDockControl barDockControl1;
@@ -350,5 +362,7 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.MaskedTextBox txtMaLoaiMon;
+        private System.Windows.Forms.Label label5;
     }
 }
