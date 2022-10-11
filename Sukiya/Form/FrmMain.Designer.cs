@@ -136,6 +136,7 @@
             this.ceBaoCaoDoanhThu.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("ceBaoCaoDoanhThu.ImageOptions.SvgImage")));
             this.ceBaoCaoDoanhThu.Name = "ceBaoCaoDoanhThu";
             this.ceBaoCaoDoanhThu.Text = "Báo Cáo Doanh Thu";
+            this.ceBaoCaoDoanhThu.Click += new System.EventHandler(this.ceBaoCaoDoanhThu_Click);
             // 
             // ceBaoCaoDT
             // 
@@ -158,6 +159,7 @@
             this.ceQuanLiKhoHang.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("ceQuanLiKhoHang.ImageOptions.SvgImage")));
             this.ceQuanLiKhoHang.Name = "ceQuanLiKhoHang";
             this.ceQuanLiKhoHang.Text = "Quản Lí Kho Hàng";
+            this.ceQuanLiKhoHang.Click += new System.EventHandler(this.ceQuanLiKhoHang_Click);
             // 
             // ceBangKiemHang
             // 

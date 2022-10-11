@@ -55,5 +55,14 @@ namespace Sukiya
             }
         }
 
+        private void ceBaoCaoDoanhThu_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void ceQuanLiKhoHang_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
