@@ -172,10 +172,11 @@
             this.SDT,
             this.DiaChi,
             this.SoCCCD});
-            this.dgvNhanVien.Location = new System.Drawing.Point(3, 158);
+            this.dgvNhanVien.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.dgvNhanVien.Location = new System.Drawing.Point(0, 24);
             this.dgvNhanVien.Name = "dgvNhanVien";
             this.dgvNhanVien.ReadOnly = true;
-            this.dgvNhanVien.Size = new System.Drawing.Size(748, 311);
+            this.dgvNhanVien.Size = new System.Drawing.Size(796, 450);
             this.dgvNhanVien.TabIndex = 4;
             // 
             // MaNV

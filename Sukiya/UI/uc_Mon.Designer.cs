@@ -184,10 +184,10 @@
             this.TenMon,
             this.Gia,
             this.KichThuoc});
-            this.dgvMon.Location = new System.Drawing.Point(32, 203);
+            this.dgvMon.Location = new System.Drawing.Point(3, 171);
             this.dgvMon.Name = "dgvMon";
             this.dgvMon.ReadOnly = true;
-            this.dgvMon.Size = new System.Drawing.Size(552, 215);
+            this.dgvMon.Size = new System.Drawing.Size(607, 293);
             this.dgvMon.TabIndex = 11;
             // 
             // MaMon
