@@ -186,10 +186,10 @@
             this.TenMon,
             this.Gia,
             this.KichThuoc});
-            this.dgvMon.Location = new System.Drawing.Point(0, 242);
+            this.dgvMon.Location = new System.Drawing.Point(0, 371);
             this.dgvMon.Name = "dgvMon";
             this.dgvMon.ReadOnly = true;
-            this.dgvMon.Size = new System.Drawing.Size(967, 388);
+            this.dgvMon.Size = new System.Drawing.Size(967, 259);
             this.dgvMon.TabIndex = 17;
             this.dgvMon.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvMon_CellClick);
             // 
@@ -226,80 +226,100 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(217, 53);
+            this.label1.BackColor = System.Drawing.SystemColors.ButtonFace;
+            this.label1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(211, 45);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(46, 13);
+            this.label1.Size = new System.Drawing.Size(74, 22);
             this.label1.TabIndex = 23;
             this.label1.Text = "Mã Món";
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(217, 172);
+            this.label2.BackColor = System.Drawing.SystemColors.ButtonFace;
+            this.label2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Location = new System.Drawing.Point(211, 164);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(23, 13);
+            this.label2.Size = new System.Drawing.Size(39, 22);
             this.label2.TabIndex = 24;
             this.label2.Text = "Giá";
             // 
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(217, 132);
+            this.label3.BackColor = System.Drawing.SystemColors.ButtonFace;
+            this.label3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Location = new System.Drawing.Point(211, 124);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(50, 13);
+            this.label3.Size = new System.Drawing.Size(80, 22);
             this.label3.TabIndex = 25;
             this.label3.Text = "Tên Món";
             // 
             // txtMaMon
             // 
-            this.txtMaMon.Location = new System.Drawing.Point(308, 46);
+            this.txtMaMon.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtMaMon.Location = new System.Drawing.Point(345, 41);
             this.txtMaMon.Name = "txtMaMon";
-            this.txtMaMon.Size = new System.Drawing.Size(276, 20);
+            this.txtMaMon.Size = new System.Drawing.Size(276, 26);
             this.txtMaMon.TabIndex = 26;
             // 
             // txtTenMon
             // 
-            this.txtTenMon.Location = new System.Drawing.Point(308, 125);
+            this.txtTenMon.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtTenMon.Location = new System.Drawing.Point(345, 120);
             this.txtTenMon.Name = "txtTenMon";
-            this.txtTenMon.Size = new System.Drawing.Size(276, 20);
+            this.txtTenMon.Size = new System.Drawing.Size(276, 26);
             this.txtTenMon.TabIndex = 27;
             // 
             // txtKichThuoc
             // 
-            this.txtKichThuoc.Location = new System.Drawing.Point(308, 209);
+            this.txtKichThuoc.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtKichThuoc.Location = new System.Drawing.Point(345, 204);
             this.txtKichThuoc.Name = "txtKichThuoc";
-            this.txtKichThuoc.Size = new System.Drawing.Size(276, 20);
+            this.txtKichThuoc.Size = new System.Drawing.Size(276, 26);
             this.txtKichThuoc.TabIndex = 28;
             // 
             // txtGia
             // 
-            this.txtGia.Location = new System.Drawing.Point(308, 165);
+            this.txtGia.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtGia.Location = new System.Drawing.Point(345, 160);
             this.txtGia.Name = "txtGia";
-            this.txtGia.Size = new System.Drawing.Size(276, 20);
+            this.txtGia.Size = new System.Drawing.Size(276, 26);
             this.txtGia.TabIndex = 29;
             // 
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(217, 216);
+            this.label4.BackColor = System.Drawing.SystemColors.ButtonFace;
+            this.label4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.Location = new System.Drawing.Point(211, 208);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(64, 13);
+            this.label4.Size = new System.Drawing.Size(99, 22);
             this.label4.TabIndex = 30;
             this.label4.Text = "Kích Thước";
             // 
             // txtMaLoaiMon
             // 
-            this.txtMaLoaiMon.Location = new System.Drawing.Point(308, 89);
+            this.txtMaLoaiMon.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtMaLoaiMon.Location = new System.Drawing.Point(345, 84);
             this.txtMaLoaiMon.Name = "txtMaLoaiMon";
-            this.txtMaLoaiMon.Size = new System.Drawing.Size(276, 20);
+            this.txtMaLoaiMon.Size = new System.Drawing.Size(276, 26);
             this.txtMaLoaiMon.TabIndex = 37;
             // 
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(217, 96);
+            this.label5.BackColor = System.Drawing.SystemColors.ButtonFace;
+            this.label5.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.Location = new System.Drawing.Point(211, 88);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(69, 13);
+            this.label5.Size = new System.Drawing.Size(113, 22);
             this.label5.TabIndex = 36;
             this.label5.Text = "Mã Loại Món";
             // 
@@ -308,6 +328,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.Controls.Add(this.txtMaLoaiMon);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.label4);
