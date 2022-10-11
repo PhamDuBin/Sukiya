@@ -13,9 +13,9 @@ namespace Sukiya.Models
         public NhanVien()
         {
             BangChamCong = new HashSet<BangChamCong>();
+            CT_LichLam = new HashSet<CT_LichLam>();
             HoaDon = new HashSet<HoaDon>();
             HopDong = new HashSet<HopDong>();
-            CT_LichLam = new HashSet<CT_LichLam>();
         }
 
         [Key]
@@ -25,7 +25,7 @@ namespace Sukiya.Models
         public int MaCV { get; set; }
 
         [Required]
-        [StringLength(50)]
+        [StringLength(30)]
         public string HoTen { get; set; }
 
         [Required]
@@ -36,14 +36,19 @@ namespace Sukiya.Models
         [StringLength(10)]
         public string SDT { get; set; }
 
+        [Required]
         [StringLength(50)]
         public string DiaChi { get; set; }
 
-        [StringLength(12)]
-        public string SoSCCD { get; set; }
+        [Required]
+        [StringLength(10)]
+        public string SoCCCD { get; set; }
 
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<BangChamCong> BangChamCong { get; set; }
+
+        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
+        public virtual ICollection<CT_LichLam> CT_LichLam { get; set; }
 
         public virtual ChucVu ChucVu { get; set; }
 
@@ -52,8 +57,5 @@ namespace Sukiya.Models
 
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<HopDong> HopDong { get; set; }
-
-        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-        public virtual ICollection<CT_LichLam> CT_LichLam { get; set; }
     }
 }

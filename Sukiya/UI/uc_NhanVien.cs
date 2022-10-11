@@ -42,7 +42,7 @@ namespace Sukiya.UI
                 dgvNhanVien.Rows[index].Cells[3].Value = item.GioiTinh;
                 dgvNhanVien.Rows[index].Cells[4].Value = item.SDT;
                 dgvNhanVien.Rows[index].Cells[5].Value = item.DiaChi;
-                dgvNhanVien.Rows[index].Cells[6].Value = item.SoSCCD;
+                dgvNhanVien.Rows[index].Cells[6].Value = item.SoCCCD;
             }
         }
     }

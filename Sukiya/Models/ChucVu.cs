@@ -20,7 +20,7 @@ namespace Sukiya.Models
         public int MaCV { get; set; }
 
         [Required]
-        [StringLength(20)]
+        [StringLength(30)]
         public string TenCV { get; set; }
 
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]

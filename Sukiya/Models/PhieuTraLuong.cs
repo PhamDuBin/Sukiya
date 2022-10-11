@@ -16,7 +16,7 @@ namespace Sukiya.Models
         public int MaBangChamCong { get; set; }
 
         [Column(TypeName = "money")]
-        public decimal? TienPhuCap { get; set; }
+        public decimal TienPhuCap { get; set; }
 
         public int TongGioLam { get; set; }
 

@@ -24,14 +24,13 @@ namespace Sukiya.Models
         [Column(TypeName = "date")]
         public DateTime NgayLam { get; set; }
 
-        public TimeSpan GioVaoLam { get; set; }
+        public int GioVaoLam { get; set; }
 
-        public TimeSpan GioTanCa { get; set; }
+        public int GioTanCa { get; set; }
+
+        public int Ca { get; set; }
 
         [Required]
-        [StringLength(1)]
-        public string Ca { get; set; }
-
         [StringLength(50)]
         public string GhiChu { get; set; }
 

@@ -19,7 +19,7 @@ namespace Sukiya.Models
         [DatabaseGenerated(DatabaseGeneratedOption.None)]
         public int MaBan { get; set; }
 
-        public byte SoBan { get; set; }
+        public int SoBan { get; set; }
 
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<PhieuGoiMon> PhieuGoiMon { get; set; }

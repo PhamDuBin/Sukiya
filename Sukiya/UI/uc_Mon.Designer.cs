@@ -44,11 +44,19 @@
             this.barDockControlLeft = new DevExpress.XtraBars.BarDockControl();
             this.barDockControlRight = new DevExpress.XtraBars.BarDockControl();
             this.dgvMon = new System.Windows.Forms.DataGridView();
-            this.MaNV = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.MaCV = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.HoTen = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.GioiTinh = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.SDT = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.MaMon = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.MaLoaiMon = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.TenMon = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Gia = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.KichThuoc = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.label1 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
+            this.txtMaMon = new System.Windows.Forms.TextBox();
+            this.txtTenMon = new System.Windows.Forms.MaskedTextBox();
+            this.txtKichThuoc = new System.Windows.Forms.TextBox();
+            this.txtGia = new System.Windows.Forms.TextBox();
+            this.label4 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.barManager1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgvMon)).BeginInit();
             this.SuspendLayout();
@@ -79,7 +87,7 @@
             this.barDockControlTop.Dock = System.Windows.Forms.DockStyle.Top;
             this.barDockControlTop.Location = new System.Drawing.Point(0, 24);
             this.barDockControlTop.Manager = null;
-            this.barDockControlTop.Size = new System.Drawing.Size(613, 0);
+            this.barDockControlTop.Size = new System.Drawing.Size(967, 0);
             // 
             // barManager1
             // 
@@ -147,15 +155,15 @@
             this.barDockControl1.Dock = System.Windows.Forms.DockStyle.Top;
             this.barDockControl1.Location = new System.Drawing.Point(0, 0);
             this.barDockControl1.Manager = this.barManager1;
-            this.barDockControl1.Size = new System.Drawing.Size(613, 24);
+            this.barDockControl1.Size = new System.Drawing.Size(967, 24);
             // 
             // barDockControlBottom
             // 
             this.barDockControlBottom.CausesValidation = false;
             this.barDockControlBottom.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.barDockControlBottom.Location = new System.Drawing.Point(0, 467);
+            this.barDockControlBottom.Location = new System.Drawing.Point(0, 630);
             this.barDockControlBottom.Manager = this.barManager1;
-            this.barDockControlBottom.Size = new System.Drawing.Size(613, 0);
+            this.barDockControlBottom.Size = new System.Drawing.Size(967, 0);
             // 
             // barDockControlLeft
             // 
@@ -163,15 +171,15 @@
             this.barDockControlLeft.Dock = System.Windows.Forms.DockStyle.Left;
             this.barDockControlLeft.Location = new System.Drawing.Point(0, 24);
             this.barDockControlLeft.Manager = this.barManager1;
-            this.barDockControlLeft.Size = new System.Drawing.Size(0, 443);
+            this.barDockControlLeft.Size = new System.Drawing.Size(0, 606);
             // 
             // barDockControlRight
             // 
             this.barDockControlRight.CausesValidation = false;
             this.barDockControlRight.Dock = System.Windows.Forms.DockStyle.Right;
-            this.barDockControlRight.Location = new System.Drawing.Point(613, 24);
+            this.barDockControlRight.Location = new System.Drawing.Point(967, 24);
             this.barDockControlRight.Manager = this.barManager1;
-            this.barDockControlRight.Size = new System.Drawing.Size(0, 443);
+            this.barDockControlRight.Size = new System.Drawing.Size(0, 606);
             // 
             // dgvMon
             // 
@@ -179,51 +187,124 @@
             this.dgvMon.AllowUserToDeleteRows = false;
             this.dgvMon.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvMon.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.MaNV,
-            this.MaCV,
-            this.HoTen,
-            this.GioiTinh,
-            this.SDT});
-            this.dgvMon.Location = new System.Drawing.Point(0, 111);
+            this.MaMon,
+            this.MaLoaiMon,
+            this.TenMon,
+            this.Gia,
+            this.KichThuoc});
+            this.dgvMon.Location = new System.Drawing.Point(0, 195);
             this.dgvMon.Name = "dgvMon";
             this.dgvMon.ReadOnly = true;
-            this.dgvMon.Size = new System.Drawing.Size(613, 356);
+            this.dgvMon.Size = new System.Drawing.Size(967, 435);
             this.dgvMon.TabIndex = 17;
             // 
-            // MaNV
+            // MaMon
             // 
-            this.MaNV.HeaderText = "Mã Nhân Viên";
-            this.MaNV.Name = "MaNV";
-            this.MaNV.ReadOnly = true;
+            this.MaMon.HeaderText = "Mã Món";
+            this.MaMon.Name = "MaMon";
+            this.MaMon.ReadOnly = true;
             // 
-            // MaCV
+            // MaLoaiMon
             // 
-            this.MaCV.HeaderText = "Mã Chức Vụ";
-            this.MaCV.Name = "MaCV";
-            this.MaCV.ReadOnly = true;
+            this.MaLoaiMon.HeaderText = "Mã Loại Món";
+            this.MaLoaiMon.Name = "MaLoaiMon";
+            this.MaLoaiMon.ReadOnly = true;
             // 
-            // HoTen
+            // TenMon
             // 
-            this.HoTen.HeaderText = "Họ Tên";
-            this.HoTen.Name = "HoTen";
-            this.HoTen.ReadOnly = true;
+            this.TenMon.HeaderText = "Tên Món";
+            this.TenMon.Name = "TenMon";
+            this.TenMon.ReadOnly = true;
             // 
-            // GioiTinh
+            // Gia
             // 
-            this.GioiTinh.HeaderText = "Giới Tính";
-            this.GioiTinh.Name = "GioiTinh";
-            this.GioiTinh.ReadOnly = true;
+            this.Gia.HeaderText = "Giá";
+            this.Gia.Name = "Gia";
+            this.Gia.ReadOnly = true;
             // 
-            // SDT
+            // KichThuoc
             // 
-            this.SDT.HeaderText = "SDT";
-            this.SDT.Name = "SDT";
-            this.SDT.ReadOnly = true;
+            this.KichThuoc.HeaderText = "Kích Thước";
+            this.KichThuoc.Name = "KichThuoc";
+            this.KichThuoc.ReadOnly = true;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(217, 53);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(46, 13);
+            this.label1.TabIndex = 23;
+            this.label1.Text = "Mã Món";
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(217, 135);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(23, 13);
+            this.label2.TabIndex = 24;
+            this.label2.Text = "Giá";
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(217, 95);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(50, 13);
+            this.label3.TabIndex = 25;
+            this.label3.Text = "Tên Món";
+            // 
+            // txtMaMon
+            // 
+            this.txtMaMon.Location = new System.Drawing.Point(308, 46);
+            this.txtMaMon.Name = "txtMaMon";
+            this.txtMaMon.Size = new System.Drawing.Size(276, 20);
+            this.txtMaMon.TabIndex = 26;
+            // 
+            // txtTenMon
+            // 
+            this.txtTenMon.Location = new System.Drawing.Point(308, 88);
+            this.txtTenMon.Name = "txtTenMon";
+            this.txtTenMon.Size = new System.Drawing.Size(276, 20);
+            this.txtTenMon.TabIndex = 27;
+            // 
+            // txtKichThuoc
+            // 
+            this.txtKichThuoc.Location = new System.Drawing.Point(308, 172);
+            this.txtKichThuoc.Name = "txtKichThuoc";
+            this.txtKichThuoc.Size = new System.Drawing.Size(276, 20);
+            this.txtKichThuoc.TabIndex = 28;
+            // 
+            // txtGia
+            // 
+            this.txtGia.Location = new System.Drawing.Point(308, 128);
+            this.txtGia.Name = "txtGia";
+            this.txtGia.Size = new System.Drawing.Size(276, 20);
+            this.txtGia.TabIndex = 29;
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Location = new System.Drawing.Point(217, 179);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(64, 13);
+            this.label4.TabIndex = 30;
+            this.label4.Text = "Kích Thước";
             // 
             // uc_Mon
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
+            this.Controls.Add(this.label4);
+            this.Controls.Add(this.txtGia);
+            this.Controls.Add(this.txtKichThuoc);
+            this.Controls.Add(this.txtTenMon);
+            this.Controls.Add(this.txtMaMon);
+            this.Controls.Add(this.label3);
+            this.Controls.Add(this.label2);
+            this.Controls.Add(this.label1);
             this.Controls.Add(this.dgvMon);
             this.Controls.Add(this.barDockControlTop);
             this.Controls.Add(this.barDockControlLeft);
@@ -231,7 +312,7 @@
             this.Controls.Add(this.barDockControlBottom);
             this.Controls.Add(this.barDockControl1);
             this.Name = "uc_Mon";
-            this.Size = new System.Drawing.Size(613, 467);
+            this.Size = new System.Drawing.Size(967, 630);
             this.Load += new System.EventHandler(this.uc_Mon_Load);
             ((System.ComponentModel.ISupportInitialize)(this.barManager1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgvMon)).EndInit();
@@ -256,10 +337,18 @@
         private DevExpress.XtraBars.BarDockControl barDockControlLeft;
         private DevExpress.XtraBars.BarDockControl barDockControlRight;
         private System.Windows.Forms.DataGridView dgvMon;
-        private System.Windows.Forms.DataGridViewTextBoxColumn MaNV;
-        private System.Windows.Forms.DataGridViewTextBoxColumn MaCV;
-        private System.Windows.Forms.DataGridViewTextBoxColumn HoTen;
-        private System.Windows.Forms.DataGridViewTextBoxColumn GioiTinh;
-        private System.Windows.Forms.DataGridViewTextBoxColumn SDT;
+        private System.Windows.Forms.DataGridViewTextBoxColumn MaMon;
+        private System.Windows.Forms.DataGridViewTextBoxColumn MaLoaiMon;
+        private System.Windows.Forms.DataGridViewTextBoxColumn TenMon;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Gia;
+        private System.Windows.Forms.DataGridViewTextBoxColumn KichThuoc;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.TextBox txtGia;
+        private System.Windows.Forms.TextBox txtKichThuoc;
+        private System.Windows.Forms.MaskedTextBox txtTenMon;
+        private System.Windows.Forms.TextBox txtMaMon;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label label1;
     }
 }

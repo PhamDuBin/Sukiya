@@ -18,13 +18,10 @@ namespace Sukiya.Models
         [DatabaseGenerated(DatabaseGeneratedOption.None)]
         public int MaNVL { get; set; }
 
-        [Key]
-        [Column(Order = 2)]
         public double LieuLuong { get; set; }
 
-        [Key]
-        [Column(Order = 3)]
-        [StringLength(50)]
+        [Required]
+        [StringLength(40)]
         public string CachLam { get; set; }
 
         public virtual Mon Mon { get; set; }

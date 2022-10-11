@@ -8,12 +8,15 @@ namespace Sukiya.Models
     public partial class SukiyaContextDB : DbContext
     {
         public SukiyaContextDB()
-            : base("name=SukiyaContextDB")
+            : base("name=SukiyaContextDB1")
         {
         }
 
         public virtual DbSet<Ban> Ban { get; set; }
         public virtual DbSet<BangChamCong> BangChamCong { get; set; }
+        public virtual DbSet<CT_LichLam> CT_LichLam { get; set; }
+        public virtual DbSet<CT_Mon> CT_Mon { get; set; }
+        public virtual DbSet<CT_PhieuGoiMon> CT_PhieuGoiMon { get; set; }
         public virtual DbSet<ChucVu> ChucVu { get; set; }
         public virtual DbSet<HoaDon> HoaDon { get; set; }
         public virtual DbSet<HopDong> HopDong { get; set; }
@@ -25,9 +28,6 @@ namespace Sukiya.Models
         public virtual DbSet<PhieuGoiMon> PhieuGoiMon { get; set; }
         public virtual DbSet<PhieuTraLuong> PhieuTraLuong { get; set; }
         public virtual DbSet<sysdiagrams> sysdiagrams { get; set; }
-        public virtual DbSet<CT_LichLam> CT_LichLam { get; set; }
-        public virtual DbSet<CT_Mon> CT_Mon { get; set; }
-        public virtual DbSet<CT_PhieuGoiMon> CT_PhieuGoiMon { get; set; }
 
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
         {
@@ -37,11 +37,6 @@ namespace Sukiya.Models
                 .WillCascadeOnDelete(false);
 
             modelBuilder.Entity<BangChamCong>()
-                .Property(e => e.Ca)
-                .IsFixedLength()
-                .IsUnicode(false);
-
-            modelBuilder.Entity<BangChamCong>()
                 .Property(e => e.LuongCoBan)
                 .HasPrecision(19, 4);
 
@@ -49,6 +44,11 @@ namespace Sukiya.Models
                 .HasMany(e => e.PhieuTraLuong)
                 .WithRequired(e => e.BangChamCong)
                 .WillCascadeOnDelete(false);
+
+            modelBuilder.Entity<CT_PhieuGoiMon>()
+                .Property(e => e.Size)
+                .IsFixedLength()
+                .IsUnicode(false);
 
             modelBuilder.Entity<ChucVu>()
                 .HasMany(e => e.NhanVien)
@@ -99,14 +99,21 @@ namespace Sukiya.Models
 
             modelBuilder.Entity<NhanVien>()
                 .Property(e => e.SDT)
+                .IsFixedLength()
                 .IsUnicode(false);
 
             modelBuilder.Entity<NhanVien>()
-                .Property(e => e.SoSCCD)
+                .Property(e => e.SoCCCD)
+                .IsFixedLength()
                 .IsUnicode(false);
 
             modelBuilder.Entity<NhanVien>()
                 .HasMany(e => e.BangChamCong)
+                .WithRequired(e => e.NhanVien)
+                .WillCascadeOnDelete(false);
+
+            modelBuilder.Entity<NhanVien>()
+                .HasMany(e => e.CT_LichLam)
                 .WithRequired(e => e.NhanVien)
                 .WillCascadeOnDelete(false);
 
@@ -120,22 +127,17 @@ namespace Sukiya.Models
                 .WithRequired(e => e.NhanVien)
                 .WillCascadeOnDelete(false);
 
-            modelBuilder.Entity<NhanVien>()
-                .HasMany(e => e.CT_LichLam)
-                .WithRequired(e => e.NhanVien)
-                .WillCascadeOnDelete(false);
-
             modelBuilder.Entity<PhieuGoiMon>()
                 .Property(e => e.TongTien)
                 .HasPrecision(19, 4);
 
             modelBuilder.Entity<PhieuGoiMon>()
-                .HasMany(e => e.HoaDon)
+                .HasMany(e => e.CT_PhieuGoiMon)
                 .WithRequired(e => e.PhieuGoiMon)
                 .WillCascadeOnDelete(false);
 
             modelBuilder.Entity<PhieuGoiMon>()
-                .HasMany(e => e.CT_PhieuGoiMon)
+                .HasMany(e => e.HoaDon)
                 .WithRequired(e => e.PhieuGoiMon)
                 .WillCascadeOnDelete(false);
 
@@ -146,15 +148,6 @@ namespace Sukiya.Models
             modelBuilder.Entity<PhieuTraLuong>()
                 .Property(e => e.TienLuong)
                 .HasPrecision(19, 4);
-
-            modelBuilder.Entity<CT_LichLam>()
-                .Property(e => e.GioRa)
-                .IsFixedLength();
-
-            modelBuilder.Entity<CT_PhieuGoiMon>()
-                .Property(e => e.Size)
-                .IsFixedLength()
-                .IsUnicode(false);
         }
     }
 }

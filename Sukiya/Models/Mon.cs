@@ -33,12 +33,12 @@ namespace Sukiya.Models
         [StringLength(1)]
         public string Size { get; set; }
 
-        public virtual LoaiMon LoaiMon { get; set; }
-
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<CT_Mon> CT_Mon { get; set; }
 
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<CT_PhieuGoiMon> CT_PhieuGoiMon { get; set; }
+
+        public virtual LoaiMon LoaiMon { get; set; }
     }
 }

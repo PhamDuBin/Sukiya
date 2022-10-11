@@ -20,6 +20,7 @@ namespace Sukiya
         }
         uc_NhanVien ucNhanVien;
         uc_Mon ucMon;
+        uc_TrangChu ucTrangChu;
         private void ceDangXuat_Click(object sender, EventArgs e)
         {
             Application.Exit();
@@ -27,6 +28,7 @@ namespace Sukiya
 
         private void ceQuanLiNhanVien_Click(object sender, EventArgs e)
         {
+            
             if(ucNhanVien == null)
             {
                 ucNhanVien = new uc_NhanVien();
@@ -38,6 +40,7 @@ namespace Sukiya
             {
                 ucNhanVien.BringToFront();
             }
+            lblTieuDe.Caption = ceQuanLiNhanVien.Text;
         }
 
         private void ceDanhMucMon_Click(object sender, EventArgs e)
@@ -53,6 +56,7 @@ namespace Sukiya
             {
                 ucMon.BringToFront();
             }
+            lblTieuDe.Caption = ceDanhMucMon.Text;
         }
 
         private void ceBaoCaoDoanhThu_Click(object sender, EventArgs e)
@@ -63,6 +67,38 @@ namespace Sukiya
         private void ceQuanLiKhoHang_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void ceTrangChu_Click(object sender, EventArgs e)
+        {
+            if (ucTrangChu == null)
+            {
+                ucTrangChu = new uc_TrangChu();
+                ucTrangChu.Dock = DockStyle.Fill;
+                TrangHienThiConterner.Controls.Add(ucTrangChu);
+                ucTrangChu.BringToFront();
+            }
+            else
+            {
+                ucTrangChu.BringToFront();
+            }
+            lblTieuDe.Caption = ceTrangChu.Text;
+        }
+
+        private void FormMain_Load(object sender, EventArgs e)
+        {
+            if (ucTrangChu == null)
+            {
+                ucTrangChu = new uc_TrangChu();
+                ucTrangChu.Dock = DockStyle.Fill;
+                TrangHienThiConterner.Controls.Add(ucTrangChu);
+                ucTrangChu.BringToFront();
+            }
+            else
+            {
+                ucTrangChu.BringToFront();
+            }
+            lblTieuDe.Caption = ceTrangChu.Text;
         }
     }
 }

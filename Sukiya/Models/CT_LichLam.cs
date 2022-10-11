@@ -17,15 +17,9 @@ namespace Sukiya.Models
         [Column(Order = 1, TypeName = "date")]
         public DateTime NgayLam { get; set; }
 
-        [Key]
-        [Column(Order = 2)]
-        [DatabaseGenerated(DatabaseGeneratedOption.None)]
         public int GioVao { get; set; }
 
-        [Key]
-        [Column(Order = 3)]
-        [StringLength(10)]
-        public string GioRa { get; set; }
+        public int GioRa { get; set; }
 
         public virtual LichLamViec LichLamViec { get; set; }
 

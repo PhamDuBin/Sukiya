@@ -12,8 +12,8 @@ namespace Sukiya.Models
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
         public PhieuGoiMon()
         {
-            HoaDon = new HashSet<HoaDon>();
             CT_PhieuGoiMon = new HashSet<CT_PhieuGoiMon>();
+            HoaDon = new HashSet<HoaDon>();
         }
 
         [Key]
@@ -30,9 +30,9 @@ namespace Sukiya.Models
         public virtual Ban Ban { get; set; }
 
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-        public virtual ICollection<HoaDon> HoaDon { get; set; }
+        public virtual ICollection<CT_PhieuGoiMon> CT_PhieuGoiMon { get; set; }
 
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-        public virtual ICollection<CT_PhieuGoiMon> CT_PhieuGoiMon { get; set; }
+        public virtual ICollection<HoaDon> HoaDon { get; set; }
     }
 }
