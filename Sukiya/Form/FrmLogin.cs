@@ -1,4 +1,7 @@
-﻿using DevExpress.XtraEditors;
+﻿using DevExpress.Data.ODataLinq.Helpers;
+using DevExpress.Data.WcfLinq.Helpers;
+using DevExpress.XtraEditors;
+using Sukiya.Models;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -11,45 +14,63 @@ using System.Windows.Forms;
 
 namespace Sukiya.Form
 {
-    public partial class FrmDangNhap : DevExpress.XtraEditors.XtraForm
+    public partial class FrmLogin : DevExpress.XtraEditors.XtraForm
     {
-        public FrmDangNhap()
+        SukiyaContextDB context = new SukiyaContextDB();
+        public FrmLogin()
         {
             InitializeComponent();
             
             txtMatKhau.PasswordChar = '*';
-
         }
+        private bool kiemTraDangNhap(string tenDangNhap, string matKhau)
+        {
+          
+            try
+            {
+                NhanVien nhanvien = context.NhanVien.Where(x => x.SDT.ToString() == tenDangNhap).FirstOrDefault();
+                if (nhanvien != null)
+                {
+                    return BCrypt.Net.BCrypt.Verify(matKhau, nhanvien.MatKhau);
+                }
+                return false;
 
-        private void txtTenDangNhap_TextChanged(object sender, EventArgs e)
-        {
-            btnDangNhap.Enabled = !string.IsNullOrEmpty(txtTenDangNhap.Text)&&
-                !string.IsNullOrEmpty(txtMatKhau.Text);
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Lỗi: " + ex.Message);
+            }
+            return false;
         }
-        private void cbxHienMatKhau_CheckedChanged(object sender, EventArgs e)
+          
+        private void txtMatKhau_TextChanged(object sender, EventArgs e)
         {
-            txtMatKhau.PasswordChar = (cbxHienMatKhau.Checked) ? '\0' : '*';
+            btnDangNhap.Enabled = !string.IsNullOrEmpty(txtMatKhau.Text) && !string.IsNullOrEmpty(txtMatKhau.Text);
         }
 
         private void btnDangNhap_Click(object sender, EventArgs e)
         {
-            string matkhau = "12345";
-            string tendangnhap = "PhamDuBin";
+            //string matKhauMaHoa = BCrypt.Net.BCrypt.HashPassword(txtMatKhau.Text);
             try
             {
-                if(txtMatKhau.Text == matkhau && txtTenDangNhap.Text == tendangnhap)
-                {
-                    
+                if (kiemTraDangNhap(txtTenDangNhap.Text, txtMatKhau.Text) == true){
                     FormMain frm = new FormMain();
                     frm.Show();
-                    this.Close();
+                    frm.FormClosed += Frm_FormClosed;
                     this.Hide();
-
                 }
-            }catch(Exception ex)
+            }
+            catch (Exception ex)
             {
                 MessageBox.Show("Lỗi: " + ex.Message);
             }
         }
+
+        private void Frm_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            this.Close();
+        }
+
+
     }
 }

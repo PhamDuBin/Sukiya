@@ -21,6 +21,8 @@ namespace Sukiya
         uc_NhanVien ucNhanVien;
         uc_Mon ucMon;
         uc_TrangChu ucTrangChu;
+        uc_LienHe ucLienHe;
+        uc_GioiThieu ucGioiThieu;
         private void ceDangXuat_Click(object sender, EventArgs e)
         {
             Application.Exit();
@@ -97,6 +99,38 @@ namespace Sukiya
             else
             {
                 ucTrangChu.BringToFront();
+            }
+            lblTieuDe.Caption = ceTrangChu.Text;
+        }
+
+        private void ceLienHe_Click(object sender, EventArgs e)
+        {
+            if (ucLienHe == null)
+            {
+                ucLienHe = new uc_LienHe();
+                ucLienHe.Dock = DockStyle.Fill;
+                TrangHienThiConterner.Controls.Add(ucLienHe);
+                ucLienHe.BringToFront();
+            }
+            else
+            {
+                ucLienHe.BringToFront();
+            }
+            lblTieuDe.Caption = ceTrangChu.Text;
+        }
+
+        private void ceGioiThieu_Click(object sender, EventArgs e)
+        {
+            if (ucGioiThieu == null)
+            {
+                ucGioiThieu = new uc_GioiThieu();
+                ucGioiThieu.Dock = DockStyle.Fill;
+                TrangHienThiConterner.Controls.Add(ucGioiThieu);
+                ucGioiThieu.BringToFront();
+            }
+            else
+            {
+                ucGioiThieu.BringToFront();
             }
             lblTieuDe.Caption = ceTrangChu.Text;
         }

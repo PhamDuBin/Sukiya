@@ -51,7 +51,6 @@
             this.ceTinhLuong = new DevExpress.XtraBars.Navigation.AccordionControlElement();
             this.ceLienHe = new DevExpress.XtraBars.Navigation.AccordionControlElement();
             this.ceGioiThieu = new DevExpress.XtraBars.Navigation.AccordionControlElement();
-            this.ceUpdate = new DevExpress.XtraBars.Navigation.AccordionControlElement();
             this.ceDangXuat = new DevExpress.XtraBars.Navigation.AccordionControlElement();
             this.accordionControlElement4 = new DevExpress.XtraBars.Navigation.AccordionControlElement();
             this.accordionControlElement3 = new DevExpress.XtraBars.Navigation.AccordionControlElement();
@@ -91,7 +90,7 @@
             // 
             // TrangHienThiConterner
             // 
-            this.TrangHienThiConterner.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
+            this.TrangHienThiConterner.Appearance.BackColor = System.Drawing.Color.White;
             this.TrangHienThiConterner.Appearance.Options.UseBackColor = true;
             this.TrangHienThiConterner.Dock = System.Windows.Forms.DockStyle.Fill;
             this.TrangHienThiConterner.Location = new System.Drawing.Point(260, 31);
@@ -111,7 +110,6 @@
             this.ceLichLam,
             this.ceLienHe,
             this.ceGioiThieu,
-            this.ceUpdate,
             this.ceDangXuat});
             this.accordionControl1.Location = new System.Drawing.Point(0, 31);
             this.accordionControl1.Name = "accordionControl1";
@@ -229,6 +227,7 @@
             this.ceLienHe.Name = "ceLienHe";
             this.ceLienHe.Style = DevExpress.XtraBars.Navigation.ElementStyle.Item;
             this.ceLienHe.Text = "Liên Hệ";
+            this.ceLienHe.Click += new System.EventHandler(this.ceLienHe_Click);
             // 
             // ceGioiThieu
             // 
@@ -236,20 +235,14 @@
             this.ceGioiThieu.Name = "ceGioiThieu";
             this.ceGioiThieu.Style = DevExpress.XtraBars.Navigation.ElementStyle.Item;
             this.ceGioiThieu.Text = "Giới Thiệu";
-            // 
-            // ceUpdate
-            // 
-            this.ceUpdate.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("ceUpdate.ImageOptions.SvgImage")));
-            this.ceUpdate.Name = "ceUpdate";
-            this.ceUpdate.Style = DevExpress.XtraBars.Navigation.ElementStyle.Item;
-            this.ceUpdate.Text = "Update";
+            this.ceGioiThieu.Click += new System.EventHandler(this.ceGioiThieu_Click);
             // 
             // ceDangXuat
             // 
             this.ceDangXuat.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("ceDangXuat.ImageOptions.SvgImage")));
             this.ceDangXuat.Name = "ceDangXuat";
             this.ceDangXuat.Style = DevExpress.XtraBars.Navigation.ElementStyle.Item;
-            this.ceDangXuat.Text = "Đăng Xuất";
+            this.ceDangXuat.Text = "Thoát";
             this.ceDangXuat.Click += new System.EventHandler(this.ceDangXuat_Click);
             // 
             // accordionControlElement4
@@ -304,7 +297,6 @@
         private DevExpress.XtraBars.Navigation.AccordionControlElement ceBangXinNhapHang;
         private DevExpress.XtraBars.Navigation.AccordionControlElement ceLienHe;
         private DevExpress.XtraBars.Navigation.AccordionControlElement ceGioiThieu;
-        private DevExpress.XtraBars.Navigation.AccordionControlElement ceUpdate;
         private DevExpress.XtraBars.Navigation.AccordionControlElement ceDangXuat;
         private DevExpress.XtraBars.Navigation.AccordionControlElement ceBaoCaoDoanhThu;
         private DevExpress.XtraBars.Navigation.AccordionControlElement ceBaoCaoDT;

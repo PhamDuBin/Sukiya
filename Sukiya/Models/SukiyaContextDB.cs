@@ -8,7 +8,7 @@ namespace Sukiya.Models
     public partial class SukiyaContextDB : DbContext
     {
         public SukiyaContextDB()
-            : base("name=SukiyaContextDB1")
+            : base("name=SukiyaContextDB")
         {
         }
 
@@ -105,6 +105,10 @@ namespace Sukiya.Models
             modelBuilder.Entity<NhanVien>()
                 .Property(e => e.SoCCCD)
                 .IsFixedLength()
+                .IsUnicode(false);
+
+            modelBuilder.Entity<NhanVien>()
+                .Property(e => e.MatKhau)
                 .IsUnicode(false);
 
             modelBuilder.Entity<NhanVien>()
