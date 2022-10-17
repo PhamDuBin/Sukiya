@@ -91,9 +91,9 @@
             this.label3.ForeColor = System.Drawing.Color.White;
             this.label3.Location = new System.Drawing.Point(35, 95);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(144, 23);
+            this.label3.Size = new System.Drawing.Size(192, 23);
             this.label3.TabIndex = 9;
-            this.label3.Text = "Tên Đăng Nhập";
+            this.label3.Text = "Tên Đăng Nhập/ SDT";
             // 
             // txtTenDangNhap
             // 
@@ -121,7 +121,7 @@
             this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "FrmLogin";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "FrmLogin";
+            this.Text = "Đăng Nhập";
             this.ResumeLayout(false);
             this.PerformLayout();
 

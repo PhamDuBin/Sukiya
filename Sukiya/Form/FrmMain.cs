@@ -23,6 +23,9 @@ namespace Sukiya
         uc_TrangChu ucTrangChu;
         uc_LienHe ucLienHe;
         uc_GioiThieu ucGioiThieu;
+        uc_BangKiemHang ucBangKiemHang;
+        uc_SanPhamLoss ucSanPhamLoss;
+        uc_XemDoanhThu ucXemDoanhThu;
         private void ceDangXuat_Click(object sender, EventArgs e)
         {
             Application.Exit();
@@ -116,7 +119,7 @@ namespace Sukiya
             {
                 ucLienHe.BringToFront();
             }
-            lblTieuDe.Caption = ceTrangChu.Text;
+            lblTieuDe.Caption = "Liên Hệ";
         }
 
         private void ceGioiThieu_Click(object sender, EventArgs e)
@@ -132,7 +135,57 @@ namespace Sukiya
             {
                 ucGioiThieu.BringToFront();
             }
-            lblTieuDe.Caption = ceTrangChu.Text;
+            lblTieuDe.Caption = "Giới Thiệu";
+        }
+
+        private void ceBangKiemHang_Click(object sender, EventArgs e)
+        {
+            if (ucBangKiemHang == null)
+            {
+                ucBangKiemHang = new uc_BangKiemHang();
+                ucBangKiemHang.Dock = DockStyle.Fill;
+                TrangHienThiConterner.Controls.Add(ucBangKiemHang);
+                ucBangKiemHang.BringToFront();
+            }
+            else
+            {
+                ucBangKiemHang.BringToFront();
+            }
+            lblTieuDe.Caption ="Bảng Kiểm Hàng";
+        }
+
+        private void ceSPLoss_Click(object sender, EventArgs e)
+        {
+            if (ucSanPhamLoss == null)
+            {
+                ucSanPhamLoss = new uc_SanPhamLoss();
+                ucSanPhamLoss.Dock = DockStyle.Fill;
+                TrangHienThiConterner.Controls.Add(ucSanPhamLoss);
+                ucSanPhamLoss.BringToFront();
+            }
+            else
+            {
+                ucSanPhamLoss.BringToFront();
+            }
+            lblTieuDe.Caption = "Nhập Hàng Loss";
+        }
+
+       
+
+        private void ceXemDT_Click(object sender, EventArgs e)
+        {
+            if (ucXemDoanhThu == null)
+            {
+                ucXemDoanhThu = new uc_XemDoanhThu();
+                ucXemDoanhThu.Dock = DockStyle.Fill;
+                TrangHienThiConterner.Controls.Add(ucXemDoanhThu);
+                ucXemDoanhThu.BringToFront();
+            }
+            else
+            {
+                ucXemDoanhThu.BringToFront();
+            }
+            lblTieuDe.Caption = "Xem Doanh Thu";
         }
     }
 }

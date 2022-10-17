@@ -147,6 +147,7 @@
             this.ceBaoCaoDoanhThu.Elements.AddRange(new DevExpress.XtraBars.Navigation.AccordionControlElement[] {
             this.ceBaoCaoDT,
             this.ceXemDT});
+            this.ceBaoCaoDoanhThu.Expanded = true;
             this.ceBaoCaoDoanhThu.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("ceBaoCaoDoanhThu.ImageOptions.SvgImage")));
             this.ceBaoCaoDoanhThu.Name = "ceBaoCaoDoanhThu";
             this.ceBaoCaoDoanhThu.Text = "Báo Cáo Doanh Thu";
@@ -163,6 +164,7 @@
             this.ceXemDT.Name = "ceXemDT";
             this.ceXemDT.Style = DevExpress.XtraBars.Navigation.ElementStyle.Item;
             this.ceXemDT.Text = "Xem Doanh Thu";
+            this.ceXemDT.Click += new System.EventHandler(this.ceXemDT_Click);
             // 
             // ceQuanLiKhoHang
             // 
@@ -170,6 +172,7 @@
             this.ceBangKiemHang,
             this.ceSPLoss,
             this.ceBangXinNhapHang});
+            this.ceQuanLiKhoHang.Expanded = true;
             this.ceQuanLiKhoHang.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("ceQuanLiKhoHang.ImageOptions.SvgImage")));
             this.ceQuanLiKhoHang.Name = "ceQuanLiKhoHang";
             this.ceQuanLiKhoHang.Text = "Quản Lí Kho Hàng";
@@ -180,12 +183,14 @@
             this.ceBangKiemHang.Name = "ceBangKiemHang";
             this.ceBangKiemHang.Style = DevExpress.XtraBars.Navigation.ElementStyle.Item;
             this.ceBangKiemHang.Text = "Bảng Kiểm Hàng";
+            this.ceBangKiemHang.Click += new System.EventHandler(this.ceBangKiemHang_Click);
             // 
             // ceSPLoss
             // 
             this.ceSPLoss.Name = "ceSPLoss";
             this.ceSPLoss.Style = DevExpress.XtraBars.Navigation.ElementStyle.Item;
             this.ceSPLoss.Text = "Sản Phẩm Loss";
+            this.ceSPLoss.Click += new System.EventHandler(this.ceSPLoss_Click);
             // 
             // ceBangXinNhapHang
             // 
@@ -199,6 +204,7 @@
             this.ceThemLichLam,
             this.ceSuaXoaLich,
             this.ceTinhLuong});
+            this.ceLichLam.Expanded = true;
             this.ceLichLam.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("ceLichLam.ImageOptions.SvgImage")));
             this.ceLichLam.Name = "ceLichLam";
             this.ceLichLam.Text = "Lịch Làm";

@@ -24,7 +24,10 @@ namespace Sukiya.UI
             try
             {
                 SukiyaContextDB context = new SukiyaContextDB();
-                List<Mon> listMon = context.Mon.ToList();
+              //  List<Mon> listMon = context.Mon.ToList();
+              //  List<CT_Mon> listCTMon = context.CT_Mon.ToList();
+                
+                
                 BindGrid();
             }
             catch(Exception ex)
@@ -35,15 +38,19 @@ namespace Sukiya.UI
         private void BindGrid()
         {
             dgvMon.Rows.Clear();
-            foreach(var item in dbContext.Mon.ToList())
+            
+            foreach (var item in dbContext.Mon.ToList())
             {
                 int index = dgvMon.Rows.Add();
+
                 dgvMon.Rows[index].Cells[0].Value = item.MaMon;
                 dgvMon.Rows[index].Cells[1].Value = item.MaLM;
                 dgvMon.Rows[index].Cells[2].Value = item.TenMon;
                 dgvMon.Rows[index].Cells[3].Value = item.Gia;
                 dgvMon.Rows[index].Cells[4].Value = item.Size;
+                
             }
+           
         }
 
         private void barButtonItem1_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
@@ -51,6 +58,7 @@ namespace Sukiya.UI
             try
             {
                 string MaMon = txtMaMon.Text.Trim();
+                
                 Mon mon = dbContext.Mon.Where
                     (x => x.MaMon.ToString() == txtMaMon.Text).FirstOrDefault();
                 if (mon == null)
@@ -63,6 +71,7 @@ namespace Sukiya.UI
                 mon.TenMon = txtTenMon.Text;
                 mon.Gia = decimal.Parse( txtGia.Text);
                 mon.Size = txtKichThuoc.Text;
+                
 
                 dbContext.SaveChanges();
                 MessageBox.Show("Thêm/ Sửa OK!!");
