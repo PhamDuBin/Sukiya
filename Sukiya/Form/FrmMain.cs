@@ -84,7 +84,7 @@ namespace Sukiya
         private void ceQuanLiKhoHang_Click(object sender, EventArgs e)
         {
 
-
+        }
         private void ceTrangChu_Click(object sender, EventArgs e)
         {
             if (ucTrangChu == null)
