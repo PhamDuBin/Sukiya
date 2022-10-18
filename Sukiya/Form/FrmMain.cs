@@ -65,26 +65,10 @@ namespace Sukiya
             lblTieuDe.Caption = ceDanhMucMon.Text;
         }
 
-        private void ceBaoCaoDoanhThu_Click(object sender, EventArgs e)
-        {
-            if (ucBaoCaoDoanhThu == null)
-            {
-                ucBaoCaoDoanhThu = new uc_BaoCaoDoanhThu();
-                ucBaoCaoDoanhThu.Dock = DockStyle.Fill;
-                TrangHienThiConterner.Controls.Add(ucBaoCaoDoanhThu);
-                ucBaoCaoDoanhThu.BringToFront();
-            }
-            else
-            {
-                ucBaoCaoDoanhThu.BringToFront();
-            }
-            lblTieuDe.Caption = ceDanhMucMon.Text;
-        }
-
         private void ceQuanLiKhoHang_Click(object sender, EventArgs e)
         {
 
-
+        }
         private void ceTrangChu_Click(object sender, EventArgs e)
         {
             if (ucTrangChu == null)
@@ -201,7 +185,18 @@ namespace Sukiya
 
         private void ceBaoCaoDT_Click(object sender, EventArgs e)
         {
-            
+            if (ucBaoCaoDoanhThu == null)
+            {
+                ucBaoCaoDoanhThu = new uc_BaoCaoDoanhThu();
+                ucBaoCaoDoanhThu.Dock = DockStyle.Fill;
+                TrangHienThiConterner.Controls.Add(ucBaoCaoDoanhThu);
+                ucBaoCaoDoanhThu.BringToFront();
+            }
+            else
+            {
+                ucBaoCaoDoanhThu.BringToFront();
+            }
+            lblTieuDe.Caption = ceBaoCaoDT.Text;
         }
     }
 }
