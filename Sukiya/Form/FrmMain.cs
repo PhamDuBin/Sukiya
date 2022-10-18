@@ -26,6 +26,7 @@ namespace Sukiya
         uc_BangKiemHang ucBangKiemHang;
         uc_SanPhamLoss ucSanPhamLoss;
         uc_XemDoanhThu ucXemDoanhThu;
+        uc_BaoCaoDoanhThu ucBaoCaoDoanhThu;
         private void ceDangXuat_Click(object sender, EventArgs e)
         {
             Application.Exit();
@@ -66,7 +67,18 @@ namespace Sukiya
 
         private void ceBaoCaoDoanhThu_Click(object sender, EventArgs e)
         {
-
+            if (ucBaoCaoDoanhThu == null)
+            {
+                ucBaoCaoDoanhThu = new uc_BaoCaoDoanhThu();
+                ucBaoCaoDoanhThu.Dock = DockStyle.Fill;
+                TrangHienThiConterner.Controls.Add(ucBaoCaoDoanhThu);
+                ucBaoCaoDoanhThu.BringToFront();
+            }
+            else
+            {
+                ucBaoCaoDoanhThu.BringToFront();
+            }
+            lblTieuDe.Caption = ceDanhMucMon.Text;
         }
 
         private void ceQuanLiKhoHang_Click(object sender, EventArgs e)
