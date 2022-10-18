@@ -8,7 +8,7 @@ namespace Sukiya.Models
     public partial class SukiyaContextDB : DbContext
     {
         public SukiyaContextDB()
-            : base("name=SukiyaContextDB")
+            : base("name=SukiyaContextDB1")
         {
         }
 

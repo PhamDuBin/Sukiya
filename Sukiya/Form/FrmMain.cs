@@ -84,7 +84,6 @@ namespace Sukiya
         private void ceQuanLiKhoHang_Click(object sender, EventArgs e)
         {
 
-        }
 
         private void ceTrangChu_Click(object sender, EventArgs e)
         {
@@ -198,6 +197,11 @@ namespace Sukiya
                 ucXemDoanhThu.BringToFront();
             }
             lblTieuDe.Caption = "Xem Doanh Thu";
+        }
+
+        private void ceBaoCaoDT_Click(object sender, EventArgs e)
+        {
+            
         }
     }
 }
