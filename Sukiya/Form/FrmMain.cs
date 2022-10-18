@@ -104,6 +104,7 @@ namespace Sukiya
                 ucTrangChu.BringToFront();
             }
             lblTieuDe.Caption = ceTrangChu.Text;
+            WindowState = FormWindowState.Maximized;
         }
 
         private void ceLienHe_Click(object sender, EventArgs e)
@@ -169,9 +170,6 @@ namespace Sukiya
             }
             lblTieuDe.Caption = "Nhập Hàng Loss";
         }
-
-       
-
         private void ceXemDT_Click(object sender, EventArgs e)
         {
             if (ucXemDoanhThu == null)

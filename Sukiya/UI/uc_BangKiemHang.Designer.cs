@@ -31,6 +31,11 @@
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(uc_BangKiemHang));
             this.dgvBangKiemHang = new System.Windows.Forms.DataGridView();
+            this.MaNVL = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.TenNVL = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.DVT = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Gia = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.SoLuong = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.label4 = new System.Windows.Forms.Label();
             this.txtGia = new System.Windows.Forms.TextBox();
             this.txtSoLuong = new System.Windows.Forms.TextBox();
@@ -52,11 +57,6 @@
             this.barDockControlRight = new DevExpress.XtraBars.BarDockControl();
             this.txtTenNVL = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
-            this.MaNVL = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.TenNVL = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.DVT = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Gia = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.SoLuong = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.dgvBangKiemHang)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.barManager1)).BeginInit();
             this.SuspendLayout();
@@ -72,12 +72,54 @@
             this.DVT,
             this.Gia,
             this.SoLuong});
-            this.dgvBangKiemHang.Location = new System.Drawing.Point(0, 350);
+            this.dgvBangKiemHang.Location = new System.Drawing.Point(0, 431);
+            this.dgvBangKiemHang.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.dgvBangKiemHang.Name = "dgvBangKiemHang";
             this.dgvBangKiemHang.ReadOnly = true;
-            this.dgvBangKiemHang.Size = new System.Drawing.Size(910, 209);
+            this.dgvBangKiemHang.RowHeadersWidth = 51;
+            this.dgvBangKiemHang.Size = new System.Drawing.Size(1213, 257);
             this.dgvBangKiemHang.TabIndex = 0;
             this.dgvBangKiemHang.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvBangKiemHang_CellClick);
+            // 
+            // MaNVL
+            // 
+            this.MaNVL.HeaderText = "Mã Nguyên Vật Liệu";
+            this.MaNVL.MinimumWidth = 6;
+            this.MaNVL.Name = "MaNVL";
+            this.MaNVL.ReadOnly = true;
+            this.MaNVL.Width = 175;
+            // 
+            // TenNVL
+            // 
+            this.TenNVL.HeaderText = "Tên Nguyên Vật Liệu";
+            this.TenNVL.MinimumWidth = 6;
+            this.TenNVL.Name = "TenNVL";
+            this.TenNVL.ReadOnly = true;
+            this.TenNVL.Width = 175;
+            // 
+            // DVT
+            // 
+            this.DVT.HeaderText = "Đơn Vị Tính";
+            this.DVT.MinimumWidth = 6;
+            this.DVT.Name = "DVT";
+            this.DVT.ReadOnly = true;
+            this.DVT.Width = 175;
+            // 
+            // Gia
+            // 
+            this.Gia.HeaderText = "Giá";
+            this.Gia.MinimumWidth = 6;
+            this.Gia.Name = "Gia";
+            this.Gia.ReadOnly = true;
+            this.Gia.Width = 175;
+            // 
+            // SoLuong
+            // 
+            this.SoLuong.HeaderText = "Số Lượng";
+            this.SoLuong.MinimumWidth = 6;
+            this.SoLuong.Name = "SoLuong";
+            this.SoLuong.ReadOnly = true;
+            this.SoLuong.Width = 175;
             // 
             // label4
             // 
@@ -85,42 +127,47 @@
             this.label4.BackColor = System.Drawing.SystemColors.ButtonFace;
             this.label4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(488, 160);
+            this.label4.Location = new System.Drawing.Point(651, 197);
+            this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(88, 22);
+            this.label4.Size = new System.Drawing.Size(107, 27);
             this.label4.TabIndex = 52;
             this.label4.Text = "Số Lượng";
             // 
             // txtGia
             // 
             this.txtGia.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtGia.Location = new System.Drawing.Point(616, 112);
+            this.txtGia.Location = new System.Drawing.Point(821, 138);
+            this.txtGia.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txtGia.Name = "txtGia";
-            this.txtGia.Size = new System.Drawing.Size(276, 26);
+            this.txtGia.Size = new System.Drawing.Size(367, 30);
             this.txtGia.TabIndex = 51;
             // 
             // txtSoLuong
             // 
             this.txtSoLuong.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtSoLuong.Location = new System.Drawing.Point(616, 156);
+            this.txtSoLuong.Location = new System.Drawing.Point(821, 192);
+            this.txtSoLuong.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txtSoLuong.Name = "txtSoLuong";
-            this.txtSoLuong.Size = new System.Drawing.Size(276, 26);
+            this.txtSoLuong.Size = new System.Drawing.Size(367, 30);
             this.txtSoLuong.TabIndex = 50;
             // 
             // txtDVT
             // 
             this.txtDVT.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtDVT.Location = new System.Drawing.Point(160, 192);
+            this.txtDVT.Location = new System.Drawing.Point(213, 236);
+            this.txtDVT.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txtDVT.Name = "txtDVT";
-            this.txtDVT.Size = new System.Drawing.Size(276, 26);
+            this.txtDVT.Size = new System.Drawing.Size(367, 30);
             this.txtDVT.TabIndex = 49;
             // 
             // txtMaNVL
             // 
             this.txtMaNVL.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtMaNVL.Location = new System.Drawing.Point(160, 113);
+            this.txtMaNVL.Location = new System.Drawing.Point(213, 139);
+            this.txtMaNVL.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txtMaNVL.Name = "txtMaNVL";
-            this.txtMaNVL.Size = new System.Drawing.Size(276, 26);
+            this.txtMaNVL.Size = new System.Drawing.Size(367, 30);
             this.txtMaNVL.TabIndex = 48;
             // 
             // label3
@@ -129,9 +176,10 @@
             this.label3.BackColor = System.Drawing.SystemColors.ButtonFace;
             this.label3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(20, 196);
+            this.label3.Location = new System.Drawing.Point(27, 241);
+            this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(46, 22);
+            this.label3.Size = new System.Drawing.Size(58, 27);
             this.label3.TabIndex = 47;
             this.label3.Text = "DVT";
             // 
@@ -141,9 +189,10 @@
             this.label2.BackColor = System.Drawing.SystemColors.ButtonFace;
             this.label2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(488, 116);
+            this.label2.Location = new System.Drawing.Point(651, 143);
+            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(39, 22);
+            this.label2.Size = new System.Drawing.Size(47, 27);
             this.label2.TabIndex = 46;
             this.label2.Text = "Giá";
             // 
@@ -153,9 +202,10 @@
             this.label1.BackColor = System.Drawing.SystemColors.ButtonFace;
             this.label1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(20, 117);
+            this.label1.Location = new System.Drawing.Point(27, 144);
+            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(69, 22);
+            this.label1.Size = new System.Drawing.Size(86, 27);
             this.label1.TabIndex = 45;
             this.label1.Text = "MaNVL";
             // 
@@ -245,38 +295,43 @@
             this.barDockControlTop.Dock = System.Windows.Forms.DockStyle.Top;
             this.barDockControlTop.Location = new System.Drawing.Point(0, 0);
             this.barDockControlTop.Manager = this.barManager1;
-            this.barDockControlTop.Size = new System.Drawing.Size(910, 24);
+            this.barDockControlTop.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.barDockControlTop.Size = new System.Drawing.Size(1213, 30);
             // 
             // barDockControlBottom
             // 
             this.barDockControlBottom.CausesValidation = false;
             this.barDockControlBottom.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.barDockControlBottom.Location = new System.Drawing.Point(0, 539);
+            this.barDockControlBottom.Location = new System.Drawing.Point(0, 668);
             this.barDockControlBottom.Manager = this.barManager1;
-            this.barDockControlBottom.Size = new System.Drawing.Size(910, 20);
+            this.barDockControlBottom.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.barDockControlBottom.Size = new System.Drawing.Size(1213, 20);
             // 
             // barDockControlLeft
             // 
             this.barDockControlLeft.CausesValidation = false;
             this.barDockControlLeft.Dock = System.Windows.Forms.DockStyle.Left;
-            this.barDockControlLeft.Location = new System.Drawing.Point(0, 24);
+            this.barDockControlLeft.Location = new System.Drawing.Point(0, 30);
             this.barDockControlLeft.Manager = this.barManager1;
-            this.barDockControlLeft.Size = new System.Drawing.Size(0, 515);
+            this.barDockControlLeft.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.barDockControlLeft.Size = new System.Drawing.Size(0, 638);
             // 
             // barDockControlRight
             // 
             this.barDockControlRight.CausesValidation = false;
             this.barDockControlRight.Dock = System.Windows.Forms.DockStyle.Right;
-            this.barDockControlRight.Location = new System.Drawing.Point(910, 24);
+            this.barDockControlRight.Location = new System.Drawing.Point(1213, 30);
             this.barDockControlRight.Manager = this.barManager1;
-            this.barDockControlRight.Size = new System.Drawing.Size(0, 515);
+            this.barDockControlRight.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.barDockControlRight.Size = new System.Drawing.Size(0, 638);
             // 
             // txtTenNVL
             // 
             this.txtTenNVL.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtTenNVL.Location = new System.Drawing.Point(160, 156);
+            this.txtTenNVL.Location = new System.Drawing.Point(213, 192);
+            this.txtTenNVL.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txtTenNVL.Name = "txtTenNVL";
-            this.txtTenNVL.Size = new System.Drawing.Size(276, 26);
+            this.txtTenNVL.Size = new System.Drawing.Size(367, 30);
             this.txtTenNVL.TabIndex = 60;
             // 
             // label5
@@ -285,50 +340,16 @@
             this.label5.BackColor = System.Drawing.SystemColors.ButtonFace;
             this.label5.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(20, 160);
+            this.label5.Location = new System.Drawing.Point(27, 197);
+            this.label5.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(80, 22);
+            this.label5.Size = new System.Drawing.Size(100, 27);
             this.label5.TabIndex = 59;
             this.label5.Text = "Tên NVL";
             // 
-            // MaNVL
-            // 
-            this.MaNVL.HeaderText = "Mã Nguyên Vật Liệu";
-            this.MaNVL.Name = "MaNVL";
-            this.MaNVL.ReadOnly = true;
-            this.MaNVL.Width = 175;
-            // 
-            // TenNVL
-            // 
-            this.TenNVL.HeaderText = "Tên Nguyên Vật Liệu";
-            this.TenNVL.Name = "TenNVL";
-            this.TenNVL.ReadOnly = true;
-            this.TenNVL.Width = 175;
-            // 
-            // DVT
-            // 
-            this.DVT.HeaderText = "Đơn Vị Tính";
-            this.DVT.Name = "DVT";
-            this.DVT.ReadOnly = true;
-            this.DVT.Width = 175;
-            // 
-            // Gia
-            // 
-            this.Gia.HeaderText = "Giá";
-            this.Gia.Name = "Gia";
-            this.Gia.ReadOnly = true;
-            this.Gia.Width = 175;
-            // 
-            // SoLuong
-            // 
-            this.SoLuong.HeaderText = "Số Lượng";
-            this.SoLuong.Name = "SoLuong";
-            this.SoLuong.ReadOnly = true;
-            this.SoLuong.Width = 175;
-            // 
             // uc_BangKiemHang
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
@@ -348,8 +369,9 @@
             this.Controls.Add(this.barDockControlBottom);
             this.Controls.Add(this.barDockControlTop);
             this.DoubleBuffered = true;
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "uc_BangKiemHang";
-            this.Size = new System.Drawing.Size(910, 559);
+            this.Size = new System.Drawing.Size(1213, 688);
             this.Load += new System.EventHandler(this.uc_BangKiemHang_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgvBangKiemHang)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.barManager1)).EndInit();
