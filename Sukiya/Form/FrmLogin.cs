@@ -20,12 +20,12 @@ namespace Sukiya.Form
         public FrmLogin()
         {
             InitializeComponent();
-            
+
             txtMatKhau.PasswordChar = '*';
         }
         private bool kiemTraDangNhap(string tenDangNhap, string matKhau)
         {
-          
+
             try
             {
                 NhanVien nhanvien = context.NhanVien.Where(x => x.SDT.ToString() == tenDangNhap).FirstOrDefault();
@@ -42,7 +42,7 @@ namespace Sukiya.Form
             }
             return false;
         }
-          
+
         private void txtMatKhau_TextChanged(object sender, EventArgs e)
         {
             btnDangNhap.Enabled = !string.IsNullOrEmpty(txtMatKhau.Text) && !string.IsNullOrEmpty(txtMatKhau.Text);
@@ -51,18 +51,30 @@ namespace Sukiya.Form
         private void btnDangNhap_Click(object sender, EventArgs e)
         {
             //string matKhauMaHoa = BCrypt.Net.BCrypt.HashPassword(txtMatKhau.Text);
-            try
+            if (txtMatKhau.Text == "" || txtTenDangNhap.Text == "")
             {
-                if (kiemTraDangNhap(txtTenDangNhap.Text, txtMatKhau.Text) == true){
-                    FormMain frm = new FormMain();
-                    frm.Show();
-                    frm.FormClosed += Frm_FormClosed;
-                    this.Hide();
-                }
+                MessageBox.Show("Vui lòng nhập đầy đủ trước khi đăng nhập");
             }
-            catch (Exception ex)
+            else
             {
-                MessageBox.Show("Lỗi: " + ex.Message);
+                try
+                {
+                    if (kiemTraDangNhap(txtTenDangNhap.Text, txtMatKhau.Text) == true)
+                    {
+                        FormMain frm = new FormMain();
+                        frm.Show();
+                        frm.FormClosed += Frm_FormClosed;
+                        this.Hide();
+                    }
+                    else
+                    {
+                        MessageBox.Show("Sai mật khẩu, vui lòng nhập lại");
+                    }
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show("Lỗi: " + ex.Message);
+                }
             }
         }
 
