@@ -82,7 +82,5 @@ namespace Sukiya.Form
         {
             this.Close();
         }
-
-
     }
 }
