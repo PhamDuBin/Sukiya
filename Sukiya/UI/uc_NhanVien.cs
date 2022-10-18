@@ -110,13 +110,7 @@ namespace Sukiya.UI
         }
         private void InsertUpdate(int selectedRow)
         {
-            dgvNhanVien.Rows[selectedRow].Cells[0].Value = txtMaNV.Text;
-            dgvNhanVien.Rows[selectedRow].Cells[1].Value = txtMaChucVu.Text;
-            dgvNhanVien.Rows[selectedRow].Cells[2].Value = txtHoTen.Text;
-            dgvNhanVien.Rows[selectedRow].Cells[3].Value = txtGioiTinh.Text;
-            dgvNhanVien.Rows[selectedRow].Cells[4].Value = txtSDT.Text;
-            dgvNhanVien.Rows[selectedRow].Cells[5].Value = txtDiaChi.Text;
-            dgvNhanVien.Rows[selectedRow].Cells[6].Value = txtSoCCCD.Text;
+            
         }
 
         private void dgvNhanVien_CellClick(object sender, DataGridViewCellEventArgs e)
@@ -129,6 +123,37 @@ namespace Sukiya.UI
             txtSDT.Text = row.Cells[4].Value.ToString();
             txtDiaChi.Text = row.Cells[5].Value.ToString();
             txtSoCCCD.Text = row.Cells[6].Value.ToString();
+        }
+        private void BindGrids(List<NhanVien> listNhanVien)
+        {
+            dgvNhanVien.Rows.Clear();
+            foreach (var item in listNhanVien)
+            {
+                int index = dgvNhanVien.Rows.Add();
+
+                dgvNhanVien.Rows[index].Cells[0].Value = item.MaNV;
+                dgvNhanVien.Rows[index].Cells[1].Value = item.MaCV;
+                dgvNhanVien.Rows[index].Cells[2].Value = item.HoTen;
+                dgvNhanVien.Rows[index].Cells[3].Value = item.GioiTinh;
+                dgvNhanVien.Rows[index].Cells[4].Value = item.SDT;
+                dgvNhanVien.Rows[index].Cells[5].Value = item.DiaChi;
+                dgvNhanVien.Rows[index].Cells[6].Value = item.SoCCCD;
+            }
+
+        }
+        private void txtTimKiem_TextChanged_1(object sender, EventArgs e)
+        {
+            string search = txtTimKiem.Text.Trim();
+            List<NhanVien> listSeach = new List<NhanVien>();
+            foreach (var item in dbContext.NhanVien)
+            {
+                if (item.MaNV.ToString().Contains(search.ToLower()) || item.MaCV.ToString().Contains(search.ToLower()) || item.HoTen.ToString().Contains(search)
+                    || item.SDT.ToString().Contains(search.ToLower()) || item.DiaChi.ToString().Contains(search.ToLower()) || item.SoCCCD.ToString().Contains(search.ToLower()))
+                {
+                    listSeach.Add(item);
+                }
+            }
+            BindGrids(listSeach);
         }
     }
 }

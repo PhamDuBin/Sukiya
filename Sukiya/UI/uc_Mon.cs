@@ -24,10 +24,10 @@ namespace Sukiya.UI
             try
             {
                 SukiyaContextDB context = new SukiyaContextDB();
-              //  List<Mon> listMon = context.Mon.ToList();
-              //  List<CT_Mon> listCTMon = context.CT_Mon.ToList();
-                
-                
+               List<Mon> listMon = context.Mon.ToList();
+             // List<CT_Mon> listCTMon = context.CT_Mon.ToList();
+
+               
                 BindGrid();
             }
             catch(Exception ex)
@@ -35,6 +35,7 @@ namespace Sukiya.UI
                 MessageBox.Show(ex.Message);    
             }
         }
+        
         private void BindGrid()
         {
             dgvMon.Rows.Clear();
@@ -131,6 +132,37 @@ namespace Sukiya.UI
             txtTenMon.Text = row.Cells[2].Value.ToString();
             txtGia.Text = row.Cells[3].Value.ToString();
             txtKichThuoc.Text = row.Cells[4].Value.ToString();
+        }
+        private void BindGrids(List<Mon> listMon)
+        {
+            dgvMon.Rows.Clear();
+
+            foreach (var item in listMon)
+            {
+                int index = dgvMon.Rows.Add();
+
+                dgvMon.Rows[index].Cells[0].Value = item.MaMon;
+                dgvMon.Rows[index].Cells[1].Value = item.MaLM;
+                dgvMon.Rows[index].Cells[2].Value = item.TenMon;
+                dgvMon.Rows[index].Cells[3].Value = item.Gia;
+                dgvMon.Rows[index].Cells[4].Value = item.Size;
+
+            }
+
+        }
+
+        private void txtTimKiem_TextChanged(object sender, EventArgs e)
+        {
+            string search = txtTimKiem.Text.Trim();
+            List<Mon> listSeach = new List<Mon>();
+            foreach (var item in dbContext.Mon)
+            {
+                if (item.MaMon.ToString().Contains(search.ToLower()) || item.TenMon.ToLower().Contains(search.ToLower()) || item.MaLM.ToString().Contains(search))
+                {
+                    listSeach.Add(item);
+                }
+            }
+            BindGrids(listSeach);
         }
     }
 }

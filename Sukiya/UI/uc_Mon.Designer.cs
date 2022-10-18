@@ -43,6 +43,11 @@
             this.barDockControlLeft = new DevExpress.XtraBars.BarDockControl();
             this.barDockControlRight = new DevExpress.XtraBars.BarDockControl();
             this.dgvMon = new System.Windows.Forms.DataGridView();
+            this.MaMon = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.MaLoaiMon = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.TenMon = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Gia = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.KichThuoc = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
@@ -53,14 +58,9 @@
             this.label4 = new System.Windows.Forms.Label();
             this.txtMaLoaiMon = new System.Windows.Forms.MaskedTextBox();
             this.label5 = new System.Windows.Forms.Label();
+            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.txtTimKiem = new System.Windows.Forms.TextBox();
             this.label6 = new System.Windows.Forms.Label();
-            this.txtCachLam = new System.Windows.Forms.TextBox();
-            this.MaMon = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.MaLoaiMon = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.TenMon = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Gia = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.KichThuoc = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.CachLam = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.barManager1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgvMon)).BeginInit();
             this.SuspendLayout();
@@ -188,14 +188,48 @@
             this.MaLoaiMon,
             this.TenMon,
             this.Gia,
-            this.KichThuoc,
-            this.CachLam});
+            this.KichThuoc});
             this.dgvMon.Location = new System.Drawing.Point(-9, 371);
             this.dgvMon.Name = "dgvMon";
             this.dgvMon.ReadOnly = true;
             this.dgvMon.Size = new System.Drawing.Size(976, 259);
             this.dgvMon.TabIndex = 17;
             this.dgvMon.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvMon_CellClick);
+            // 
+            // MaMon
+            // 
+            this.MaMon.HeaderText = "Mã Món";
+            this.MaMon.Name = "MaMon";
+            this.MaMon.ReadOnly = true;
+            this.MaMon.Width = 150;
+            // 
+            // MaLoaiMon
+            // 
+            this.MaLoaiMon.HeaderText = "Mã Loại Món";
+            this.MaLoaiMon.Name = "MaLoaiMon";
+            this.MaLoaiMon.ReadOnly = true;
+            this.MaLoaiMon.Width = 135;
+            // 
+            // TenMon
+            // 
+            this.TenMon.HeaderText = "Tên Món";
+            this.TenMon.Name = "TenMon";
+            this.TenMon.ReadOnly = true;
+            this.TenMon.Width = 150;
+            // 
+            // Gia
+            // 
+            this.Gia.HeaderText = "Giá";
+            this.Gia.Name = "Gia";
+            this.Gia.ReadOnly = true;
+            this.Gia.Width = 150;
+            // 
+            // KichThuoc
+            // 
+            this.KichThuoc.HeaderText = "Kích Thước";
+            this.KichThuoc.Name = "KichThuoc";
+            this.KichThuoc.ReadOnly = true;
+            this.KichThuoc.Width = 150;
             // 
             // label1
             // 
@@ -297,67 +331,31 @@
             this.label5.TabIndex = 36;
             this.label5.Text = "Mã Loại Món";
             // 
+            // textBox1
+            // 
+            this.textBox1.Location = new System.Drawing.Point(-15, -15);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(100, 20);
+            this.textBox1.TabIndex = 43;
+            // 
+            // txtTimKiem
+            // 
+            this.txtTimKiem.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtTimKiem.Location = new System.Drawing.Point(686, 212);
+            this.txtTimKiem.Name = "txtTimKiem";
+            this.txtTimKiem.Size = new System.Drawing.Size(208, 24);
+            this.txtTimKiem.TabIndex = 44;
+            this.txtTimKiem.TextChanged += new System.EventHandler(this.txtTimKiem_TextChanged);
+            // 
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.BackColor = System.Drawing.SystemColors.ButtonFace;
-            this.label6.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(484, 147);
+            this.label6.Location = new System.Drawing.Point(583, 214);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(91, 22);
-            this.label6.TabIndex = 44;
-            this.label6.Text = "Cách Làm";
-            // 
-            // txtCachLam
-            // 
-            this.txtCachLam.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtCachLam.Location = new System.Drawing.Point(618, 143);
-            this.txtCachLam.Name = "txtCachLam";
-            this.txtCachLam.Size = new System.Drawing.Size(276, 26);
-            this.txtCachLam.TabIndex = 43;
-            // 
-            // MaMon
-            // 
-            this.MaMon.HeaderText = "Mã Món";
-            this.MaMon.Name = "MaMon";
-            this.MaMon.ReadOnly = true;
-            this.MaMon.Width = 150;
-            // 
-            // MaLoaiMon
-            // 
-            this.MaLoaiMon.HeaderText = "Mã Loại Món";
-            this.MaLoaiMon.Name = "MaLoaiMon";
-            this.MaLoaiMon.ReadOnly = true;
-            this.MaLoaiMon.Width = 135;
-            // 
-            // TenMon
-            // 
-            this.TenMon.HeaderText = "Tên Món";
-            this.TenMon.Name = "TenMon";
-            this.TenMon.ReadOnly = true;
-            this.TenMon.Width = 150;
-            // 
-            // Gia
-            // 
-            this.Gia.HeaderText = "Giá";
-            this.Gia.Name = "Gia";
-            this.Gia.ReadOnly = true;
-            this.Gia.Width = 150;
-            // 
-            // KichThuoc
-            // 
-            this.KichThuoc.HeaderText = "Kích Thước";
-            this.KichThuoc.Name = "KichThuoc";
-            this.KichThuoc.ReadOnly = true;
-            this.KichThuoc.Width = 150;
-            // 
-            // CachLam
-            // 
-            this.CachLam.HeaderText = "Cách Làm";
-            this.CachLam.Name = "CachLam";
-            this.CachLam.ReadOnly = true;
-            this.CachLam.Width = 150;
+            this.label6.Size = new System.Drawing.Size(81, 20);
+            this.label6.TabIndex = 45;
+            this.label6.Text = "Tìm Kiếm";
             // 
             // uc_Mon
             // 
@@ -366,7 +364,8 @@
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.Controls.Add(this.label6);
-            this.Controls.Add(this.txtCachLam);
+            this.Controls.Add(this.txtTimKiem);
+            this.Controls.Add(this.textBox1);
             this.Controls.Add(this.txtMaLoaiMon);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.label4);
@@ -418,13 +417,13 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.MaskedTextBox txtMaLoaiMon;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.TextBox txtCachLam;
         private System.Windows.Forms.DataGridViewTextBoxColumn MaMon;
         private System.Windows.Forms.DataGridViewTextBoxColumn MaLoaiMon;
         private System.Windows.Forms.DataGridViewTextBoxColumn TenMon;
         private System.Windows.Forms.DataGridViewTextBoxColumn Gia;
         private System.Windows.Forms.DataGridViewTextBoxColumn KichThuoc;
-        private System.Windows.Forms.DataGridViewTextBoxColumn CachLam;
+        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.TextBox txtTimKiem;
+        private System.Windows.Forms.TextBox textBox1;
     }
 }

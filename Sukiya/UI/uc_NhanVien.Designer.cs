@@ -40,6 +40,13 @@
             this.barDockControlLeft = new DevExpress.XtraBars.BarDockControl();
             this.barDockControlRight = new DevExpress.XtraBars.BarDockControl();
             this.dgvNhanVien = new System.Windows.Forms.DataGridView();
+            this.MaNV = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.MaCV = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.HoTen = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.GioiTinh = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.SDT = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.DiaChi = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.SoCCCD = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.txtMaChucVu = new System.Windows.Forms.TextBox();
             this.txtDiaChi = new System.Windows.Forms.TextBox();
             this.txtSDT = new System.Windows.Forms.TextBox();
@@ -54,13 +61,8 @@
             this.txtSoCCCD = new System.Windows.Forms.TextBox();
             this.label7 = new System.Windows.Forms.Label();
             this.txtGioiTinh = new System.Windows.Forms.TextBox();
-            this.MaNV = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.MaCV = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.HoTen = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.GioiTinh = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.SDT = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.DiaChi = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.SoCCCD = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.label8 = new System.Windows.Forms.Label();
+            this.txtTimKiem = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.barManager1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgvNhanVien)).BeginInit();
             this.SuspendLayout();
@@ -174,6 +176,55 @@
             this.dgvNhanVien.Size = new System.Drawing.Size(967, 320);
             this.dgvNhanVien.TabIndex = 4;
             this.dgvNhanVien.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvNhanVien_CellClick);
+            // 
+            // MaNV
+            // 
+            this.MaNV.HeaderText = "Mã Nhân Viên";
+            this.MaNV.Name = "MaNV";
+            this.MaNV.ReadOnly = true;
+            this.MaNV.Width = 120;
+            // 
+            // MaCV
+            // 
+            this.MaCV.HeaderText = "Mã Chức Vụ";
+            this.MaCV.Name = "MaCV";
+            this.MaCV.ReadOnly = true;
+            this.MaCV.Width = 120;
+            // 
+            // HoTen
+            // 
+            this.HoTen.HeaderText = "Họ Tên";
+            this.HoTen.Name = "HoTen";
+            this.HoTen.ReadOnly = true;
+            this.HoTen.Width = 150;
+            // 
+            // GioiTinh
+            // 
+            this.GioiTinh.HeaderText = "Giới Tính";
+            this.GioiTinh.Name = "GioiTinh";
+            this.GioiTinh.ReadOnly = true;
+            this.GioiTinh.Width = 120;
+            // 
+            // SDT
+            // 
+            this.SDT.HeaderText = "SDT";
+            this.SDT.Name = "SDT";
+            this.SDT.ReadOnly = true;
+            this.SDT.Width = 120;
+            // 
+            // DiaChi
+            // 
+            this.DiaChi.HeaderText = "Địa Chỉ";
+            this.DiaChi.Name = "DiaChi";
+            this.DiaChi.ReadOnly = true;
+            this.DiaChi.Width = 120;
+            // 
+            // SoCCCD
+            // 
+            this.SoCCCD.HeaderText = "Số CCCD";
+            this.SoCCCD.Name = "SoCCCD";
+            this.SoCCCD.ReadOnly = true;
+            this.SoCCCD.Width = 120;
             // 
             // txtMaChucVu
             // 
@@ -322,54 +373,24 @@
             this.txtGioiTinh.Size = new System.Drawing.Size(274, 26);
             this.txtGioiTinh.TabIndex = 25;
             // 
-            // MaNV
+            // label8
             // 
-            this.MaNV.HeaderText = "Mã Nhân Viên";
-            this.MaNV.Name = "MaNV";
-            this.MaNV.ReadOnly = true;
-            this.MaNV.Width = 120;
+            this.label8.AutoSize = true;
+            this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label8.Location = new System.Drawing.Point(586, 224);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(81, 20);
+            this.label8.TabIndex = 47;
+            this.label8.Text = "Tìm Kiếm";
             // 
-            // MaCV
+            // txtTimKiem
             // 
-            this.MaCV.HeaderText = "Mã Chức Vụ";
-            this.MaCV.Name = "MaCV";
-            this.MaCV.ReadOnly = true;
-            this.MaCV.Width = 120;
-            // 
-            // HoTen
-            // 
-            this.HoTen.HeaderText = "Họ Tên";
-            this.HoTen.Name = "HoTen";
-            this.HoTen.ReadOnly = true;
-            this.HoTen.Width = 150;
-            // 
-            // GioiTinh
-            // 
-            this.GioiTinh.HeaderText = "Giới Tính";
-            this.GioiTinh.Name = "GioiTinh";
-            this.GioiTinh.ReadOnly = true;
-            this.GioiTinh.Width = 120;
-            // 
-            // SDT
-            // 
-            this.SDT.HeaderText = "SDT";
-            this.SDT.Name = "SDT";
-            this.SDT.ReadOnly = true;
-            this.SDT.Width = 120;
-            // 
-            // DiaChi
-            // 
-            this.DiaChi.HeaderText = "Địa Chỉ";
-            this.DiaChi.Name = "DiaChi";
-            this.DiaChi.ReadOnly = true;
-            this.DiaChi.Width = 120;
-            // 
-            // SoCCCD
-            // 
-            this.SoCCCD.HeaderText = "Số CCCD";
-            this.SoCCCD.Name = "SoCCCD";
-            this.SoCCCD.ReadOnly = true;
-            this.SoCCCD.Width = 120;
+            this.txtTimKiem.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtTimKiem.Location = new System.Drawing.Point(689, 222);
+            this.txtTimKiem.Name = "txtTimKiem";
+            this.txtTimKiem.Size = new System.Drawing.Size(208, 24);
+            this.txtTimKiem.TabIndex = 46;
+            this.txtTimKiem.TextChanged += new System.EventHandler(this.txtTimKiem_TextChanged_1);
             // 
             // uc_NhanVien
             // 
@@ -378,6 +399,8 @@
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.Controls.Add(this.label8);
+            this.Controls.Add(this.txtTimKiem);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.txtGioiTinh);
             this.Controls.Add(this.label6);
@@ -442,5 +465,7 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn SDT;
         private System.Windows.Forms.DataGridViewTextBoxColumn DiaChi;
         private System.Windows.Forms.DataGridViewTextBoxColumn SoCCCD;
+        private System.Windows.Forms.Label label8;
+        private System.Windows.Forms.TextBox txtTimKiem;
     }
 }
