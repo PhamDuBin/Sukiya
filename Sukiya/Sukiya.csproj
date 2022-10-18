@@ -58,6 +58,7 @@
     <Reference Include="DevExpress.Sparkline.v21.2.Core" />
     <Reference Include="DevExpress.XtraCharts.v21.2, Version=21.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
     <Reference Include="DevExpress.XtraCharts.v21.2.Extensions, Version=21.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraCharts.v21.2.UI, Version=21.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
     <Reference Include="DevExpress.XtraCharts.v21.2.Wizard, Version=21.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
     <Reference Include="DevExpress.XtraDiagram.v21.2, Version=21.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
     <Reference Include="DevExpress.XtraEditors.v21.2" />
@@ -159,6 +160,11 @@
     <Compile Include="Models\sysdiagrams.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="QL_SukiyaDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>QL_SukiyaDataSet.xsd</DependentUpon>
+    </Compile>
     <Compile Include="UI\uc_BangKiemHang.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -207,6 +213,12 @@
     <Compile Include="UI\uc_XemDoanhThu.Designer.cs">
       <DependentUpon>uc_XemDoanhThu.cs</DependentUpon>
     </Compile>
+    <Compile Include="UI\uc_BaoCaoDoanhThu.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI\uc_BaoCaoDoanhThu.Designer.cs">
+      <DependentUpon>uc_BaoCaoDoanhThu.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="Form\FrmMain.resx">
       <DependentUpon>FrmMain.cs</DependentUpon>
     </EmbeddedResource>
@@ -225,6 +237,9 @@
     </Compile>
     <EmbeddedResource Include="UI\uc_BangKiemHang.resx">
       <DependentUpon>uc_BangKiemHang.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\uc_BaoCaoDoanhThu.resx">
+      <DependentUpon>uc_BaoCaoDoanhThu.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="UI\uc_LienHe.resx">
       <DependentUpon>uc_LienHe.cs</DependentUpon>
@@ -247,6 +262,7 @@
     <None Include="App.config" />
     <None Include="packages.config" />
     <None Include="Properties\DataSources\Sukiya.Models.HoaDon.datasource" />
+    <None Include="Properties\DataSources\Sukiya.Models.NguyenVatLieu.datasource" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -256,6 +272,17 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
+    <None Include="QL_SukiyaDataSet.xsc">
+      <DependentUpon>QL_SukiyaDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="QL_SukiyaDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>QL_SukiyaDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="QL_SukiyaDataSet.xss">
+      <DependentUpon>QL_SukiyaDataSet.xsd</DependentUpon>
+    </None>
   </ItemGroup>
   <ItemGroup>
     <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />

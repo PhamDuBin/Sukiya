@@ -30,6 +30,10 @@ namespace Sukiya.Models
 
         public int SoLuong { get; set; }
 
+        public double? LuongLoss { get; set; }
+
+        public int? LiDo { get; set; }
+
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<CT_Mon> CT_Mon { get; set; }
     }
