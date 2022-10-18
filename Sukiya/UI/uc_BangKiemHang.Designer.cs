@@ -57,14 +57,17 @@
             this.barDockControlRight = new DevExpress.XtraBars.BarDockControl();
             this.txtTenNVL = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.dgvBangKiemHang)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.barManager1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // dgvBangKiemHang
             // 
             this.dgvBangKiemHang.AllowUserToAddRows = false;
             this.dgvBangKiemHang.AllowUserToDeleteRows = false;
+            this.dgvBangKiemHang.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dgvBangKiemHang.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvBangKiemHang.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.MaNVL,
@@ -72,12 +75,13 @@
             this.DVT,
             this.Gia,
             this.SoLuong});
-            this.dgvBangKiemHang.Location = new System.Drawing.Point(0, 431);
-            this.dgvBangKiemHang.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.dgvBangKiemHang.Dock = System.Windows.Forms.DockStyle.Right;
+            this.dgvBangKiemHang.Location = new System.Drawing.Point(97, 30);
+            this.dgvBangKiemHang.Margin = new System.Windows.Forms.Padding(4);
             this.dgvBangKiemHang.Name = "dgvBangKiemHang";
             this.dgvBangKiemHang.ReadOnly = true;
             this.dgvBangKiemHang.RowHeadersWidth = 51;
-            this.dgvBangKiemHang.Size = new System.Drawing.Size(1213, 257);
+            this.dgvBangKiemHang.Size = new System.Drawing.Size(1116, 638);
             this.dgvBangKiemHang.TabIndex = 0;
             this.dgvBangKiemHang.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvBangKiemHang_CellClick);
             // 
@@ -87,7 +91,6 @@
             this.MaNVL.MinimumWidth = 6;
             this.MaNVL.Name = "MaNVL";
             this.MaNVL.ReadOnly = true;
-            this.MaNVL.Width = 175;
             // 
             // TenNVL
             // 
@@ -95,7 +98,6 @@
             this.TenNVL.MinimumWidth = 6;
             this.TenNVL.Name = "TenNVL";
             this.TenNVL.ReadOnly = true;
-            this.TenNVL.Width = 175;
             // 
             // DVT
             // 
@@ -103,7 +105,6 @@
             this.DVT.MinimumWidth = 6;
             this.DVT.Name = "DVT";
             this.DVT.ReadOnly = true;
-            this.DVT.Width = 175;
             // 
             // Gia
             // 
@@ -111,7 +112,6 @@
             this.Gia.MinimumWidth = 6;
             this.Gia.Name = "Gia";
             this.Gia.ReadOnly = true;
-            this.Gia.Width = 175;
             // 
             // SoLuong
             // 
@@ -119,55 +119,58 @@
             this.SoLuong.MinimumWidth = 6;
             this.SoLuong.Name = "SoLuong";
             this.SoLuong.ReadOnly = true;
-            this.SoLuong.Width = 175;
             // 
             // label4
             // 
             this.label4.AutoSize = true;
             this.label4.BackColor = System.Drawing.SystemColors.ButtonFace;
             this.label4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(651, 197);
+            this.label4.Font = new System.Drawing.Font("Tahoma", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.Location = new System.Drawing.Point(66, 307);
             this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(107, 27);
+            this.label4.Size = new System.Drawing.Size(150, 36);
             this.label4.TabIndex = 52;
             this.label4.Text = "Số Lượng";
             // 
             // txtGia
             // 
-            this.txtGia.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtGia.Location = new System.Drawing.Point(821, 138);
-            this.txtGia.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtGia.BackColor = System.Drawing.SystemColors.Control;
+            this.txtGia.Font = new System.Drawing.Font("Tahoma", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtGia.Location = new System.Drawing.Point(253, 248);
+            this.txtGia.Margin = new System.Windows.Forms.Padding(4);
             this.txtGia.Name = "txtGia";
-            this.txtGia.Size = new System.Drawing.Size(367, 30);
+            this.txtGia.Size = new System.Drawing.Size(397, 40);
             this.txtGia.TabIndex = 51;
             // 
             // txtSoLuong
             // 
-            this.txtSoLuong.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtSoLuong.Location = new System.Drawing.Point(821, 192);
-            this.txtSoLuong.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtSoLuong.BackColor = System.Drawing.SystemColors.Control;
+            this.txtSoLuong.Font = new System.Drawing.Font("Tahoma", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtSoLuong.Location = new System.Drawing.Point(253, 307);
+            this.txtSoLuong.Margin = new System.Windows.Forms.Padding(4);
             this.txtSoLuong.Name = "txtSoLuong";
-            this.txtSoLuong.Size = new System.Drawing.Size(367, 30);
+            this.txtSoLuong.Size = new System.Drawing.Size(397, 40);
             this.txtSoLuong.TabIndex = 50;
             // 
             // txtDVT
             // 
-            this.txtDVT.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtDVT.Location = new System.Drawing.Point(213, 236);
-            this.txtDVT.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtDVT.BackColor = System.Drawing.SystemColors.Control;
+            this.txtDVT.Font = new System.Drawing.Font("Tahoma", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtDVT.Location = new System.Drawing.Point(253, 193);
+            this.txtDVT.Margin = new System.Windows.Forms.Padding(4);
             this.txtDVT.Name = "txtDVT";
-            this.txtDVT.Size = new System.Drawing.Size(367, 30);
+            this.txtDVT.Size = new System.Drawing.Size(397, 40);
             this.txtDVT.TabIndex = 49;
             // 
             // txtMaNVL
             // 
-            this.txtMaNVL.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtMaNVL.Location = new System.Drawing.Point(213, 139);
-            this.txtMaNVL.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtMaNVL.BackColor = System.Drawing.SystemColors.Control;
+            this.txtMaNVL.Font = new System.Drawing.Font("Tahoma", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtMaNVL.Location = new System.Drawing.Point(253, 79);
+            this.txtMaNVL.Margin = new System.Windows.Forms.Padding(4);
             this.txtMaNVL.Name = "txtMaNVL";
-            this.txtMaNVL.Size = new System.Drawing.Size(367, 30);
+            this.txtMaNVL.Size = new System.Drawing.Size(397, 40);
             this.txtMaNVL.TabIndex = 48;
             // 
             // label3
@@ -175,11 +178,11 @@
             this.label3.AutoSize = true;
             this.label3.BackColor = System.Drawing.SystemColors.ButtonFace;
             this.label3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(27, 241);
+            this.label3.Font = new System.Drawing.Font("Tahoma", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Location = new System.Drawing.Point(66, 193);
             this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(58, 27);
+            this.label3.Size = new System.Drawing.Size(74, 36);
             this.label3.TabIndex = 47;
             this.label3.Text = "DVT";
             // 
@@ -188,11 +191,11 @@
             this.label2.AutoSize = true;
             this.label2.BackColor = System.Drawing.SystemColors.ButtonFace;
             this.label2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(651, 143);
+            this.label2.Font = new System.Drawing.Font("Tahoma", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Location = new System.Drawing.Point(66, 248);
             this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(47, 27);
+            this.label2.Size = new System.Drawing.Size(63, 36);
             this.label2.TabIndex = 46;
             this.label2.Text = "Giá";
             // 
@@ -201,11 +204,11 @@
             this.label1.AutoSize = true;
             this.label1.BackColor = System.Drawing.SystemColors.ButtonFace;
             this.label1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(27, 144);
+            this.label1.Font = new System.Drawing.Font("Tahoma", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(66, 79);
             this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(86, 27);
+            this.label1.Size = new System.Drawing.Size(116, 36);
             this.label1.TabIndex = 45;
             this.label1.Text = "MaNVL";
             // 
@@ -295,7 +298,7 @@
             this.barDockControlTop.Dock = System.Windows.Forms.DockStyle.Top;
             this.barDockControlTop.Location = new System.Drawing.Point(0, 0);
             this.barDockControlTop.Manager = this.barManager1;
-            this.barDockControlTop.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.barDockControlTop.Margin = new System.Windows.Forms.Padding(4);
             this.barDockControlTop.Size = new System.Drawing.Size(1213, 30);
             // 
             // barDockControlBottom
@@ -304,7 +307,7 @@
             this.barDockControlBottom.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.barDockControlBottom.Location = new System.Drawing.Point(0, 668);
             this.barDockControlBottom.Manager = this.barManager1;
-            this.barDockControlBottom.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.barDockControlBottom.Margin = new System.Windows.Forms.Padding(4);
             this.barDockControlBottom.Size = new System.Drawing.Size(1213, 20);
             // 
             // barDockControlLeft
@@ -313,7 +316,7 @@
             this.barDockControlLeft.Dock = System.Windows.Forms.DockStyle.Left;
             this.barDockControlLeft.Location = new System.Drawing.Point(0, 30);
             this.barDockControlLeft.Manager = this.barManager1;
-            this.barDockControlLeft.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.barDockControlLeft.Margin = new System.Windows.Forms.Padding(4);
             this.barDockControlLeft.Size = new System.Drawing.Size(0, 638);
             // 
             // barDockControlRight
@@ -322,16 +325,17 @@
             this.barDockControlRight.Dock = System.Windows.Forms.DockStyle.Right;
             this.barDockControlRight.Location = new System.Drawing.Point(1213, 30);
             this.barDockControlRight.Manager = this.barManager1;
-            this.barDockControlRight.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.barDockControlRight.Margin = new System.Windows.Forms.Padding(4);
             this.barDockControlRight.Size = new System.Drawing.Size(0, 638);
             // 
             // txtTenNVL
             // 
-            this.txtTenNVL.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtTenNVL.Location = new System.Drawing.Point(213, 192);
-            this.txtTenNVL.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtTenNVL.BackColor = System.Drawing.SystemColors.Control;
+            this.txtTenNVL.Font = new System.Drawing.Font("Tahoma", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtTenNVL.Location = new System.Drawing.Point(253, 136);
+            this.txtTenNVL.Margin = new System.Windows.Forms.Padding(4);
             this.txtTenNVL.Name = "txtTenNVL";
-            this.txtTenNVL.Size = new System.Drawing.Size(367, 30);
+            this.txtTenNVL.Size = new System.Drawing.Size(397, 40);
             this.txtTenNVL.TabIndex = 60;
             // 
             // label5
@@ -339,20 +343,29 @@
             this.label5.AutoSize = true;
             this.label5.BackColor = System.Drawing.SystemColors.ButtonFace;
             this.label5.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(27, 197);
+            this.label5.Font = new System.Drawing.Font("Tahoma", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.Location = new System.Drawing.Point(66, 136);
             this.label5.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(100, 27);
+            this.label5.Size = new System.Drawing.Size(134, 36);
             this.label5.TabIndex = 59;
             this.label5.Text = "Tên NVL";
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
+            this.pictureBox1.Location = new System.Drawing.Point(15, 385);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(691, 322);
+            this.pictureBox1.TabIndex = 65;
+            this.pictureBox1.TabStop = false;
             // 
             // uc_BangKiemHang
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.txtTenNVL);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.label4);
@@ -369,12 +382,13 @@
             this.Controls.Add(this.barDockControlBottom);
             this.Controls.Add(this.barDockControlTop);
             this.DoubleBuffered = true;
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "uc_BangKiemHang";
             this.Size = new System.Drawing.Size(1213, 688);
             this.Load += new System.EventHandler(this.uc_BangKiemHang_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgvBangKiemHang)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.barManager1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -409,5 +423,6 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn DVT;
         private System.Windows.Forms.DataGridViewTextBoxColumn Gia;
         private System.Windows.Forms.DataGridViewTextBoxColumn SoLuong;
+        private System.Windows.Forms.PictureBox pictureBox1;
     }
 }

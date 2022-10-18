@@ -58,57 +58,63 @@
             this.label5 = new System.Windows.Forms.Label();
             this.txtMaNVL = new System.Windows.Forms.TextBox();
             this.txtTenNVL = new System.Windows.Forms.TextBox();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.dgvSanPhamLOSS)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.barManager1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.hoaDonBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.nguyenVatLieuBindingSource1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.nguyenVatLieuBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // dgvSanPhamLOSS
             // 
             this.dgvSanPhamLOSS.AllowUserToAddRows = false;
             this.dgvSanPhamLOSS.AllowUserToDeleteRows = false;
+            this.dgvSanPhamLOSS.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dgvSanPhamLOSS.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvSanPhamLOSS.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.MaNVL,
             this.TenNVL,
             this.SoLuongLoss,
             this.LiDo});
-            this.dgvSanPhamLOSS.Location = new System.Drawing.Point(-2, 245);
+            this.dgvSanPhamLOSS.Dock = System.Windows.Forms.DockStyle.Right;
+            this.dgvSanPhamLOSS.Location = new System.Drawing.Point(154, 30);
+            this.dgvSanPhamLOSS.Margin = new System.Windows.Forms.Padding(4);
             this.dgvSanPhamLOSS.Name = "dgvSanPhamLOSS";
             this.dgvSanPhamLOSS.ReadOnly = true;
-            this.dgvSanPhamLOSS.Size = new System.Drawing.Size(851, 199);
+            this.dgvSanPhamLOSS.RowHeadersWidth = 51;
+            this.dgvSanPhamLOSS.Size = new System.Drawing.Size(983, 595);
             this.dgvSanPhamLOSS.TabIndex = 0;
             this.dgvSanPhamLOSS.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvSanPhamLOSS_CellClick);
             // 
             // MaNVL
             // 
             this.MaNVL.HeaderText = "Mã Nguyên Vật Liệu";
+            this.MaNVL.MinimumWidth = 6;
             this.MaNVL.Name = "MaNVL";
             this.MaNVL.ReadOnly = true;
-            this.MaNVL.Width = 200;
             // 
             // TenNVL
             // 
             this.TenNVL.HeaderText = "Tên Nguyên Vật Liệu";
+            this.TenNVL.MinimumWidth = 6;
             this.TenNVL.Name = "TenNVL";
             this.TenNVL.ReadOnly = true;
-            this.TenNVL.Width = 200;
             // 
             // SoLuongLoss
             // 
             this.SoLuongLoss.HeaderText = "Số Lượng Loss";
+            this.SoLuongLoss.MinimumWidth = 6;
             this.SoLuongLoss.Name = "SoLuongLoss";
             this.SoLuongLoss.ReadOnly = true;
-            this.SoLuongLoss.Width = 200;
             // 
             // LiDo
             // 
             this.LiDo.HeaderText = "Lí Do";
+            this.LiDo.MinimumWidth = 6;
             this.LiDo.Name = "LiDo";
             this.LiDo.ReadOnly = true;
-            this.LiDo.Width = 200;
             // 
             // barManager1
             // 
@@ -165,83 +171,97 @@
             this.barDockControlTop.Dock = System.Windows.Forms.DockStyle.Top;
             this.barDockControlTop.Location = new System.Drawing.Point(0, 0);
             this.barDockControlTop.Manager = this.barManager1;
-            this.barDockControlTop.Size = new System.Drawing.Size(853, 24);
+            this.barDockControlTop.Margin = new System.Windows.Forms.Padding(4);
+            this.barDockControlTop.Size = new System.Drawing.Size(1137, 30);
             // 
             // barDockControlBottom
             // 
             this.barDockControlBottom.CausesValidation = false;
             this.barDockControlBottom.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.barDockControlBottom.Location = new System.Drawing.Point(0, 424);
+            this.barDockControlBottom.Location = new System.Drawing.Point(0, 625);
             this.barDockControlBottom.Manager = this.barManager1;
-            this.barDockControlBottom.Size = new System.Drawing.Size(853, 20);
+            this.barDockControlBottom.Margin = new System.Windows.Forms.Padding(4);
+            this.barDockControlBottom.Size = new System.Drawing.Size(1137, 20);
             // 
             // barDockControlLeft
             // 
             this.barDockControlLeft.CausesValidation = false;
             this.barDockControlLeft.Dock = System.Windows.Forms.DockStyle.Left;
-            this.barDockControlLeft.Location = new System.Drawing.Point(0, 24);
+            this.barDockControlLeft.Location = new System.Drawing.Point(0, 30);
             this.barDockControlLeft.Manager = this.barManager1;
-            this.barDockControlLeft.Size = new System.Drawing.Size(0, 400);
+            this.barDockControlLeft.Margin = new System.Windows.Forms.Padding(4);
+            this.barDockControlLeft.Size = new System.Drawing.Size(0, 595);
             // 
             // barDockControlRight
             // 
             this.barDockControlRight.CausesValidation = false;
             this.barDockControlRight.Dock = System.Windows.Forms.DockStyle.Right;
-            this.barDockControlRight.Location = new System.Drawing.Point(853, 24);
+            this.barDockControlRight.Location = new System.Drawing.Point(1137, 30);
             this.barDockControlRight.Manager = this.barManager1;
-            this.barDockControlRight.Size = new System.Drawing.Size(0, 400);
+            this.barDockControlRight.Margin = new System.Windows.Forms.Padding(4);
+            this.barDockControlRight.Size = new System.Drawing.Size(0, 595);
             // 
             // txtLuongLoss
             // 
-            this.txtLuongLoss.BackColor = System.Drawing.SystemColors.InactiveBorder;
-            this.txtLuongLoss.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtLuongLoss.Location = new System.Drawing.Point(161, 115);
+            this.txtLuongLoss.BackColor = System.Drawing.SystemColors.Control;
+            this.txtLuongLoss.Font = new System.Drawing.Font("Tahoma", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtLuongLoss.Location = new System.Drawing.Point(252, 179);
+            this.txtLuongLoss.Margin = new System.Windows.Forms.Padding(4);
             this.txtLuongLoss.Name = "txtLuongLoss";
-            this.txtLuongLoss.Size = new System.Drawing.Size(220, 26);
+            this.txtLuongLoss.Size = new System.Drawing.Size(417, 40);
             this.txtLuongLoss.TabIndex = 25;
             // 
             // txtLiDo
             // 
-            this.txtLiDo.BackColor = System.Drawing.SystemColors.InactiveBorder;
-            this.txtLiDo.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtLiDo.Location = new System.Drawing.Point(161, 154);
+            this.txtLiDo.BackColor = System.Drawing.SystemColors.Control;
+            this.txtLiDo.Font = new System.Drawing.Font("Tahoma", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtLiDo.Location = new System.Drawing.Point(252, 239);
+            this.txtLiDo.Margin = new System.Windows.Forms.Padding(4);
             this.txtLiDo.Name = "txtLiDo";
-            this.txtLiDo.Size = new System.Drawing.Size(220, 26);
+            this.txtLiDo.Size = new System.Drawing.Size(417, 40);
             this.txtLiDo.TabIndex = 24;
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(483, 54);
+            this.label2.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Location = new System.Drawing.Point(26, 327);
+            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(115, 13);
+            this.label2.Size = new System.Drawing.Size(246, 24);
             this.label2.TabIndex = 35;
             this.label2.Text = "1: Do quá trình shikomi";
             // 
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(483, 101);
+            this.label3.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Location = new System.Drawing.Point(26, 385);
+            this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(54, 13);
+            this.label3.Size = new System.Drawing.Size(111, 24);
             this.label3.TabIndex = 36;
             this.label3.Text = "3: Làm dư";
             // 
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(483, 79);
+            this.label4.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.Location = new System.Drawing.Point(26, 358);
+            this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(125, 13);
+            this.label4.Size = new System.Drawing.Size(262, 24);
             this.label4.TabIndex = 37;
             this.label4.Text = "2: Do quá trình vận hành";
             // 
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(483, 123);
+            this.label6.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.Location = new System.Drawing.Point(26, 412);
+            this.label6.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(110, 13);
+            this.label6.Size = new System.Drawing.Size(228, 24);
             this.label6.TabIndex = 38;
             this.label6.Text = "4: Khách hàng đổi trả";
             // 
@@ -252,20 +272,22 @@
             // label7
             // 
             this.label7.AutoSize = true;
-            this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.Location = new System.Drawing.Point(34, 160);
+            this.label7.Font = new System.Drawing.Font("Tahoma", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label7.Location = new System.Drawing.Point(24, 241);
+            this.label7.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(51, 20);
+            this.label7.Size = new System.Drawing.Size(85, 34);
             this.label7.TabIndex = 46;
             this.label7.Text = "Lí Do";
             // 
             // label9
             // 
             this.label9.AutoSize = true;
-            this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label9.Location = new System.Drawing.Point(34, 121);
+            this.label9.Font = new System.Drawing.Font("Tahoma", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label9.Location = new System.Drawing.Point(24, 181);
+            this.label9.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(111, 20);
+            this.label9.Size = new System.Drawing.Size(187, 34);
             this.label9.TabIndex = 44;
             this.label9.Text = "Lượng LOSS";
             // 
@@ -280,45 +302,59 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(34, 86);
+            this.label1.Font = new System.Drawing.Font("Tahoma", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(24, 120);
+            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(78, 20);
+            this.label1.Size = new System.Drawing.Size(132, 34);
             this.label1.TabIndex = 54;
             this.label1.Text = "Tên NVL";
             // 
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(34, 47);
+            this.label5.Font = new System.Drawing.Font("Tahoma", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.Location = new System.Drawing.Point(24, 57);
+            this.label5.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(72, 20);
+            this.label5.Size = new System.Drawing.Size(122, 34);
             this.label5.TabIndex = 53;
             this.label5.Text = "Mã NVL";
             // 
             // txtMaNVL
             // 
-            this.txtMaNVL.BackColor = System.Drawing.SystemColors.InactiveBorder;
-            this.txtMaNVL.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtMaNVL.Location = new System.Drawing.Point(161, 41);
+            this.txtMaNVL.BackColor = System.Drawing.SystemColors.Control;
+            this.txtMaNVL.Font = new System.Drawing.Font("Tahoma", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtMaNVL.Location = new System.Drawing.Point(252, 54);
+            this.txtMaNVL.Margin = new System.Windows.Forms.Padding(4);
             this.txtMaNVL.Name = "txtMaNVL";
-            this.txtMaNVL.Size = new System.Drawing.Size(220, 26);
+            this.txtMaNVL.Size = new System.Drawing.Size(417, 40);
             this.txtMaNVL.TabIndex = 52;
             // 
             // txtTenNVL
             // 
-            this.txtTenNVL.BackColor = System.Drawing.SystemColors.InactiveBorder;
-            this.txtTenNVL.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtTenNVL.Location = new System.Drawing.Point(161, 80);
+            this.txtTenNVL.BackColor = System.Drawing.SystemColors.Control;
+            this.txtTenNVL.Font = new System.Drawing.Font("Tahoma", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtTenNVL.Location = new System.Drawing.Point(252, 117);
+            this.txtTenNVL.Margin = new System.Windows.Forms.Padding(4);
             this.txtTenNVL.Name = "txtTenNVL";
-            this.txtTenNVL.Size = new System.Drawing.Size(220, 26);
+            this.txtTenNVL.Size = new System.Drawing.Size(417, 40);
             this.txtTenNVL.TabIndex = 51;
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
+            this.pictureBox1.Location = new System.Drawing.Point(75, 510);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(680, 306);
+            this.pictureBox1.TabIndex = 59;
+            this.pictureBox1.TabStop = false;
             // 
             // uc_SanPhamLoss
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.txtMaNVL);
@@ -336,14 +372,16 @@
             this.Controls.Add(this.barDockControlRight);
             this.Controls.Add(this.barDockControlBottom);
             this.Controls.Add(this.barDockControlTop);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "uc_SanPhamLoss";
-            this.Size = new System.Drawing.Size(853, 444);
+            this.Size = new System.Drawing.Size(1137, 645);
             this.Load += new System.EventHandler(this.uc_SanPhamLoss_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgvSanPhamLOSS)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.barManager1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.hoaDonBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.nguyenVatLieuBindingSource1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.nguyenVatLieuBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -379,5 +417,6 @@
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.TextBox txtMaNVL;
         private System.Windows.Forms.TextBox txtTenNVL;
+        private System.Windows.Forms.PictureBox pictureBox1;
     }
 }
