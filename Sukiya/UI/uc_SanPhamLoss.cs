@@ -38,6 +38,7 @@ namespace Sukiya.UI
         }
         private void BindGrid()
         {
+            txtLiDo.Text = txtLuongLoss.Text = txtMaNVL.Text = txtTenNVL.Text = "";
             dgvSanPhamLOSS.Rows.Clear();
             foreach (var item in dbContext.NguyenVatLieu.ToList())
             {
@@ -52,25 +53,28 @@ namespace Sukiya.UI
 
         private void btnSua_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
         {
-            try
-            {
-                string MaNVL = txtMaNVL.Text.Trim();
+            if (txtLiDo.Text != "" && txtLuongLoss.Text != "" && txtMaNVL.Text != "" && txtTenNVL.Text != "")
+                try
+                {
+                    string MaNVL = txtMaNVL.Text.Trim();
 
-                NguyenVatLieu NVL = dbContext.NguyenVatLieu.Where
-                    (x => x.MaNVL.ToString() == txtMaNVL.Text).FirstOrDefault();
+                    NguyenVatLieu NVL = dbContext.NguyenVatLieu.Where
+                        (x => x.MaNVL.ToString() == txtMaNVL.Text).FirstOrDefault();
 
-                NVL.LuongLoss = float.Parse(txtLuongLoss.Text);
-                NVL.LiDo = int.Parse(txtLiDo.Text);
+                    NVL.LuongLoss = float.Parse(txtLuongLoss.Text);
+                    NVL.LiDo = int.Parse(txtLiDo.Text);
 
 
-                dbContext.SaveChanges();
-                MessageBox.Show("Sửa OK!!");
-                BindGrid();
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show("Error", ex.Message);
-            }
+                    dbContext.SaveChanges();
+                    MessageBox.Show("Sửa OK!!");
+                    BindGrid();
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show("Error", ex.Message);
+                }
+            else
+                MessageBox.Show("Vui lòng nhập đầy đủ thông tin");
         }
 
         private void dgvSanPhamLOSS_CellClick(object sender, DataGridViewCellEventArgs e)

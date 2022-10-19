@@ -25,16 +25,16 @@ namespace Sukiya.UI
             {
                 BindGrid();
             }
-            catch(Exception ex)
+            catch (Exception ex)
             {
-                MessageBox.Show(ex.Message);    
+                MessageBox.Show(ex.Message);
             }
         }
-        
+
         private void BindGrid()
         {
             dgvMon.Rows.Clear();
-            
+            txtGia.Text = txtKichThuoc.Text = txtMaLoaiMon.Text = txtMaMon.Text = txtTenMon.Text = "";
             foreach (var item in dbContext.Mon.ToList())
             {
                 int index = dgvMon.Rows.Add();
@@ -43,37 +43,41 @@ namespace Sukiya.UI
                 dgvMon.Rows[index].Cells[1].Value = item.MaLM;
                 dgvMon.Rows[index].Cells[2].Value = item.TenMon;
                 dgvMon.Rows[index].Cells[3].Value = item.Gia;
-                dgvMon.Rows[index].Cells[4].Value = item.Size;                
-            } 
+                dgvMon.Rows[index].Cells[4].Value = item.Size;
+            }
         }
 
         private void btnThemSua_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
         {
-            try
-            {
-                string MaMon = txtMaMon.Text.Trim();
-
-                Mon mon = dbContext.Mon.Where
-                    (x => x.MaMon.ToString() == txtMaMon.Text).FirstOrDefault();
-                if (mon == null)
+            if (txtKichThuoc.Text != "" && txtGia.Text != "" && txtMaLoaiMon.Text != "" && txtMaMon.Text != "" && txtTenMon.Text != "")
+                try
                 {
-                    mon = new Mon();
-                    mon.MaMon = int.Parse(txtMaMon.Text);
-                    dbContext.Mon.Add(mon);
-                }
-                mon.MaLM = int.Parse(txtMaLoaiMon.Text);
-                mon.TenMon = txtTenMon.Text;
-                mon.Gia = decimal.Parse(txtGia.Text);
-                mon.Size = txtKichThuoc.Text;
+                    string MaMon = txtMaMon.Text.Trim();
 
-                dbContext.SaveChanges();
-                MessageBox.Show("Thêm/ Sửa OK!!");
-                BindGrid();
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show("Error", ex.Message);
-            }
+                    Mon mon = dbContext.Mon.Where
+                        (x => x.MaMon.ToString() == txtMaMon.Text).FirstOrDefault();
+                    if (mon == null)
+                    {
+                        mon = new Mon();
+                        mon.MaMon = int.Parse(txtMaMon.Text);
+                        dbContext.Mon.Add(mon);
+                    }
+                    mon.MaLM = int.Parse(txtMaLoaiMon.Text);
+                    mon.TenMon = txtTenMon.Text;
+                    mon.Gia = decimal.Parse(txtGia.Text);
+                    mon.Size = txtKichThuoc.Text;
+
+                    dbContext.SaveChanges();
+                    MessageBox.Show("Thêm/ Sửa OK!!");
+                    BindGrid();
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show("Error", ex.Message);
+                }
+            else
+                MessageBox.Show("Vui lòng nhập đầy đủ thông tin");
+
         }
 
         private void btnXoa_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)

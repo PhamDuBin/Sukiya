@@ -20,7 +20,7 @@ namespace Sukiya.Form
         public FrmLogin()
         {
             InitializeComponent();
-
+            btnDangNhap.Enabled = false;
             txtMatKhau.PasswordChar = '*';
         }
         private bool kiemTraDangNhap(string tenDangNhap, string matKhau)
@@ -45,13 +45,18 @@ namespace Sukiya.Form
 
         private void txtMatKhau_TextChanged(object sender, EventArgs e)
         {
-            btnDangNhap.Enabled = !string.IsNullOrEmpty(txtMatKhau.Text) && !string.IsNullOrEmpty(txtMatKhau.Text);
+            btnDangNhap.Enabled = !string.IsNullOrEmpty(txtMatKhau.Text);
+        }
+
+        private void txtTenDangNhap_TextChanged(object sender, EventArgs e)
+        {
+            btnDangNhap.Enabled = !string.IsNullOrEmpty(txtTenDangNhap.Text);
         }
 
         private void btnDangNhap_Click(object sender, EventArgs e)
         {
             //string matKhauMaHoa = BCrypt.Net.BCrypt.HashPassword(txtMatKhau.Text);
-            if (txtMatKhau.Text == "" || txtTenDangNhap.Text == "")
+            if (string.IsNullOrEmpty(txtMatKhau.Text) || string.IsNullOrEmpty(txtTenDangNhap.Text))
             {
                 MessageBox.Show("Vui lòng nhập đầy đủ trước khi đăng nhập");
             }
@@ -81,6 +86,11 @@ namespace Sukiya.Form
         private void Frm_FormClosed(object sender, FormClosedEventArgs e)
         {
             this.Close();
+        }
+
+        private void chkHienMatKhau_CheckedChanged(object sender, EventArgs e)
+        {
+            txtMatKhau.PasswordChar = (chkHienMatKhau.Checked) ? '\0' : '*';
         }
     }
 }

@@ -24,15 +24,16 @@ namespace Sukiya.UI
             {
                 BindGrid();
             }
-            catch(Exception ex)
+            catch (Exception ex)
             {
                 MessageBox.Show(ex.Message);
             }
         }
         private void BindGrid()
         {
+            txtDiaChi.Text = txtGioiTinh.Text = txtHoTen.Text = txtMaChucVu.Text = txtMaNV.Text = txtSDT.Text = txtSoCCCD.Text = "";
             dgvNhanVien.Rows.Clear();
-            foreach(var item in dbContext.NhanVien.ToList())
+            foreach (var item in dbContext.NhanVien.ToList())
             {
                 int index = dgvNhanVien.Rows.Add();
                 dgvNhanVien.Rows[index].Cells[0].Value = item.MaNV;
@@ -47,64 +48,59 @@ namespace Sukiya.UI
 
         private void btnThemSua_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
         {
-            try
-            {
-                string MaNV = txtMaNV.Text.Trim();
-                NhanVien nhanvien = dbContext.NhanVien.Where
-                    (x => x.MaNV.ToString() == txtMaNV.Text).FirstOrDefault();
-                if (nhanvien == null)
+            if (txtDiaChi.Text != "" && txtGioiTinh.Text != "" && txtHoTen.Text != "" && txtMaChucVu.Text != "" && txtMaNV.Text != "" && txtSDT.Text != "" && txtSoCCCD.Text != "")
+                try
                 {
-                    nhanvien = new NhanVien();
-                    nhanvien.MaNV = int.Parse(txtMaNV.Text);
-                    dbContext.NhanVien.Add(nhanvien);
-                }
-                nhanvien.MaCV = int.Parse(txtMaChucVu.Text);
-                nhanvien.HoTen = txtHoTen.Text;
-                nhanvien.GioiTinh = txtGioiTinh.Text;
-                nhanvien.DiaChi = txtDiaChi.Text;
-                nhanvien.SoCCCD = txtSoCCCD.Text;
+                    string MaNV = txtMaNV.Text.Trim();
+                    NhanVien nhanvien = dbContext.NhanVien.Where
+                        (x => x.MaNV.ToString() == txtMaNV.Text).FirstOrDefault();
+                    if (nhanvien == null)
+                    {
+                        nhanvien = new NhanVien();
+                        nhanvien.MaNV = int.Parse(txtMaNV.Text);
+                        dbContext.NhanVien.Add(nhanvien);
+                    }
+                    nhanvien.MaCV = int.Parse(txtMaChucVu.Text);
+                    nhanvien.HoTen = txtHoTen.Text;
+                    nhanvien.GioiTinh = txtGioiTinh.Text;
+                    nhanvien.DiaChi = txtDiaChi.Text;
+                    nhanvien.SoCCCD = txtSoCCCD.Text;
 
-                dbContext.SaveChanges();
-                MessageBox.Show("Thêm/ Sửa OK!!");
-                BindGrid();
-            }
-            catch(Exception ex)
-            {
-                MessageBox.Show("Error", ex.Message);
-            }
+                    dbContext.SaveChanges();
+                    MessageBox.Show("Thêm/ Sửa OK!!");
+                    BindGrid();
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show("Error", ex.Message);
+                }
+            else
+                MessageBox.Show("Vui lòng nhập đầy đủ thông tin");
         }
 
         private void btnXoa_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
         {
-            try
-            {
-                string MaNV = txtMaNV.Text.Trim();
-                NhanVien nhanvien = dbContext.NhanVien.Where
-                    (x => x.MaNV.ToString() == txtMaNV.Text).FirstOrDefault();
-                if(nhanvien != null)
+            if (txtDiaChi.Text != "" && txtGioiTinh.Text != "" && txtHoTen.Text != "" && txtMaChucVu.Text != "" && txtMaNV.Text != "" && txtSDT.Text != "" && txtSoCCCD.Text != "")
+                try
                 {
-                    dbContext.NhanVien.Remove(nhanvien);
+                    string MaNV = txtMaNV.Text.Trim();
+                    NhanVien nhanvien = dbContext.NhanVien.Where
+                        (x => x.MaNV.ToString() == txtMaNV.Text).FirstOrDefault();
+                    if (nhanvien != null)
+                    {
+                        dbContext.NhanVien.Remove(nhanvien);
+                    }
+                    dbContext.SaveChanges();
+                    MessageBox.Show("Xóa OK!!");
+                    BindGrid();
                 }
-                dbContext.SaveChanges();
-                MessageBox.Show("Xóa OK!!");
-                BindGrid();
-            }
-            catch(Exception ex)
-            {
-                MessageBox.Show(ex.Message, "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                catch (Exception ex)
+                {
+                    MessageBox.Show(ex.Message, "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
 
-            }
-        }
-        private int GetSelectedRow(string MaNV)
-        {
-            for (int i = 0; i < dgvNhanVien.Rows.Count; i++)
-            {
-                if (dgvNhanVien.Rows[i].Cells[0].Value.ToString() == MaNV)
-                {
-                    return i;
                 }
-            }
-            return -1;
+            else
+                MessageBox.Show("Vui lòng nhập đầy đủ thông tin");
         }
 
         private void dgvNhanVien_CellClick(object sender, DataGridViewCellEventArgs e)
