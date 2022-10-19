@@ -53,7 +53,6 @@ namespace Sukiya.UI
                 try
                 {
                     string MaMon = txtMaMon.Text.Trim();
-
                     Mon mon = dbContext.Mon.Where
                         (x => x.MaMon.ToString() == txtMaMon.Text).FirstOrDefault();
                     if (mon == null)
