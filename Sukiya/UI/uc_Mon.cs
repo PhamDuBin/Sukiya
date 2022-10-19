@@ -23,11 +23,6 @@ namespace Sukiya.UI
         {
             try
             {
-                SukiyaContextDB context = new SukiyaContextDB();
-               List<Mon> listMon = context.Mon.ToList();
-             // List<CT_Mon> listCTMon = context.CT_Mon.ToList();
-
-               
                 BindGrid();
             }
             catch(Exception ex)
@@ -102,25 +97,7 @@ namespace Sukiya.UI
 
             }
         }
-        private int GetSelectedRow(string MaMon)
-        {
-            for (int i = 0; i <dgvMon.Rows.Count; i++)
-            {
-                if (dgvMon.Rows[i].Cells[0].Value.ToString() == MaMon)
-                {
-                    return i;
-                }
-            }
-            return -1;
-        }
-        private void InsertUpdate(int selectedRow)
-        {
-            dgvMon.Rows[selectedRow].Cells[0].Value = txtMaMon.Text;
-            dgvMon.Rows[selectedRow].Cells[1].Value = txtMaLoaiMon.Text;
-            dgvMon.Rows[selectedRow].Cells[2].Value = txtTenMon.Text;
-            dgvMon.Rows[selectedRow].Cells[3].Value = txtGia.Text;
-            dgvMon.Rows[selectedRow].Cells[4].Value = txtKichThuoc.Text;
-        }
+
         private void dgvMon_CellClick(object sender, DataGridViewCellEventArgs e)
         {
             DataGridViewRow row = this.dgvMon.Rows[e.RowIndex];
@@ -130,7 +107,7 @@ namespace Sukiya.UI
             txtGia.Text = row.Cells[3].Value.ToString();
             txtKichThuoc.Text = row.Cells[4].Value.ToString();
         }
-        private void BindGrids(List<Mon> listMon)
+        private void BindGrid(List<Mon> listMon)
         {
             dgvMon.Rows.Clear();
 
@@ -157,7 +134,7 @@ namespace Sukiya.UI
                     listSeach.Add(item);
                 }
             }
-            BindGrids(listSeach);
+            BindGrid(listSeach);
         }
     }
 }

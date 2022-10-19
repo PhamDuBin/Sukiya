@@ -23,8 +23,6 @@ namespace Sukiya.UI
         {
             try
             {
-                SukiyaContextDB context = new SukiyaContextDB();
-               // List<NguyenVatLieu> listNVL = context.NguyenVatLieu.ToList();
                 BindGrid();
             }
             catch (Exception ex)
@@ -97,26 +95,6 @@ namespace Sukiya.UI
                 MessageBox.Show(ex.Message, "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
 
             }
-        }
-        private int GetSelectedRow(string MaNVL)
-        {
-            for (int i = 0; i < dgvBangKiemHang.Rows.Count; i++)
-            {
-                if (dgvBangKiemHang.Rows[i].Cells[0].Value.ToString() == MaNVL)
-                {
-                    return i;
-                }
-            }
-            return -1;
-        }
-        private void InsertUpdate(int selectedRow)
-        {
-            dgvBangKiemHang.Rows[selectedRow].Cells[0].Value = txtMaNVL.Text;
-            dgvBangKiemHang.Rows[selectedRow].Cells[1].Value = txtTenNVL.Text;
-            dgvBangKiemHang.Rows[selectedRow].Cells[2].Value = txtDVT.Text;
-            dgvBangKiemHang.Rows[selectedRow].Cells[3].Value = txtGia.Text;
-            dgvBangKiemHang.Rows[selectedRow].Cells[4].Value = txtSoLuong.Text;
-           
         }
 
         private void dgvBangKiemHang_CellClick(object sender, DataGridViewCellEventArgs e)

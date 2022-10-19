@@ -29,31 +29,23 @@ namespace Sukiya.UI
         {
             try
             {
-                dgvSanPhamLOSS.Rows.Clear();
-                foreach (var item in dbContext.NguyenVatLieu.ToList())
-                {
-                    int index = dgvSanPhamLOSS.Rows.Add();
-                    dgvSanPhamLOSS.Rows[index].Cells[0].Value = item.MaNVL;
-                    dgvSanPhamLOSS.Rows[index].Cells[1].Value = item.TenNVL;
-                    dgvSanPhamLOSS.Rows[index].Cells[2].Value = item.LuongLoss;
-                    dgvSanPhamLOSS.Rows[index].Cells[3].Value = item.LiDo;
-                }
+                BindGrid();
             }
             catch (Exception ex)
             {
                 MessageBox.Show(ex.Message);
             }
         }
-        private void BindGrid1()
+        private void BindGrid()
         {
             dgvSanPhamLOSS.Rows.Clear();
             foreach (var item in dbContext.NguyenVatLieu.ToList())
-            { 
-                    int index = dgvSanPhamLOSS.Rows.Add();
-                    dgvSanPhamLOSS.Rows[index].Cells[0].Value = item.MaNVL;
-                    dgvSanPhamLOSS.Rows[index].Cells[1].Value = item.TenNVL;
-                    dgvSanPhamLOSS.Rows[index].Cells[2].Value = item.LuongLoss;
-                    dgvSanPhamLOSS.Rows[index].Cells[3].Value = item.LiDo;
+            {
+                int index = dgvSanPhamLOSS.Rows.Add();
+                dgvSanPhamLOSS.Rows[index].Cells[0].Value = item.MaNVL;
+                dgvSanPhamLOSS.Rows[index].Cells[1].Value = item.TenNVL;
+                dgvSanPhamLOSS.Rows[index].Cells[2].Value = item.LuongLoss;
+                dgvSanPhamLOSS.Rows[index].Cells[3].Value = item.LiDo;
 
             }
         }
@@ -66,14 +58,14 @@ namespace Sukiya.UI
 
                 NguyenVatLieu NVL = dbContext.NguyenVatLieu.Where
                     (x => x.MaNVL.ToString() == txtMaNVL.Text).FirstOrDefault();
-               
+
                 NVL.LuongLoss = float.Parse(txtLuongLoss.Text);
                 NVL.LiDo = int.Parse(txtLiDo.Text);
 
 
                 dbContext.SaveChanges();
                 MessageBox.Show("Sửa OK!!");
-                BindGrid1();
+                BindGrid();
             }
             catch (Exception ex)
             {

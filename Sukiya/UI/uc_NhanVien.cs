@@ -22,8 +22,6 @@ namespace Sukiya.UI
         {
             try
             {
-                SukiyaContextDB context = new SukiyaContextDB();
-                List<NhanVien> listNhanVien = context.NhanVien.ToList();
                 BindGrid();
             }
             catch(Exception ex)
@@ -108,10 +106,6 @@ namespace Sukiya.UI
             }
             return -1;
         }
-        private void InsertUpdate(int selectedRow)
-        {
-            
-        }
 
         private void dgvNhanVien_CellClick(object sender, DataGridViewCellEventArgs e)
         {
@@ -124,7 +118,7 @@ namespace Sukiya.UI
             txtDiaChi.Text = row.Cells[5].Value.ToString();
             txtSoCCCD.Text = row.Cells[6].Value.ToString();
         }
-        private void BindGrids(List<NhanVien> listNhanVien)
+        private void BindGrid(List<NhanVien> listNhanVien)
         {
             dgvNhanVien.Rows.Clear();
             foreach (var item in listNhanVien)
@@ -153,7 +147,7 @@ namespace Sukiya.UI
                     listSeach.Add(item);
                 }
             }
-            BindGrids(listSeach);
+            BindGrid(listSeach);
         }
     }
 }
