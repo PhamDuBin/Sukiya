@@ -15,6 +15,9 @@ namespace Sukiya.UI
         public uc_GioiThieu()
         {
             InitializeComponent();
+            //imgSlider.Images.Add(Image.FromFile(@"C:\Desktop\LT_Window\Picture\dauCong.png"));
+            //imgSlider.Images.Add(Image.FromFile(@"C:\Desktop\LT_Window\Picture\doiBan.jpg"));
+            //imgSlider.SlideNext();
         }
     }
 }

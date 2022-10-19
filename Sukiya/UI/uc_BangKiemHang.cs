@@ -38,12 +38,12 @@ namespace Sukiya.UI
             foreach (var item in dbContext.NguyenVatLieu.ToList())
             {
                 int index = dgvBangKiemHang.Rows.Add();
+
                 dgvBangKiemHang.Rows[index].Cells[0].Value = item.MaNVL;
                 dgvBangKiemHang.Rows[index].Cells[1].Value = item.TenNVL;
                 dgvBangKiemHang.Rows[index].Cells[2].Value = item.DVT;
                 dgvBangKiemHang.Rows[index].Cells[3].Value = item.Gia;
-                dgvBangKiemHang.Rows[index].Cells[4].Value = item.SoLuong;
-               
+                dgvBangKiemHang.Rows[index].Cells[4].Value = item.SoLuong;             
             }
         }
 
@@ -52,6 +52,7 @@ namespace Sukiya.UI
             try
             {
                 string MaNVL = txtMaNVL.Text.Trim();
+
                 NguyenVatLieu NVL = dbContext.NguyenVatLieu.Where
                     (x => x.MaNVL.ToString() == txtMaNVL.Text).FirstOrDefault();
                 if (NVL == null)
@@ -125,8 +126,7 @@ namespace Sukiya.UI
             txtTenNVL.Text = row.Cells[1].Value.ToString();
             txtDVT.Text = row.Cells[2].Value.ToString();
             txtGia.Text = row.Cells[3].Value.ToString();
-            txtSoLuong.Text = row.Cells[4].Value.ToString();
-          
+            txtSoLuong.Text = row.Cells[4].Value.ToString();        
         }
     }
 }
