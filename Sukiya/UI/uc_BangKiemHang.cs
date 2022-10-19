@@ -46,25 +46,25 @@ namespace Sukiya.UI
             }
         }
 
-        private void barButtonItem1_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        private void btnThemSua_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
         {
             if (txtDVT.Text != "" && txtGia.Text != "" && txtMaNVL.Text != "" && txtSoLuong.Text != "" && txtTenNVL.Text != "")
                 try
                 {
                     string MaNVL = txtMaNVL.Text.Trim();
 
-                    NguyenVatLieu NVL = dbContext.NguyenVatLieu.Where
-                        (x => x.MaNVL.ToString() == txtMaNVL.Text).FirstOrDefault();
-                    if (NVL == null)
-                    {
-                        NVL = new NguyenVatLieu();
-                        NVL.MaNVL = int.Parse(txtMaNVL.Text);
-                        dbContext.NguyenVatLieu.Add(NVL);
-                    }
-                    NVL.TenNVL = txtTenNVL.Text;
-                    NVL.DVT = int.Parse(txtDVT.Text);
-                    NVL.Gia = decimal.Parse(txtGia.Text);
-                    NVL.SoLuong = int.Parse(txtSoLuong.Text);
+                NguyenVatLieu NVL = dbContext.NguyenVatLieu.Where
+                    (x => x.MaNVL.ToString() == txtMaNVL.Text).FirstOrDefault();
+                if (NVL == null)
+                {
+                    NVL = new NguyenVatLieu();
+                    NVL.MaNVL = int.Parse(txtMaNVL.Text);
+                    dbContext.NguyenVatLieu.Add(NVL);
+                }
+                NVL.TenNVL = txtTenNVL.Text;
+                NVL.DVT = int.Parse(txtDVT.Text);
+                NVL.Gia = decimal.Parse(txtGia.Text);
+                NVL.SoLuong = int.Parse(txtSoLuong.Text);
 
 
                     dbContext.SaveChanges();
@@ -79,7 +79,7 @@ namespace Sukiya.UI
                 MessageBox.Show("Vui lòng nhập đầy đủ thông tin ");
         }
 
-        private void barButtonItem2_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        private void btnXoa_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
         {
             if (txtDVT.Text != "" && txtGia.Text != "" && txtMaNVL.Text != "" && txtSoLuong.Text != "" && txtTenNVL.Text != "")
                 try
@@ -98,7 +98,6 @@ namespace Sukiya.UI
             catch (Exception ex)
             {
                 MessageBox.Show(ex.Message, "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
-
             }
             else
                 MessageBox.Show("Vui lòng nhập đầy đủ thông tin ");
@@ -113,5 +112,7 @@ namespace Sukiya.UI
             txtGia.Text = row.Cells[3].Value.ToString();
             txtSoLuong.Text = row.Cells[4].Value.ToString();
         }
+
+        
     }
 }
