@@ -48,8 +48,8 @@
             this.bar1 = new DevExpress.XtraBars.Bar();
             this.barManager1 = new DevExpress.XtraBars.BarManager(this.components);
             this.bar4 = new DevExpress.XtraBars.Bar();
-            this.barButtonItem1 = new DevExpress.XtraBars.BarButtonItem();
-            this.barButtonItem2 = new DevExpress.XtraBars.BarButtonItem();
+            this.btnThemSua = new DevExpress.XtraBars.BarButtonItem();
+            this.btnXoa = new DevExpress.XtraBars.BarButtonItem();
             this.bar5 = new DevExpress.XtraBars.Bar();
             this.barDockControlTop = new DevExpress.XtraBars.BarDockControl();
             this.barDockControlBottom = new DevExpress.XtraBars.BarDockControl();
@@ -76,12 +76,11 @@
             this.Gia,
             this.SoLuong});
             this.dgvBangKiemHang.Dock = System.Windows.Forms.DockStyle.Right;
-            this.dgvBangKiemHang.Location = new System.Drawing.Point(97, 30);
-            this.dgvBangKiemHang.Margin = new System.Windows.Forms.Padding(4);
+            this.dgvBangKiemHang.Location = new System.Drawing.Point(73, 24);
             this.dgvBangKiemHang.Name = "dgvBangKiemHang";
             this.dgvBangKiemHang.ReadOnly = true;
             this.dgvBangKiemHang.RowHeadersWidth = 51;
-            this.dgvBangKiemHang.Size = new System.Drawing.Size(1116, 638);
+            this.dgvBangKiemHang.Size = new System.Drawing.Size(837, 515);
             this.dgvBangKiemHang.TabIndex = 0;
             this.dgvBangKiemHang.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvBangKiemHang_CellClick);
             // 
@@ -126,10 +125,9 @@
             this.label4.BackColor = System.Drawing.SystemColors.ButtonFace;
             this.label4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.label4.Font = new System.Drawing.Font("Tahoma", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(66, 307);
-            this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label4.Location = new System.Drawing.Point(50, 249);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(150, 36);
+            this.label4.Size = new System.Drawing.Size(119, 29);
             this.label4.TabIndex = 52;
             this.label4.Text = "Số Lượng";
             // 
@@ -137,40 +135,36 @@
             // 
             this.txtGia.BackColor = System.Drawing.SystemColors.Control;
             this.txtGia.Font = new System.Drawing.Font("Tahoma", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtGia.Location = new System.Drawing.Point(253, 248);
-            this.txtGia.Margin = new System.Windows.Forms.Padding(4);
+            this.txtGia.Location = new System.Drawing.Point(190, 202);
             this.txtGia.Name = "txtGia";
-            this.txtGia.Size = new System.Drawing.Size(397, 40);
+            this.txtGia.Size = new System.Drawing.Size(299, 34);
             this.txtGia.TabIndex = 51;
             // 
             // txtSoLuong
             // 
             this.txtSoLuong.BackColor = System.Drawing.SystemColors.Control;
             this.txtSoLuong.Font = new System.Drawing.Font("Tahoma", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtSoLuong.Location = new System.Drawing.Point(253, 307);
-            this.txtSoLuong.Margin = new System.Windows.Forms.Padding(4);
+            this.txtSoLuong.Location = new System.Drawing.Point(190, 249);
             this.txtSoLuong.Name = "txtSoLuong";
-            this.txtSoLuong.Size = new System.Drawing.Size(397, 40);
+            this.txtSoLuong.Size = new System.Drawing.Size(299, 34);
             this.txtSoLuong.TabIndex = 50;
             // 
             // txtDVT
             // 
             this.txtDVT.BackColor = System.Drawing.SystemColors.Control;
             this.txtDVT.Font = new System.Drawing.Font("Tahoma", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtDVT.Location = new System.Drawing.Point(253, 193);
-            this.txtDVT.Margin = new System.Windows.Forms.Padding(4);
+            this.txtDVT.Location = new System.Drawing.Point(190, 157);
             this.txtDVT.Name = "txtDVT";
-            this.txtDVT.Size = new System.Drawing.Size(397, 40);
+            this.txtDVT.Size = new System.Drawing.Size(299, 34);
             this.txtDVT.TabIndex = 49;
             // 
             // txtMaNVL
             // 
             this.txtMaNVL.BackColor = System.Drawing.SystemColors.Control;
             this.txtMaNVL.Font = new System.Drawing.Font("Tahoma", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtMaNVL.Location = new System.Drawing.Point(253, 79);
-            this.txtMaNVL.Margin = new System.Windows.Forms.Padding(4);
+            this.txtMaNVL.Location = new System.Drawing.Point(190, 64);
             this.txtMaNVL.Name = "txtMaNVL";
-            this.txtMaNVL.Size = new System.Drawing.Size(397, 40);
+            this.txtMaNVL.Size = new System.Drawing.Size(299, 34);
             this.txtMaNVL.TabIndex = 48;
             // 
             // label3
@@ -179,10 +173,9 @@
             this.label3.BackColor = System.Drawing.SystemColors.ButtonFace;
             this.label3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.label3.Font = new System.Drawing.Font("Tahoma", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(66, 193);
-            this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label3.Location = new System.Drawing.Point(50, 157);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(74, 36);
+            this.label3.Size = new System.Drawing.Size(59, 29);
             this.label3.TabIndex = 47;
             this.label3.Text = "DVT";
             // 
@@ -192,10 +185,9 @@
             this.label2.BackColor = System.Drawing.SystemColors.ButtonFace;
             this.label2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.label2.Font = new System.Drawing.Font("Tahoma", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(66, 248);
-            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label2.Location = new System.Drawing.Point(50, 202);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(63, 36);
+            this.label2.Size = new System.Drawing.Size(50, 29);
             this.label2.TabIndex = 46;
             this.label2.Text = "Giá";
             // 
@@ -205,10 +197,9 @@
             this.label1.BackColor = System.Drawing.SystemColors.ButtonFace;
             this.label1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.label1.Font = new System.Drawing.Font("Tahoma", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(66, 79);
-            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label1.Location = new System.Drawing.Point(50, 64);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(116, 36);
+            this.label1.Size = new System.Drawing.Size(92, 29);
             this.label1.TabIndex = 45;
             this.label1.Text = "MaNVL";
             // 
@@ -243,8 +234,8 @@
             this.barManager1.DockControls.Add(this.barDockControlRight);
             this.barManager1.Form = this;
             this.barManager1.Items.AddRange(new DevExpress.XtraBars.BarItem[] {
-            this.barButtonItem1,
-            this.barButtonItem2});
+            this.btnThemSua,
+            this.btnXoa});
             this.barManager1.MainMenu = this.bar4;
             this.barManager1.MaxItemId = 2;
             this.barManager1.StatusBar = this.bar5;
@@ -256,29 +247,29 @@
             this.bar4.DockRow = 0;
             this.bar4.DockStyle = DevExpress.XtraBars.BarDockStyle.Top;
             this.bar4.LinksPersistInfo.AddRange(new DevExpress.XtraBars.LinkPersistInfo[] {
-            new DevExpress.XtraBars.LinkPersistInfo(((DevExpress.XtraBars.BarLinkUserDefines)((DevExpress.XtraBars.BarLinkUserDefines.Caption | DevExpress.XtraBars.BarLinkUserDefines.PaintStyle))), this.barButtonItem1, "Thêm/ Sửa", false, true, true, 0, null, DevExpress.XtraBars.BarItemPaintStyle.CaptionGlyph),
-            new DevExpress.XtraBars.LinkPersistInfo(DevExpress.XtraBars.BarLinkUserDefines.PaintStyle, this.barButtonItem2, DevExpress.XtraBars.BarItemPaintStyle.CaptionGlyph)});
+            new DevExpress.XtraBars.LinkPersistInfo(((DevExpress.XtraBars.BarLinkUserDefines)((DevExpress.XtraBars.BarLinkUserDefines.Caption | DevExpress.XtraBars.BarLinkUserDefines.PaintStyle))), this.btnThemSua, "Thêm/ Sửa", false, true, true, 0, null, DevExpress.XtraBars.BarItemPaintStyle.CaptionGlyph),
+            new DevExpress.XtraBars.LinkPersistInfo(DevExpress.XtraBars.BarLinkUserDefines.PaintStyle, this.btnXoa, DevExpress.XtraBars.BarItemPaintStyle.CaptionGlyph)});
             this.bar4.OptionsBar.MultiLine = true;
             this.bar4.OptionsBar.UseWholeRow = true;
             this.bar4.Text = "Main menu";
             // 
-            // barButtonItem1
+            // btnThemSua
             // 
-            this.barButtonItem1.Caption = "Thêm/ Sửa";
-            this.barButtonItem1.Id = 0;
-            this.barButtonItem1.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("barButtonItem1.ImageOptions.Image")));
-            this.barButtonItem1.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("barButtonItem1.ImageOptions.LargeImage")));
-            this.barButtonItem1.Name = "barButtonItem1";
-            this.barButtonItem1.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.barButtonItem1_ItemClick);
+            this.btnThemSua.Caption = "Thêm/ Sửa";
+            this.btnThemSua.Id = 0;
+            this.btnThemSua.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("barButtonItem1.ImageOptions.Image")));
+            this.btnThemSua.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("barButtonItem1.ImageOptions.LargeImage")));
+            this.btnThemSua.Name = "btnThemSua";
+            this.btnThemSua.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.btnThemSua_ItemClick);
             // 
-            // barButtonItem2
+            // btnXoa
             // 
-            this.barButtonItem2.Caption = "Xóa";
-            this.barButtonItem2.Id = 1;
-            this.barButtonItem2.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("barButtonItem2.ImageOptions.Image")));
-            this.barButtonItem2.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("barButtonItem2.ImageOptions.LargeImage")));
-            this.barButtonItem2.Name = "barButtonItem2";
-            this.barButtonItem2.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.barButtonItem2_ItemClick);
+            this.btnXoa.Caption = "Xóa";
+            this.btnXoa.Id = 1;
+            this.btnXoa.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("barButtonItem2.ImageOptions.Image")));
+            this.btnXoa.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("barButtonItem2.ImageOptions.LargeImage")));
+            this.btnXoa.Name = "btnXoa";
+            this.btnXoa.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.btnXoa_ItemClick);
             // 
             // bar5
             // 
@@ -298,44 +289,39 @@
             this.barDockControlTop.Dock = System.Windows.Forms.DockStyle.Top;
             this.barDockControlTop.Location = new System.Drawing.Point(0, 0);
             this.barDockControlTop.Manager = this.barManager1;
-            this.barDockControlTop.Margin = new System.Windows.Forms.Padding(4);
-            this.barDockControlTop.Size = new System.Drawing.Size(1213, 30);
+            this.barDockControlTop.Size = new System.Drawing.Size(910, 24);
             // 
             // barDockControlBottom
             // 
             this.barDockControlBottom.CausesValidation = false;
             this.barDockControlBottom.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.barDockControlBottom.Location = new System.Drawing.Point(0, 668);
+            this.barDockControlBottom.Location = new System.Drawing.Point(0, 539);
             this.barDockControlBottom.Manager = this.barManager1;
-            this.barDockControlBottom.Margin = new System.Windows.Forms.Padding(4);
-            this.barDockControlBottom.Size = new System.Drawing.Size(1213, 20);
+            this.barDockControlBottom.Size = new System.Drawing.Size(910, 20);
             // 
             // barDockControlLeft
             // 
             this.barDockControlLeft.CausesValidation = false;
             this.barDockControlLeft.Dock = System.Windows.Forms.DockStyle.Left;
-            this.barDockControlLeft.Location = new System.Drawing.Point(0, 30);
+            this.barDockControlLeft.Location = new System.Drawing.Point(0, 24);
             this.barDockControlLeft.Manager = this.barManager1;
-            this.barDockControlLeft.Margin = new System.Windows.Forms.Padding(4);
-            this.barDockControlLeft.Size = new System.Drawing.Size(0, 638);
+            this.barDockControlLeft.Size = new System.Drawing.Size(0, 515);
             // 
             // barDockControlRight
             // 
             this.barDockControlRight.CausesValidation = false;
             this.barDockControlRight.Dock = System.Windows.Forms.DockStyle.Right;
-            this.barDockControlRight.Location = new System.Drawing.Point(1213, 30);
+            this.barDockControlRight.Location = new System.Drawing.Point(910, 24);
             this.barDockControlRight.Manager = this.barManager1;
-            this.barDockControlRight.Margin = new System.Windows.Forms.Padding(4);
-            this.barDockControlRight.Size = new System.Drawing.Size(0, 638);
+            this.barDockControlRight.Size = new System.Drawing.Size(0, 515);
             // 
             // txtTenNVL
             // 
             this.txtTenNVL.BackColor = System.Drawing.SystemColors.Control;
             this.txtTenNVL.Font = new System.Drawing.Font("Tahoma", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtTenNVL.Location = new System.Drawing.Point(253, 136);
-            this.txtTenNVL.Margin = new System.Windows.Forms.Padding(4);
+            this.txtTenNVL.Location = new System.Drawing.Point(190, 110);
             this.txtTenNVL.Name = "txtTenNVL";
-            this.txtTenNVL.Size = new System.Drawing.Size(397, 40);
+            this.txtTenNVL.Size = new System.Drawing.Size(299, 34);
             this.txtTenNVL.TabIndex = 60;
             // 
             // label5
@@ -344,25 +330,25 @@
             this.label5.BackColor = System.Drawing.SystemColors.ButtonFace;
             this.label5.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.label5.Font = new System.Drawing.Font("Tahoma", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(66, 136);
-            this.label5.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label5.Location = new System.Drawing.Point(50, 110);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(134, 36);
+            this.label5.Size = new System.Drawing.Size(105, 29);
             this.label5.TabIndex = 59;
             this.label5.Text = "Tên NVL";
             // 
             // pictureBox1
             // 
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(15, 385);
+            this.pictureBox1.Location = new System.Drawing.Point(11, 313);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(691, 322);
+            this.pictureBox1.Size = new System.Drawing.Size(518, 262);
             this.pictureBox1.TabIndex = 65;
             this.pictureBox1.TabStop = false;
             // 
             // uc_BangKiemHang
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.Controls.Add(this.pictureBox1);
@@ -382,9 +368,8 @@
             this.Controls.Add(this.barDockControlBottom);
             this.Controls.Add(this.barDockControlTop);
             this.DoubleBuffered = true;
-            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "uc_BangKiemHang";
-            this.Size = new System.Drawing.Size(1213, 688);
+            this.Size = new System.Drawing.Size(910, 559);
             this.Load += new System.EventHandler(this.uc_BangKiemHang_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgvBangKiemHang)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.barManager1)).EndInit();
@@ -409,8 +394,8 @@
         private DevExpress.XtraBars.Bar bar1;
         private DevExpress.XtraBars.BarManager barManager1;
         private DevExpress.XtraBars.Bar bar4;
-        private DevExpress.XtraBars.BarButtonItem barButtonItem1;
-        private DevExpress.XtraBars.BarButtonItem barButtonItem2;
+        private DevExpress.XtraBars.BarButtonItem btnThemSua;
+        private DevExpress.XtraBars.BarButtonItem btnXoa;
         private DevExpress.XtraBars.Bar bar5;
         private DevExpress.XtraBars.BarDockControl barDockControlTop;
         private DevExpress.XtraBars.BarDockControl barDockControlBottom;

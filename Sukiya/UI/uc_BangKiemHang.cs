@@ -45,7 +45,7 @@ namespace Sukiya.UI
             }
         }
 
-        private void barButtonItem1_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        private void btnThemSua_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
         {
             try
             {
@@ -63,7 +63,7 @@ namespace Sukiya.UI
                 NVL.DVT = int.Parse(txtDVT.Text);
                 NVL.Gia = decimal.Parse(txtGia.Text);
                 NVL.SoLuong = int.Parse(txtSoLuong.Text);
-               
+
 
                 dbContext.SaveChanges();
                 MessageBox.Show("Thêm/ Sửa OK!!");
@@ -75,7 +75,7 @@ namespace Sukiya.UI
             }
         }
 
-        private void barButtonItem2_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        private void btnXoa_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
         {
             try
             {
@@ -93,7 +93,6 @@ namespace Sukiya.UI
             catch (Exception ex)
             {
                 MessageBox.Show(ex.Message, "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
-
             }
         }
 
@@ -106,5 +105,7 @@ namespace Sukiya.UI
             txtGia.Text = row.Cells[3].Value.ToString();
             txtSoLuong.Text = row.Cells[4].Value.ToString();        
         }
+
+        
     }
 }
