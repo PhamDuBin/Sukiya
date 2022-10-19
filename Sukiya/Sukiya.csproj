@@ -242,6 +242,9 @@
     <EmbeddedResource Include="UI\uc_BaoCaoDoanhThu.resx">
       <DependentUpon>uc_BaoCaoDoanhThu.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="UI\uc_GioiThieu.resx">
+      <DependentUpon>uc_GioiThieu.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="UI\uc_LienHe.resx">
       <DependentUpon>uc_LienHe.cs</DependentUpon>
     </EmbeddedResource>

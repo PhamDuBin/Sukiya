@@ -48,10 +48,8 @@ namespace Sukiya.UI
                 dgvMon.Rows[index].Cells[1].Value = item.MaLM;
                 dgvMon.Rows[index].Cells[2].Value = item.TenMon;
                 dgvMon.Rows[index].Cells[3].Value = item.Gia;
-                dgvMon.Rows[index].Cells[4].Value = item.Size;
-                
-            }
-           
+                dgvMon.Rows[index].Cells[4].Value = item.Size;                
+            } 
         }
 
         private void barButtonItem1_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
@@ -73,7 +71,6 @@ namespace Sukiya.UI
                 mon.Gia = decimal.Parse( txtGia.Text);
                 mon.Size = txtKichThuoc.Text;
                 
-
                 dbContext.SaveChanges();
                 MessageBox.Show("Thêm/ Sửa OK!!");
                 BindGrid();
@@ -146,9 +143,7 @@ namespace Sukiya.UI
                 dgvMon.Rows[index].Cells[2].Value = item.TenMon;
                 dgvMon.Rows[index].Cells[3].Value = item.Gia;
                 dgvMon.Rows[index].Cells[4].Value = item.Size;
-
             }
-
         }
 
         private void txtTimKiem_TextChanged(object sender, EventArgs e)

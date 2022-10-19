@@ -67,7 +67,7 @@
             this.lblTieuDe});
             this.fluentDesignFormControl1.Location = new System.Drawing.Point(0, 0);
             this.fluentDesignFormControl1.Manager = this.fluentFormDefaultManager1;
-            this.fluentDesignFormControl1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.fluentDesignFormControl1.Margin = new System.Windows.Forms.Padding(4);
             this.fluentDesignFormControl1.Name = "fluentDesignFormControl1";
             this.fluentDesignFormControl1.Size = new System.Drawing.Size(1359, 39);
             this.fluentDesignFormControl1.TabIndex = 2;
@@ -95,7 +95,7 @@
             this.TrangHienThiConterner.Appearance.Options.UseBackColor = true;
             this.TrangHienThiConterner.Dock = System.Windows.Forms.DockStyle.Fill;
             this.TrangHienThiConterner.Location = new System.Drawing.Point(303, 39);
-            this.TrangHienThiConterner.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.TrangHienThiConterner.Margin = new System.Windows.Forms.Padding(4);
             this.TrangHienThiConterner.Name = "TrangHienThiConterner";
             this.TrangHienThiConterner.Size = new System.Drawing.Size(1056, 688);
             this.TrangHienThiConterner.TabIndex = 0;
@@ -114,7 +114,7 @@
             this.ceGioiThieu,
             this.ceDangXuat});
             this.accordionControl1.Location = new System.Drawing.Point(0, 39);
-            this.accordionControl1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.accordionControl1.Margin = new System.Windows.Forms.Padding(4);
             this.accordionControl1.Name = "accordionControl1";
             this.accordionControl1.ScrollBarMode = DevExpress.XtraBars.Navigation.ScrollBarMode.Touch;
             this.accordionControl1.Size = new System.Drawing.Size(303, 688);
@@ -280,7 +280,7 @@
             this.Controls.Add(this.fluentDesignFormControl1);
             this.FluentDesignFormControl = this.fluentDesignFormControl1;
             this.IconOptions.Image = ((System.Drawing.Image)(resources.GetObject("FormMain.IconOptions.Image")));
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "FormMain";
             this.NavigationControl = this.accordionControl1;
             this.Text = "Quản Lí Nhà Hàng Sukiya";
