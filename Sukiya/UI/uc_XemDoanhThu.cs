@@ -76,7 +76,7 @@ namespace Sukiya.UI
         {
             DataGridViewRow row = this.dgvHoaDon.Rows[e.RowIndex];
             txtMaHD.Text = row.Cells[0].Value.ToString();
-            txtMaNV.Text = row.Cells[1].Value.ToString();
+            txtMaNV1.Text = row.Cells[1].Value.ToString();
             txtMaPGm.Text = row.Cells[2].Value.ToString();
             txtNgayLap.Text = row.Cells[3].Value.ToString();
             txtTongTien.Text = row.Cells[4].Value.ToString();
