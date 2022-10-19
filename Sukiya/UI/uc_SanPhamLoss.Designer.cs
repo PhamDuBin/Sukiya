@@ -79,12 +79,11 @@
             this.SoLuongLoss,
             this.LiDo});
             this.dgvSanPhamLOSS.Dock = System.Windows.Forms.DockStyle.Right;
-            this.dgvSanPhamLOSS.Location = new System.Drawing.Point(154, 30);
-            this.dgvSanPhamLOSS.Margin = new System.Windows.Forms.Padding(4);
+            this.dgvSanPhamLOSS.Location = new System.Drawing.Point(116, 24);
             this.dgvSanPhamLOSS.Name = "dgvSanPhamLOSS";
             this.dgvSanPhamLOSS.ReadOnly = true;
             this.dgvSanPhamLOSS.RowHeadersWidth = 51;
-            this.dgvSanPhamLOSS.Size = new System.Drawing.Size(983, 595);
+            this.dgvSanPhamLOSS.Size = new System.Drawing.Size(737, 480);
             this.dgvSanPhamLOSS.TabIndex = 0;
             this.dgvSanPhamLOSS.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvSanPhamLOSS_CellClick);
             // 
@@ -171,97 +170,87 @@
             this.barDockControlTop.Dock = System.Windows.Forms.DockStyle.Top;
             this.barDockControlTop.Location = new System.Drawing.Point(0, 0);
             this.barDockControlTop.Manager = this.barManager1;
-            this.barDockControlTop.Margin = new System.Windows.Forms.Padding(4);
-            this.barDockControlTop.Size = new System.Drawing.Size(1137, 30);
+            this.barDockControlTop.Size = new System.Drawing.Size(853, 24);
             // 
             // barDockControlBottom
             // 
             this.barDockControlBottom.CausesValidation = false;
             this.barDockControlBottom.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.barDockControlBottom.Location = new System.Drawing.Point(0, 625);
+            this.barDockControlBottom.Location = new System.Drawing.Point(0, 504);
             this.barDockControlBottom.Manager = this.barManager1;
-            this.barDockControlBottom.Margin = new System.Windows.Forms.Padding(4);
-            this.barDockControlBottom.Size = new System.Drawing.Size(1137, 20);
+            this.barDockControlBottom.Size = new System.Drawing.Size(853, 20);
             // 
             // barDockControlLeft
             // 
             this.barDockControlLeft.CausesValidation = false;
             this.barDockControlLeft.Dock = System.Windows.Forms.DockStyle.Left;
-            this.barDockControlLeft.Location = new System.Drawing.Point(0, 30);
+            this.barDockControlLeft.Location = new System.Drawing.Point(0, 24);
             this.barDockControlLeft.Manager = this.barManager1;
-            this.barDockControlLeft.Margin = new System.Windows.Forms.Padding(4);
-            this.barDockControlLeft.Size = new System.Drawing.Size(0, 595);
+            this.barDockControlLeft.Size = new System.Drawing.Size(0, 480);
             // 
             // barDockControlRight
             // 
             this.barDockControlRight.CausesValidation = false;
             this.barDockControlRight.Dock = System.Windows.Forms.DockStyle.Right;
-            this.barDockControlRight.Location = new System.Drawing.Point(1137, 30);
+            this.barDockControlRight.Location = new System.Drawing.Point(853, 24);
             this.barDockControlRight.Manager = this.barManager1;
-            this.barDockControlRight.Margin = new System.Windows.Forms.Padding(4);
-            this.barDockControlRight.Size = new System.Drawing.Size(0, 595);
+            this.barDockControlRight.Size = new System.Drawing.Size(0, 480);
             // 
             // txtLuongLoss
             // 
             this.txtLuongLoss.BackColor = System.Drawing.SystemColors.Control;
             this.txtLuongLoss.Font = new System.Drawing.Font("Tahoma", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtLuongLoss.Location = new System.Drawing.Point(252, 179);
-            this.txtLuongLoss.Margin = new System.Windows.Forms.Padding(4);
+            this.txtLuongLoss.Location = new System.Drawing.Point(189, 145);
             this.txtLuongLoss.Name = "txtLuongLoss";
-            this.txtLuongLoss.Size = new System.Drawing.Size(417, 40);
+            this.txtLuongLoss.Size = new System.Drawing.Size(314, 34);
             this.txtLuongLoss.TabIndex = 25;
             // 
             // txtLiDo
             // 
             this.txtLiDo.BackColor = System.Drawing.SystemColors.Control;
             this.txtLiDo.Font = new System.Drawing.Font("Tahoma", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtLiDo.Location = new System.Drawing.Point(252, 239);
-            this.txtLiDo.Margin = new System.Windows.Forms.Padding(4);
+            this.txtLiDo.Location = new System.Drawing.Point(189, 194);
             this.txtLiDo.Name = "txtLiDo";
-            this.txtLiDo.Size = new System.Drawing.Size(417, 40);
+            this.txtLiDo.Size = new System.Drawing.Size(314, 34);
             this.txtLiDo.TabIndex = 24;
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(26, 327);
-            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label2.Font = new System.Drawing.Font("Lexend Deca", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.label2.Location = new System.Drawing.Point(20, 266);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(246, 24);
+            this.label2.Size = new System.Drawing.Size(219, 30);
             this.label2.TabIndex = 35;
             this.label2.Text = "1: Do quá trình shikomi";
             // 
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(26, 385);
-            this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label3.Font = new System.Drawing.Font("Lexend Deca", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.label3.Location = new System.Drawing.Point(20, 313);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(111, 24);
+            this.label3.Size = new System.Drawing.Size(100, 30);
             this.label3.TabIndex = 36;
             this.label3.Text = "3: Làm dư";
             // 
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(26, 358);
-            this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label4.Font = new System.Drawing.Font("Lexend Deca", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.label4.Location = new System.Drawing.Point(20, 291);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(262, 24);
+            this.label4.Size = new System.Drawing.Size(234, 30);
             this.label4.TabIndex = 37;
             this.label4.Text = "2: Do quá trình vận hành";
             // 
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(26, 412);
-            this.label6.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label6.Font = new System.Drawing.Font("Lexend Deca", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.label6.Location = new System.Drawing.Point(20, 335);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(228, 24);
+            this.label6.Size = new System.Drawing.Size(209, 30);
             this.label6.TabIndex = 38;
             this.label6.Text = "4: Khách hàng đổi trả";
             // 
@@ -272,22 +261,20 @@
             // label7
             // 
             this.label7.AutoSize = true;
-            this.label7.Font = new System.Drawing.Font("Tahoma", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.Location = new System.Drawing.Point(24, 241);
-            this.label7.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label7.Font = new System.Drawing.Font("Lexend Deca", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.label7.Location = new System.Drawing.Point(18, 196);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(85, 34);
+            this.label7.Size = new System.Drawing.Size(60, 30);
             this.label7.TabIndex = 46;
             this.label7.Text = "Lí Do";
             // 
             // label9
             // 
             this.label9.AutoSize = true;
-            this.label9.Font = new System.Drawing.Font("Tahoma", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label9.Location = new System.Drawing.Point(24, 181);
-            this.label9.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label9.Font = new System.Drawing.Font("Lexend Deca", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.label9.Location = new System.Drawing.Point(18, 147);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(187, 34);
+            this.label9.Size = new System.Drawing.Size(125, 30);
             this.label9.TabIndex = 44;
             this.label9.Text = "Lượng LOSS";
             // 
@@ -302,22 +289,20 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Tahoma", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(24, 120);
-            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label1.Font = new System.Drawing.Font("Lexend Deca", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.label1.Location = new System.Drawing.Point(18, 98);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(132, 34);
+            this.label1.Size = new System.Drawing.Size(89, 30);
             this.label1.TabIndex = 54;
             this.label1.Text = "Tên NVL";
             // 
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Tahoma", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(24, 57);
-            this.label5.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label5.Font = new System.Drawing.Font("Lexend Deca", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.label5.Location = new System.Drawing.Point(18, 46);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(122, 34);
+            this.label5.Size = new System.Drawing.Size(86, 30);
             this.label5.TabIndex = 53;
             this.label5.Text = "Mã NVL";
             // 
@@ -325,34 +310,33 @@
             // 
             this.txtMaNVL.BackColor = System.Drawing.SystemColors.Control;
             this.txtMaNVL.Font = new System.Drawing.Font("Tahoma", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtMaNVL.Location = new System.Drawing.Point(252, 54);
-            this.txtMaNVL.Margin = new System.Windows.Forms.Padding(4);
+            this.txtMaNVL.Location = new System.Drawing.Point(189, 44);
             this.txtMaNVL.Name = "txtMaNVL";
-            this.txtMaNVL.Size = new System.Drawing.Size(417, 40);
+            this.txtMaNVL.Size = new System.Drawing.Size(314, 34);
             this.txtMaNVL.TabIndex = 52;
             // 
             // txtTenNVL
             // 
             this.txtTenNVL.BackColor = System.Drawing.SystemColors.Control;
             this.txtTenNVL.Font = new System.Drawing.Font("Tahoma", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtTenNVL.Location = new System.Drawing.Point(252, 117);
-            this.txtTenNVL.Margin = new System.Windows.Forms.Padding(4);
+            this.txtTenNVL.Location = new System.Drawing.Point(189, 95);
             this.txtTenNVL.Name = "txtTenNVL";
-            this.txtTenNVL.Size = new System.Drawing.Size(417, 40);
+            this.txtTenNVL.Size = new System.Drawing.Size(314, 34);
             this.txtTenNVL.TabIndex = 51;
             // 
             // pictureBox1
             // 
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(75, 510);
+            this.pictureBox1.Location = new System.Drawing.Point(56, 414);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(680, 306);
+            this.pictureBox1.Size = new System.Drawing.Size(510, 249);
             this.pictureBox1.TabIndex = 59;
             this.pictureBox1.TabStop = false;
             // 
             // uc_SanPhamLoss
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.label1);
@@ -372,9 +356,8 @@
             this.Controls.Add(this.barDockControlRight);
             this.Controls.Add(this.barDockControlBottom);
             this.Controls.Add(this.barDockControlTop);
-            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "uc_SanPhamLoss";
-            this.Size = new System.Drawing.Size(1137, 645);
+            this.Size = new System.Drawing.Size(853, 524);
             this.Load += new System.EventHandler(this.uc_SanPhamLoss_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgvSanPhamLOSS)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.barManager1)).EndInit();
