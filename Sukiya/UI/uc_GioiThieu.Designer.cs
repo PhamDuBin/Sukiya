@@ -29,36 +29,40 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(uc_GioiThieu));
-            this.imageSlider1 = new DevExpress.XtraEditors.Controls.ImageSlider();
-            ((System.ComponentModel.ISupportInitialize)(this.imageSlider1)).BeginInit();
+            this.imgSlider = new DevExpress.XtraEditors.Controls.ImageSlider();
+            ((System.ComponentModel.ISupportInitialize)(this.imgSlider)).BeginInit();
             this.SuspendLayout();
             // 
-            // imageSlider1
+            // imgSlider
             // 
-            this.imageSlider1.AnimationTime = 10;
-            this.imageSlider1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("imageSlider1.BackgroundImage")));
-            this.imageSlider1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.imageSlider1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.imageSlider1.Location = new System.Drawing.Point(0, 0);
-            this.imageSlider1.Name = "imageSlider1";
-            this.imageSlider1.Size = new System.Drawing.Size(1073, 679);
-            this.imageSlider1.TabIndex = 0;
-            this.imageSlider1.Text = "imageSlider1";
+            this.imgSlider.AnimationTime = 10;
+            this.imgSlider.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.imgSlider.CurrentImageIndex = 0;
+            this.imgSlider.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.imgSlider.Images.Add(((System.Drawing.Image)(resources.GetObject("imgSlider.Images"))));
+            this.imgSlider.Images.Add(((System.Drawing.Image)(resources.GetObject("imgSlider.Images1"))));
+            this.imgSlider.Images.Add(((System.Drawing.Image)(resources.GetObject("imgSlider.Images2"))));
+            this.imgSlider.Images.Add(((System.Drawing.Image)(resources.GetObject("imgSlider.Images3"))));
+            this.imgSlider.Location = new System.Drawing.Point(0, 0);
+            this.imgSlider.Name = "imgSlider";
+            this.imgSlider.Size = new System.Drawing.Size(1073, 679);
+            this.imgSlider.TabIndex = 0;
+            this.imgSlider.Text = "imageSlider1";
             // 
             // uc_GioiThieu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.Controls.Add(this.imageSlider1);
+            this.Controls.Add(this.imgSlider);
             this.Name = "uc_GioiThieu";
             this.Size = new System.Drawing.Size(1073, 679);
-            ((System.ComponentModel.ISupportInitialize)(this.imageSlider1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.imgSlider)).EndInit();
             this.ResumeLayout(false);
 
         }
 
         #endregion
 
-        private DevExpress.XtraEditors.Controls.ImageSlider imageSlider1;
+        private DevExpress.XtraEditors.Controls.ImageSlider imgSlider;
     }
 }
