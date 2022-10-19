@@ -53,18 +53,18 @@ namespace Sukiya.UI
                 {
                     string MaNVL = txtMaNVL.Text.Trim();
 
-                NguyenVatLieu NVL = dbContext.NguyenVatLieu.Where
-                    (x => x.MaNVL.ToString() == txtMaNVL.Text).FirstOrDefault();
-                if (NVL == null)
-                {
-                    NVL = new NguyenVatLieu();
-                    NVL.MaNVL = int.Parse(txtMaNVL.Text);
-                    dbContext.NguyenVatLieu.Add(NVL);
-                }
-                NVL.TenNVL = txtTenNVL.Text;
-                NVL.DVT = int.Parse(txtDVT.Text);
-                NVL.Gia = decimal.Parse(txtGia.Text);
-                NVL.SoLuong = int.Parse(txtSoLuong.Text);
+                    NguyenVatLieu NVL = dbContext.NguyenVatLieu.Where
+                        (x => x.MaNVL.ToString() == txtMaNVL.Text).FirstOrDefault();
+                    if (NVL == null)
+                    {
+                        NVL = new NguyenVatLieu();
+                        NVL.MaNVL = int.Parse(txtMaNVL.Text);
+                        dbContext.NguyenVatLieu.Add(NVL);
+                    }
+                    NVL.TenNVL = txtTenNVL.Text;
+                    NVL.DVT = int.Parse(txtDVT.Text);
+                    NVL.Gia = decimal.Parse(txtGia.Text);
+                    NVL.SoLuong = int.Parse(txtSoLuong.Text);
 
 
                     dbContext.SaveChanges();
@@ -84,21 +84,21 @@ namespace Sukiya.UI
             if (txtDVT.Text != "" && txtGia.Text != "" && txtMaNVL.Text != "" && txtSoLuong.Text != "" && txtTenNVL.Text != "")
                 try
                 {
-                string MaNVL = txtMaNVL.Text.Trim();
-                NguyenVatLieu NVL = dbContext.NguyenVatLieu.Where
-                    (x => x.MaNVL.ToString() == txtMaNVL.Text).FirstOrDefault();
-                if (NVL != null)
-                {
-                    dbContext.NguyenVatLieu.Remove(NVL);
+                    string MaNVL = txtMaNVL.Text.Trim();
+                    NguyenVatLieu NVL = dbContext.NguyenVatLieu.Where
+                        (x => x.MaNVL.ToString() == txtMaNVL.Text).FirstOrDefault();
+                    if (NVL != null)
+                    {
+                        dbContext.NguyenVatLieu.Remove(NVL);
+                    }
+                    dbContext.SaveChanges();
+                    MessageBox.Show("Xóa OK!!");
+                    BindGrid();
                 }
-                dbContext.SaveChanges();
-                MessageBox.Show("Xóa OK!!");
-                BindGrid();
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show(ex.Message, "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
-            }
+                catch (Exception ex)
+                {
+                    MessageBox.Show(ex.Message, "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
             else
                 MessageBox.Show("Vui lòng nhập đầy đủ thông tin ");
         }
