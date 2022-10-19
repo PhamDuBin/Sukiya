@@ -137,6 +137,5 @@ namespace Sukiya.UI
             }
             BindGrid(listSeach);
         }
-
     }
 }

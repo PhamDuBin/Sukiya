@@ -77,10 +77,10 @@
             // 
             this.pictureBox1.ErrorImage = null;
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(25, 430);
+            this.pictureBox1.Location = new System.Drawing.Point(36, 481);
             this.pictureBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(728, 336);
+            this.pictureBox1.Size = new System.Drawing.Size(613, 257);
             this.pictureBox1.TabIndex = 70;
             this.pictureBox1.TabStop = false;
             // 
@@ -88,7 +88,7 @@
             // 
             this.label8.AutoSize = true;
             this.label8.Font = new System.Drawing.Font("Lexend Deca", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label8.Location = new System.Drawing.Point(35, 362);
+            this.label8.Location = new System.Drawing.Point(29, 409);
             this.label8.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(120, 37);
@@ -124,11 +124,11 @@
             // txtTongTien
             // 
             this.txtTongTien.BackColor = System.Drawing.SystemColors.Control;
-            this.txtTongTien.Font = new System.Drawing.Font("Tahoma", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtTongTien.Location = new System.Drawing.Point(363, 334);
-            this.txtTongTien.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.txtTongTien.Font = new System.Drawing.Font("Lexend Deca", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtTongTien.Location = new System.Drawing.Point(284, 340);
+            this.txtTongTien.Margin = new System.Windows.Forms.Padding(5);
             this.txtTongTien.Name = "txtTongTien";
-            this.txtTongTien.Size = new System.Drawing.Size(364, 35);
+            this.txtTongTien.Size = new System.Drawing.Size(342, 41);
             this.txtTongTien.TabIndex = 64;
             // 
             // label5
@@ -149,7 +149,7 @@
             this.txtMaNV.BackColor = System.Drawing.SystemColors.Control;
             this.txtMaNV.Font = new System.Drawing.Font("Tahoma", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtMaNV.Location = new System.Drawing.Point(363, -153);
-            this.txtMaNV.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.txtMaNV.Margin = new System.Windows.Forms.Padding(5);
             this.txtMaNV.Name = "txtMaNV";
             this.txtMaNV.Size = new System.Drawing.Size(364, 35);
             this.txtMaNV.TabIndex = 62;
@@ -209,31 +209,31 @@
             // txtMaHD
             // 
             this.txtMaHD.BackColor = System.Drawing.SystemColors.Control;
-            this.txtMaHD.Font = new System.Drawing.Font("Tahoma", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtMaHD.Location = new System.Drawing.Point(363, 37);
-            this.txtMaHD.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.txtMaHD.Font = new System.Drawing.Font("Lexend Deca", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtMaHD.Location = new System.Drawing.Point(284, 43);
+            this.txtMaHD.Margin = new System.Windows.Forms.Padding(5);
             this.txtMaHD.Name = "txtMaHD";
-            this.txtMaHD.Size = new System.Drawing.Size(364, 35);
+            this.txtMaHD.Size = new System.Drawing.Size(342, 41);
             this.txtMaHD.TabIndex = 57;
             // 
             // txtMaPGM
             // 
             this.txtMaPGM.BackColor = System.Drawing.SystemColors.Control;
-            this.txtMaPGM.Font = new System.Drawing.Font("Tahoma", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtMaPGM.Location = new System.Drawing.Point(363, 180);
-            this.txtMaPGM.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.txtMaPGM.Font = new System.Drawing.Font("Lexend Deca", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtMaPGM.Location = new System.Drawing.Point(284, 186);
+            this.txtMaPGM.Margin = new System.Windows.Forms.Padding(5);
             this.txtMaPGM.Name = "txtMaPGM";
-            this.txtMaPGM.Size = new System.Drawing.Size(484, 35);
+            this.txtMaPGM.Size = new System.Drawing.Size(342, 41);
             this.txtMaPGM.TabIndex = 56;
             // 
             // txtNgayLap
             // 
             this.txtNgayLap.BackColor = System.Drawing.SystemColors.Control;
-            this.txtNgayLap.Font = new System.Drawing.Font("Tahoma", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtNgayLap.Location = new System.Drawing.Point(363, 255);
-            this.txtNgayLap.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.txtNgayLap.Font = new System.Drawing.Font("Lexend Deca", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtNgayLap.Location = new System.Drawing.Point(284, 261);
+            this.txtNgayLap.Margin = new System.Windows.Forms.Padding(5);
             this.txtNgayLap.Name = "txtNgayLap";
-            this.txtNgayLap.Size = new System.Drawing.Size(364, 35);
+            this.txtNgayLap.Size = new System.Drawing.Size(342, 41);
             this.txtNgayLap.TabIndex = 55;
             // 
             // txtMaChucVu
@@ -241,7 +241,7 @@
             this.txtMaChucVu.BackColor = System.Drawing.SystemColors.Control;
             this.txtMaChucVu.Font = new System.Drawing.Font("Tahoma", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtMaChucVu.Location = new System.Drawing.Point(363, -74);
-            this.txtMaChucVu.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.txtMaChucVu.Margin = new System.Windows.Forms.Padding(5);
             this.txtMaChucVu.Name = "txtMaChucVu";
             this.txtMaChucVu.Size = new System.Drawing.Size(364, 35);
             this.txtMaChucVu.TabIndex = 54;
@@ -310,7 +310,7 @@
             this.barDockControlTop.Dock = System.Windows.Forms.DockStyle.Top;
             this.barDockControlTop.Location = new System.Drawing.Point(0, 0);
             this.barDockControlTop.Manager = this.barManager1;
-            this.barDockControlTop.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.barDockControlTop.Margin = new System.Windows.Forms.Padding(5);
             this.barDockControlTop.Size = new System.Drawing.Size(1604, 30);
             // 
             // barDockControlBottom
@@ -319,7 +319,7 @@
             this.barDockControlBottom.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.barDockControlBottom.Location = new System.Drawing.Point(0, 776);
             this.barDockControlBottom.Manager = this.barManager1;
-            this.barDockControlBottom.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.barDockControlBottom.Margin = new System.Windows.Forms.Padding(5);
             this.barDockControlBottom.Size = new System.Drawing.Size(1604, 20);
             // 
             // barDockControlLeft
@@ -328,7 +328,7 @@
             this.barDockControlLeft.Dock = System.Windows.Forms.DockStyle.Left;
             this.barDockControlLeft.Location = new System.Drawing.Point(0, 30);
             this.barDockControlLeft.Manager = this.barManager1;
-            this.barDockControlLeft.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.barDockControlLeft.Margin = new System.Windows.Forms.Padding(5);
             this.barDockControlLeft.Size = new System.Drawing.Size(0, 746);
             // 
             // barDockControlRight
@@ -337,16 +337,16 @@
             this.barDockControlRight.Dock = System.Windows.Forms.DockStyle.Right;
             this.barDockControlRight.Location = new System.Drawing.Point(1604, 30);
             this.barDockControlRight.Manager = this.barManager1;
-            this.barDockControlRight.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.barDockControlRight.Margin = new System.Windows.Forms.Padding(5);
             this.barDockControlRight.Size = new System.Drawing.Size(0, 746);
             // 
             // txtTimKiem
             // 
-            this.txtTimKiem.Font = new System.Drawing.Font("Tahoma", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtTimKiem.Location = new System.Drawing.Point(363, 436);
-            this.txtTimKiem.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.txtTimKiem.Font = new System.Drawing.Font("Lexend Deca", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtTimKiem.Location = new System.Drawing.Point(284, 411);
+            this.txtTimKiem.Margin = new System.Windows.Forms.Padding(5);
             this.txtTimKiem.Name = "txtTimKiem";
-            this.txtTimKiem.Size = new System.Drawing.Size(364, 35);
+            this.txtTimKiem.Size = new System.Drawing.Size(342, 41);
             this.txtTimKiem.TabIndex = 68;
             this.txtTimKiem.TextChanged += new System.EventHandler(this.txtTimKiem_TextChanged);
             // 
@@ -363,12 +363,12 @@
             this.NgayLap,
             this.TongTien});
             this.dgvHoaDon.Dock = System.Windows.Forms.DockStyle.Right;
-            this.dgvHoaDon.Location = new System.Drawing.Point(516, 30);
-            this.dgvHoaDon.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.dgvHoaDon.Location = new System.Drawing.Point(816, 30);
+            this.dgvHoaDon.Margin = new System.Windows.Forms.Padding(5);
             this.dgvHoaDon.Name = "dgvHoaDon";
             this.dgvHoaDon.ReadOnly = true;
             this.dgvHoaDon.RowHeadersWidth = 51;
-            this.dgvHoaDon.Size = new System.Drawing.Size(1088, 746);
+            this.dgvHoaDon.Size = new System.Drawing.Size(788, 746);
             this.dgvHoaDon.TabIndex = 53;
             this.dgvHoaDon.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvHoaDon_CellClick);
             // 
@@ -410,11 +410,11 @@
             // txtMaNV1
             // 
             this.txtMaNV1.BackColor = System.Drawing.SystemColors.Control;
-            this.txtMaNV1.Font = new System.Drawing.Font("Tahoma", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtMaNV1.Location = new System.Drawing.Point(363, 113);
-            this.txtMaNV1.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.txtMaNV1.Font = new System.Drawing.Font("Lexend Deca", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtMaNV1.Location = new System.Drawing.Point(284, 119);
+            this.txtMaNV1.Margin = new System.Windows.Forms.Padding(5);
             this.txtMaNV1.Name = "txtMaNV1";
-            this.txtMaNV1.Size = new System.Drawing.Size(364, 35);
+            this.txtMaNV1.Size = new System.Drawing.Size(342, 41);
             this.txtMaNV1.TabIndex = 75;
             // 
             // uc_XemDoanhThu
@@ -443,7 +443,7 @@
             this.Controls.Add(this.barDockControlRight);
             this.Controls.Add(this.barDockControlBottom);
             this.Controls.Add(this.barDockControlTop);
-            this.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.Margin = new System.Windows.Forms.Padding(5);
             this.Name = "uc_XemDoanhThu";
             this.Size = new System.Drawing.Size(1604, 796);
             this.Load += new System.EventHandler(this.uc_XemDoanhThu_Load);

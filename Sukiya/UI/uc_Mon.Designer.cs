@@ -196,13 +196,13 @@
             this.Gia,
             this.KichThuoc});
             this.dgvMon.Dock = System.Windows.Forms.DockStyle.Right;
-            this.dgvMon.Location = new System.Drawing.Point(413, 30);
+            this.dgvMon.Location = new System.Drawing.Point(784, 30);
             this.dgvMon.Margin = new System.Windows.Forms.Padding(4);
             this.dgvMon.Name = "dgvMon";
             this.dgvMon.ReadOnly = true;
             this.dgvMon.RowHeadersWidth = 51;
             this.dgvMon.RowTemplate.DefaultCellStyle.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.dgvMon.Size = new System.Drawing.Size(1115, 745);
+            this.dgvMon.Size = new System.Drawing.Size(744, 745);
             this.dgvMon.TabIndex = 17;
             this.dgvMon.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvMon_CellClick);
             // 
@@ -245,7 +245,7 @@
             // 
             this.label1.AutoSize = true;
             this.label1.BackColor = System.Drawing.SystemColors.ButtonFace;
-            this.label1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.label1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.label1.Font = new System.Drawing.Font("Lexend Deca", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.Location = new System.Drawing.Point(29, 79);
             this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
@@ -258,7 +258,7 @@
             // 
             this.label2.AutoSize = true;
             this.label2.BackColor = System.Drawing.SystemColors.ButtonFace;
-            this.label2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.label2.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.label2.Font = new System.Drawing.Font("Lexend Deca", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.Location = new System.Drawing.Point(29, 250);
             this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
@@ -271,7 +271,7 @@
             // 
             this.label3.AutoSize = true;
             this.label3.BackColor = System.Drawing.SystemColors.ButtonFace;
-            this.label3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.label3.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.label3.Font = new System.Drawing.Font("Lexend Deca", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.Location = new System.Drawing.Point(29, 197);
             this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
@@ -283,48 +283,48 @@
             // txtMaMon
             // 
             this.txtMaMon.BackColor = System.Drawing.SystemColors.Control;
-            this.txtMaMon.Font = new System.Drawing.Font("Tahoma", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtMaMon.Location = new System.Drawing.Point(245, 76);
+            this.txtMaMon.Font = new System.Drawing.Font("Lexend Deca", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtMaMon.Location = new System.Drawing.Point(245, 83);
             this.txtMaMon.Margin = new System.Windows.Forms.Padding(4);
             this.txtMaMon.Name = "txtMaMon";
-            this.txtMaMon.Size = new System.Drawing.Size(367, 35);
+            this.txtMaMon.Size = new System.Drawing.Size(367, 41);
             this.txtMaMon.TabIndex = 26;
             // 
             // txtTenMon
             // 
             this.txtTenMon.BackColor = System.Drawing.SystemColors.Control;
-            this.txtTenMon.Font = new System.Drawing.Font("Tahoma", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtTenMon.Font = new System.Drawing.Font("Lexend Deca", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtTenMon.Location = new System.Drawing.Point(245, 192);
             this.txtTenMon.Margin = new System.Windows.Forms.Padding(4);
             this.txtTenMon.Name = "txtTenMon";
-            this.txtTenMon.Size = new System.Drawing.Size(367, 35);
+            this.txtTenMon.Size = new System.Drawing.Size(367, 41);
             this.txtTenMon.TabIndex = 27;
             // 
             // txtKichThuoc
             // 
             this.txtKichThuoc.BackColor = System.Drawing.SystemColors.Control;
-            this.txtKichThuoc.Font = new System.Drawing.Font("Tahoma", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtKichThuoc.Font = new System.Drawing.Font("Lexend Deca", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtKichThuoc.Location = new System.Drawing.Point(245, 300);
             this.txtKichThuoc.Margin = new System.Windows.Forms.Padding(4);
             this.txtKichThuoc.Name = "txtKichThuoc";
-            this.txtKichThuoc.Size = new System.Drawing.Size(367, 35);
+            this.txtKichThuoc.Size = new System.Drawing.Size(367, 41);
             this.txtKichThuoc.TabIndex = 28;
             // 
             // txtGia
             // 
             this.txtGia.BackColor = System.Drawing.SystemColors.Control;
-            this.txtGia.Font = new System.Drawing.Font("Tahoma", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtGia.Font = new System.Drawing.Font("Lexend Deca", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtGia.Location = new System.Drawing.Point(245, 245);
             this.txtGia.Margin = new System.Windows.Forms.Padding(4);
             this.txtGia.Name = "txtGia";
-            this.txtGia.Size = new System.Drawing.Size(367, 35);
+            this.txtGia.Size = new System.Drawing.Size(367, 41);
             this.txtGia.TabIndex = 29;
             // 
             // label4
             // 
             this.label4.AutoSize = true;
             this.label4.BackColor = System.Drawing.SystemColors.ButtonFace;
-            this.label4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.label4.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.label4.Font = new System.Drawing.Font("Lexend Deca", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.Location = new System.Drawing.Point(29, 305);
             this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
@@ -336,18 +336,18 @@
             // txtMaLoaiMon
             // 
             this.txtMaLoaiMon.BackColor = System.Drawing.SystemColors.Control;
-            this.txtMaLoaiMon.Font = new System.Drawing.Font("Tahoma", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtMaLoaiMon.Location = new System.Drawing.Point(245, 132);
+            this.txtMaLoaiMon.Font = new System.Drawing.Font("Lexend Deca", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtMaLoaiMon.Location = new System.Drawing.Point(245, 139);
             this.txtMaLoaiMon.Margin = new System.Windows.Forms.Padding(4);
             this.txtMaLoaiMon.Name = "txtMaLoaiMon";
-            this.txtMaLoaiMon.Size = new System.Drawing.Size(367, 35);
+            this.txtMaLoaiMon.Size = new System.Drawing.Size(367, 41);
             this.txtMaLoaiMon.TabIndex = 37;
             // 
             // label5
             // 
             this.label5.AutoSize = true;
             this.label5.BackColor = System.Drawing.SystemColors.ButtonFace;
-            this.label5.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.label5.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.label5.Font = new System.Drawing.Font("Lexend Deca", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.Location = new System.Drawing.Point(29, 137);
             this.label5.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
@@ -358,11 +358,11 @@
             // 
             // txtTimKiem
             // 
-            this.txtTimKiem.Font = new System.Drawing.Font("Tahoma", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtTimKiem.Font = new System.Drawing.Font("Lexend Deca", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtTimKiem.Location = new System.Drawing.Point(237, 382);
             this.txtTimKiem.Margin = new System.Windows.Forms.Padding(4);
             this.txtTimKiem.Name = "txtTimKiem";
-            this.txtTimKiem.Size = new System.Drawing.Size(376, 35);
+            this.txtTimKiem.Size = new System.Drawing.Size(376, 41);
             this.txtTimKiem.TabIndex = 44;
             this.txtTimKiem.TextChanged += new System.EventHandler(this.txtTimKiem_TextChanged);
             // 
@@ -380,10 +380,10 @@
             // pictureBox1
             // 
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(-11, 436);
+            this.pictureBox1.Location = new System.Drawing.Point(59, 437);
             this.pictureBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(660, 379);
+            this.pictureBox1.Size = new System.Drawing.Size(634, 379);
             this.pictureBox1.TabIndex = 51;
             this.pictureBox1.TabStop = false;
             // 

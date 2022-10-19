@@ -133,31 +133,35 @@
             this.barDockControlTop.Dock = System.Windows.Forms.DockStyle.Top;
             this.barDockControlTop.Location = new System.Drawing.Point(0, 0);
             this.barDockControlTop.Manager = this.barManager1;
-            this.barDockControlTop.Size = new System.Drawing.Size(1138, 24);
+            this.barDockControlTop.Margin = new System.Windows.Forms.Padding(4);
+            this.barDockControlTop.Size = new System.Drawing.Size(1517, 30);
             // 
             // barDockControlBottom
             // 
             this.barDockControlBottom.CausesValidation = false;
             this.barDockControlBottom.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.barDockControlBottom.Location = new System.Drawing.Point(0, 615);
+            this.barDockControlBottom.Location = new System.Drawing.Point(0, 762);
             this.barDockControlBottom.Manager = this.barManager1;
-            this.barDockControlBottom.Size = new System.Drawing.Size(1138, 20);
+            this.barDockControlBottom.Margin = new System.Windows.Forms.Padding(4);
+            this.barDockControlBottom.Size = new System.Drawing.Size(1517, 20);
             // 
             // barDockControlLeft
             // 
             this.barDockControlLeft.CausesValidation = false;
             this.barDockControlLeft.Dock = System.Windows.Forms.DockStyle.Left;
-            this.barDockControlLeft.Location = new System.Drawing.Point(0, 24);
+            this.barDockControlLeft.Location = new System.Drawing.Point(0, 30);
             this.barDockControlLeft.Manager = this.barManager1;
-            this.barDockControlLeft.Size = new System.Drawing.Size(0, 591);
+            this.barDockControlLeft.Margin = new System.Windows.Forms.Padding(4);
+            this.barDockControlLeft.Size = new System.Drawing.Size(0, 732);
             // 
             // barDockControlRight
             // 
             this.barDockControlRight.CausesValidation = false;
             this.barDockControlRight.Dock = System.Windows.Forms.DockStyle.Right;
-            this.barDockControlRight.Location = new System.Drawing.Point(1138, 24);
+            this.barDockControlRight.Location = new System.Drawing.Point(1517, 30);
             this.barDockControlRight.Manager = this.barManager1;
-            this.barDockControlRight.Size = new System.Drawing.Size(0, 591);
+            this.barDockControlRight.Margin = new System.Windows.Forms.Padding(4);
+            this.barDockControlRight.Size = new System.Drawing.Size(0, 732);
             // 
             // dgvNhanVien
             // 
@@ -174,11 +178,12 @@
             this.DiaChi,
             this.SoCCCD});
             this.dgvNhanVien.Dock = System.Windows.Forms.DockStyle.Right;
-            this.dgvNhanVien.Location = new System.Drawing.Point(322, 24);
+            this.dgvNhanVien.Location = new System.Drawing.Point(764, 30);
+            this.dgvNhanVien.Margin = new System.Windows.Forms.Padding(4);
             this.dgvNhanVien.Name = "dgvNhanVien";
             this.dgvNhanVien.ReadOnly = true;
             this.dgvNhanVien.RowHeadersWidth = 51;
-            this.dgvNhanVien.Size = new System.Drawing.Size(816, 591);
+            this.dgvNhanVien.Size = new System.Drawing.Size(753, 732);
             this.dgvNhanVien.TabIndex = 4;
             this.dgvNhanVien.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvNhanVien_CellClick);
             // 
@@ -234,37 +239,41 @@
             // txtMaChucVu
             // 
             this.txtMaChucVu.BackColor = System.Drawing.SystemColors.Control;
-            this.txtMaChucVu.Font = new System.Drawing.Font("Tahoma", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtMaChucVu.Location = new System.Drawing.Point(204, 93);
+            this.txtMaChucVu.Font = new System.Drawing.Font("Lexend Deca", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtMaChucVu.Location = new System.Drawing.Point(272, 107);
+            this.txtMaChucVu.Margin = new System.Windows.Forms.Padding(4);
             this.txtMaChucVu.Name = "txtMaChucVu";
-            this.txtMaChucVu.Size = new System.Drawing.Size(274, 30);
+            this.txtMaChucVu.Size = new System.Drawing.Size(364, 41);
             this.txtMaChucVu.TabIndex = 9;
             // 
             // txtDiaChi
             // 
             this.txtDiaChi.BackColor = System.Drawing.SystemColors.Control;
-            this.txtDiaChi.Font = new System.Drawing.Font("Tahoma", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtDiaChi.Location = new System.Drawing.Point(204, 290);
+            this.txtDiaChi.Font = new System.Drawing.Font("Lexend Deca", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtDiaChi.Location = new System.Drawing.Point(272, 333);
+            this.txtDiaChi.Margin = new System.Windows.Forms.Padding(4);
             this.txtDiaChi.Name = "txtDiaChi";
-            this.txtDiaChi.Size = new System.Drawing.Size(274, 30);
+            this.txtDiaChi.Size = new System.Drawing.Size(364, 41);
             this.txtDiaChi.TabIndex = 10;
             // 
             // txtSDT
             // 
             this.txtSDT.BackColor = System.Drawing.SystemColors.Control;
-            this.txtSDT.Font = new System.Drawing.Font("Tahoma", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtSDT.Location = new System.Drawing.Point(204, 241);
+            this.txtSDT.Font = new System.Drawing.Font("Lexend Deca", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtSDT.Location = new System.Drawing.Point(272, 273);
+            this.txtSDT.Margin = new System.Windows.Forms.Padding(4);
             this.txtSDT.Name = "txtSDT";
-            this.txtSDT.Size = new System.Drawing.Size(274, 30);
+            this.txtSDT.Size = new System.Drawing.Size(364, 41);
             this.txtSDT.TabIndex = 11;
             // 
             // txtHoTen
             // 
             this.txtHoTen.BackColor = System.Drawing.SystemColors.Control;
-            this.txtHoTen.Font = new System.Drawing.Font("Tahoma", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtHoTen.Location = new System.Drawing.Point(204, 146);
+            this.txtHoTen.Font = new System.Drawing.Font("Lexend Deca", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtHoTen.Location = new System.Drawing.Point(272, 160);
+            this.txtHoTen.Margin = new System.Windows.Forms.Padding(4);
             this.txtHoTen.Name = "txtHoTen";
-            this.txtHoTen.Size = new System.Drawing.Size(274, 30);
+            this.txtHoTen.Size = new System.Drawing.Size(364, 41);
             this.txtHoTen.TabIndex = 12;
             // 
             // label1
@@ -273,9 +282,10 @@
             this.label1.BackColor = System.Drawing.SystemColors.Control;
             this.label1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.label1.Font = new System.Drawing.Font("Lexend Deca", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.label1.Location = new System.Drawing.Point(30, 98);
+            this.label1.Location = new System.Drawing.Point(35, 108);
+            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(123, 32);
+            this.label1.Size = new System.Drawing.Size(158, 40);
             this.label1.TabIndex = 13;
             this.label1.Text = "Mã Chức Vụ";
             // 
@@ -285,9 +295,10 @@
             this.label2.BackColor = System.Drawing.SystemColors.Control;
             this.label2.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.label2.Font = new System.Drawing.Font("Lexend Deca", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.label2.Location = new System.Drawing.Point(30, 294);
+            this.label2.Location = new System.Drawing.Point(35, 329);
+            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(80, 32);
+            this.label2.Size = new System.Drawing.Size(102, 40);
             this.label2.TabIndex = 14;
             this.label2.Text = "Địa Chỉ";
             // 
@@ -297,9 +308,10 @@
             this.label3.BackColor = System.Drawing.SystemColors.Control;
             this.label3.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.label3.Font = new System.Drawing.Font("Lexend Deca", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.label3.Location = new System.Drawing.Point(30, 245);
+            this.label3.Location = new System.Drawing.Point(35, 273);
+            this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(141, 32);
+            this.label3.Size = new System.Drawing.Size(181, 40);
             this.label3.TabIndex = 15;
             this.label3.Text = "Số Điện Thoại";
             // 
@@ -309,31 +321,34 @@
             this.label4.BackColor = System.Drawing.SystemColors.Control;
             this.label4.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.label4.Font = new System.Drawing.Font("Lexend Deca", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.label4.Location = new System.Drawing.Point(30, 149);
+            this.label4.Location = new System.Drawing.Point(37, 160);
+            this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(77, 32);
+            this.label4.Size = new System.Drawing.Size(99, 40);
             this.label4.TabIndex = 16;
             this.label4.Text = "Họ Tên";
             // 
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.BackColor = System.Drawing.SystemColors.Control;
+            this.label5.BackColor = System.Drawing.SystemColors.ButtonFace;
             this.label5.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.label5.Font = new System.Drawing.Font("Lexend Deca", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.label5.Location = new System.Drawing.Point(28, 45);
+            this.label5.Location = new System.Drawing.Point(35, 54);
+            this.label5.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(143, 32);
+            this.label5.Size = new System.Drawing.Size(183, 40);
             this.label5.TabIndex = 22;
             this.label5.Text = "Mã Nhân Viên";
             // 
             // txtMaNV
             // 
             this.txtMaNV.BackColor = System.Drawing.SystemColors.Control;
-            this.txtMaNV.Font = new System.Drawing.Font("Tahoma", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtMaNV.Location = new System.Drawing.Point(204, 41);
+            this.txtMaNV.Font = new System.Drawing.Font("Lexend Deca", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtMaNV.Location = new System.Drawing.Point(272, 53);
+            this.txtMaNV.Margin = new System.Windows.Forms.Padding(4);
             this.txtMaNV.Name = "txtMaNV";
-            this.txtMaNV.Size = new System.Drawing.Size(274, 30);
+            this.txtMaNV.Size = new System.Drawing.Size(364, 41);
             this.txtMaNV.TabIndex = 21;
             // 
             // label6
@@ -342,19 +357,21 @@
             this.label6.BackColor = System.Drawing.SystemColors.Control;
             this.label6.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.label6.Font = new System.Drawing.Font("Lexend Deca", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.label6.Location = new System.Drawing.Point(30, 346);
+            this.label6.Location = new System.Drawing.Point(35, 390);
+            this.label6.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(97, 32);
+            this.label6.Size = new System.Drawing.Size(122, 40);
             this.label6.TabIndex = 24;
             this.label6.Text = "Số CCCD";
             // 
             // txtSoCCCD
             // 
             this.txtSoCCCD.BackColor = System.Drawing.SystemColors.Control;
-            this.txtSoCCCD.Font = new System.Drawing.Font("Tahoma", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtSoCCCD.Location = new System.Drawing.Point(204, 342);
+            this.txtSoCCCD.Font = new System.Drawing.Font("Lexend Deca", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtSoCCCD.Location = new System.Drawing.Point(272, 390);
+            this.txtSoCCCD.Margin = new System.Windows.Forms.Padding(4);
             this.txtSoCCCD.Name = "txtSoCCCD";
-            this.txtSoCCCD.Size = new System.Drawing.Size(274, 30);
+            this.txtSoCCCD.Size = new System.Drawing.Size(364, 41);
             this.txtSoCCCD.TabIndex = 23;
             // 
             // label7
@@ -363,54 +380,59 @@
             this.label7.BackColor = System.Drawing.SystemColors.Control;
             this.label7.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.label7.Font = new System.Drawing.Font("Lexend Deca", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.label7.Location = new System.Drawing.Point(31, 197);
+            this.label7.Location = new System.Drawing.Point(37, 218);
+            this.label7.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(95, 32);
+            this.label7.Size = new System.Drawing.Size(121, 40);
             this.label7.TabIndex = 26;
             this.label7.Text = "Giới Tính";
             // 
             // txtGioiTinh
             // 
             this.txtGioiTinh.BackColor = System.Drawing.SystemColors.Control;
-            this.txtGioiTinh.Font = new System.Drawing.Font("Tahoma", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtGioiTinh.Location = new System.Drawing.Point(204, 193);
+            this.txtGioiTinh.Font = new System.Drawing.Font("Lexend Deca", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtGioiTinh.Location = new System.Drawing.Point(272, 218);
+            this.txtGioiTinh.Margin = new System.Windows.Forms.Padding(4);
             this.txtGioiTinh.Name = "txtGioiTinh";
-            this.txtGioiTinh.Size = new System.Drawing.Size(274, 30);
+            this.txtGioiTinh.Size = new System.Drawing.Size(364, 41);
             this.txtGioiTinh.TabIndex = 25;
             // 
             // label8
             // 
             this.label8.AutoSize = true;
             this.label8.Font = new System.Drawing.Font("Lexend Deca", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.label8.Location = new System.Drawing.Point(26, 416);
+            this.label8.Location = new System.Drawing.Point(32, 466);
+            this.label8.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(98, 30);
+            this.label8.Size = new System.Drawing.Size(127, 38);
             this.label8.TabIndex = 47;
             this.label8.Text = "Tìm Kiếm";
             // 
             // txtTimKiem
             // 
-            this.txtTimKiem.Font = new System.Drawing.Font("Tahoma", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtTimKiem.Location = new System.Drawing.Point(204, 410);
+            this.txtTimKiem.Font = new System.Drawing.Font("Lexend Deca", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtTimKiem.Location = new System.Drawing.Point(272, 463);
+            this.txtTimKiem.Margin = new System.Windows.Forms.Padding(4);
             this.txtTimKiem.Name = "txtTimKiem";
-            this.txtTimKiem.Size = new System.Drawing.Size(274, 30);
+            this.txtTimKiem.Size = new System.Drawing.Size(364, 41);
             this.txtTimKiem.TabIndex = 46;
             this.txtTimKiem.TextChanged += new System.EventHandler(this.txtTimKiem_TextChanged_1);
             // 
             // pictureBox1
             // 
+            this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.pictureBox1.ErrorImage = null;
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(-1, 452);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pictureBox1.Location = new System.Drawing.Point(51, 498);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(546, 273);
+            this.pictureBox1.Size = new System.Drawing.Size(632, 258);
             this.pictureBox1.TabIndex = 52;
             this.pictureBox1.TabStop = false;
             // 
             // uc_NhanVien
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
@@ -438,8 +460,9 @@
             this.Controls.Add(this.barDockControlTop);
             this.Cursor = System.Windows.Forms.Cursors.Arrow;
             this.DoubleBuffered = true;
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "uc_NhanVien";
-            this.Size = new System.Drawing.Size(1138, 635);
+            this.Size = new System.Drawing.Size(1517, 782);
             this.Load += new System.EventHandler(this.uc_NhanVien_Load);
             ((System.ComponentModel.ISupportInitialize)(this.barManager1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgvNhanVien)).EndInit();
