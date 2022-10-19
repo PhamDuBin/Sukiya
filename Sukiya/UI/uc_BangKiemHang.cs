@@ -112,7 +112,5 @@ namespace Sukiya.UI
             txtGia.Text = row.Cells[3].Value.ToString();
             txtSoLuong.Text = row.Cells[4].Value.ToString();
         }
-
-        
     }
 }
