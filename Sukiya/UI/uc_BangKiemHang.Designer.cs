@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(uc_BangKiemHang));
             this.dgvBangKiemHang = new System.Windows.Forms.DataGridView();
             this.MaNVL = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -69,14 +69,14 @@
             this.dgvBangKiemHang.AllowUserToAddRows = false;
             this.dgvBangKiemHang.AllowUserToDeleteRows = false;
             this.dgvBangKiemHang.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
-            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Lexend Deca", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            dataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgvBangKiemHang.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
+            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            dataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgvBangKiemHang.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
             this.dgvBangKiemHang.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvBangKiemHang.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.MaNVL,
@@ -85,13 +85,12 @@
             this.Gia,
             this.SoLuong});
             this.dgvBangKiemHang.Dock = System.Windows.Forms.DockStyle.Right;
-            this.dgvBangKiemHang.Location = new System.Drawing.Point(422, 30);
-            this.dgvBangKiemHang.Margin = new System.Windows.Forms.Padding(4);
+            this.dgvBangKiemHang.Location = new System.Drawing.Point(317, 24);
             this.dgvBangKiemHang.Name = "dgvBangKiemHang";
             this.dgvBangKiemHang.ReadOnly = true;
             this.dgvBangKiemHang.RowHeadersWidth = 51;
-            this.dgvBangKiemHang.RowTemplate.DefaultCellStyle.Font = new System.Drawing.Font("Lexend Deca", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.dgvBangKiemHang.Size = new System.Drawing.Size(791, 638);
+            this.dgvBangKiemHang.RowTemplate.DefaultCellStyle.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.dgvBangKiemHang.Size = new System.Drawing.Size(593, 515);
             this.dgvBangKiemHang.TabIndex = 0;
             this.dgvBangKiemHang.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvBangKiemHang_CellClick);
             // 
@@ -135,52 +134,47 @@
             this.label4.AutoSize = true;
             this.label4.BackColor = System.Drawing.SystemColors.ButtonFace;
             this.label4.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.label4.Font = new System.Drawing.Font("Lexend Deca", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.label4.Location = new System.Drawing.Point(45, 306);
-            this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.label4.Location = new System.Drawing.Point(34, 249);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(124, 39);
+            this.label4.Size = new System.Drawing.Size(94, 26);
             this.label4.TabIndex = 52;
             this.label4.Text = "Số Lượng";
             // 
             // txtGia
             // 
             this.txtGia.BackColor = System.Drawing.SystemColors.Control;
-            this.txtGia.Font = new System.Drawing.Font("Lexend Deca", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtGia.Location = new System.Drawing.Point(213, 249);
-            this.txtGia.Margin = new System.Windows.Forms.Padding(4);
+            this.txtGia.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtGia.Location = new System.Drawing.Point(160, 202);
             this.txtGia.Name = "txtGia";
-            this.txtGia.Size = new System.Drawing.Size(397, 41);
+            this.txtGia.Size = new System.Drawing.Size(299, 32);
             this.txtGia.TabIndex = 51;
             // 
             // txtSoLuong
             // 
             this.txtSoLuong.BackColor = System.Drawing.SystemColors.Control;
-            this.txtSoLuong.Font = new System.Drawing.Font("Lexend Deca", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtSoLuong.Location = new System.Drawing.Point(213, 306);
-            this.txtSoLuong.Margin = new System.Windows.Forms.Padding(4);
+            this.txtSoLuong.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtSoLuong.Location = new System.Drawing.Point(160, 249);
             this.txtSoLuong.Name = "txtSoLuong";
-            this.txtSoLuong.Size = new System.Drawing.Size(397, 41);
+            this.txtSoLuong.Size = new System.Drawing.Size(299, 32);
             this.txtSoLuong.TabIndex = 50;
             // 
             // txtDVT
             // 
             this.txtDVT.BackColor = System.Drawing.SystemColors.Control;
-            this.txtDVT.Font = new System.Drawing.Font("Lexend Deca", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtDVT.Location = new System.Drawing.Point(213, 193);
-            this.txtDVT.Margin = new System.Windows.Forms.Padding(4);
+            this.txtDVT.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtDVT.Location = new System.Drawing.Point(160, 157);
             this.txtDVT.Name = "txtDVT";
-            this.txtDVT.Size = new System.Drawing.Size(397, 41);
+            this.txtDVT.Size = new System.Drawing.Size(299, 32);
             this.txtDVT.TabIndex = 49;
             // 
             // txtMaNVL
             // 
             this.txtMaNVL.BackColor = System.Drawing.SystemColors.Control;
-            this.txtMaNVL.Font = new System.Drawing.Font("Lexend Deca", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtMaNVL.Location = new System.Drawing.Point(213, 79);
-            this.txtMaNVL.Margin = new System.Windows.Forms.Padding(4);
+            this.txtMaNVL.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtMaNVL.Location = new System.Drawing.Point(160, 64);
             this.txtMaNVL.Name = "txtMaNVL";
-            this.txtMaNVL.Size = new System.Drawing.Size(397, 41);
+            this.txtMaNVL.Size = new System.Drawing.Size(299, 32);
             this.txtMaNVL.TabIndex = 48;
             // 
             // label3
@@ -188,11 +182,10 @@
             this.label3.AutoSize = true;
             this.label3.BackColor = System.Drawing.SystemColors.ButtonFace;
             this.label3.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.label3.Font = new System.Drawing.Font("Lexend Deca", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.label3.Location = new System.Drawing.Point(45, 193);
-            this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.label3.Location = new System.Drawing.Point(34, 157);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(64, 39);
+            this.label3.Size = new System.Drawing.Size(50, 26);
             this.label3.TabIndex = 47;
             this.label3.Text = "DVT";
             // 
@@ -201,11 +194,10 @@
             this.label2.AutoSize = true;
             this.label2.BackColor = System.Drawing.SystemColors.ButtonFace;
             this.label2.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.label2.Font = new System.Drawing.Font("Lexend Deca", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.label2.Location = new System.Drawing.Point(45, 249);
-            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.label2.Location = new System.Drawing.Point(34, 202);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(58, 39);
+            this.label2.Size = new System.Drawing.Size(40, 26);
             this.label2.TabIndex = 46;
             this.label2.Text = "Giá";
             // 
@@ -214,11 +206,10 @@
             this.label1.AutoSize = true;
             this.label1.BackColor = System.Drawing.SystemColors.ButtonFace;
             this.label1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.label1.Font = new System.Drawing.Font("Lexend Deca", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.label1.Location = new System.Drawing.Point(45, 79);
-            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.label1.Location = new System.Drawing.Point(34, 64);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(108, 39);
+            this.label1.Size = new System.Drawing.Size(80, 26);
             this.label1.TabIndex = 45;
             this.label1.Text = "Mã NVL";
             // 
@@ -306,44 +297,39 @@
             this.barDockControlTop.Dock = System.Windows.Forms.DockStyle.Top;
             this.barDockControlTop.Location = new System.Drawing.Point(0, 0);
             this.barDockControlTop.Manager = this.barManager1;
-            this.barDockControlTop.Margin = new System.Windows.Forms.Padding(4);
-            this.barDockControlTop.Size = new System.Drawing.Size(1213, 30);
+            this.barDockControlTop.Size = new System.Drawing.Size(910, 24);
             // 
             // barDockControlBottom
             // 
             this.barDockControlBottom.CausesValidation = false;
             this.barDockControlBottom.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.barDockControlBottom.Location = new System.Drawing.Point(0, 668);
+            this.barDockControlBottom.Location = new System.Drawing.Point(0, 539);
             this.barDockControlBottom.Manager = this.barManager1;
-            this.barDockControlBottom.Margin = new System.Windows.Forms.Padding(4);
-            this.barDockControlBottom.Size = new System.Drawing.Size(1213, 20);
+            this.barDockControlBottom.Size = new System.Drawing.Size(910, 20);
             // 
             // barDockControlLeft
             // 
             this.barDockControlLeft.CausesValidation = false;
             this.barDockControlLeft.Dock = System.Windows.Forms.DockStyle.Left;
-            this.barDockControlLeft.Location = new System.Drawing.Point(0, 30);
+            this.barDockControlLeft.Location = new System.Drawing.Point(0, 24);
             this.barDockControlLeft.Manager = this.barManager1;
-            this.barDockControlLeft.Margin = new System.Windows.Forms.Padding(4);
-            this.barDockControlLeft.Size = new System.Drawing.Size(0, 638);
+            this.barDockControlLeft.Size = new System.Drawing.Size(0, 515);
             // 
             // barDockControlRight
             // 
             this.barDockControlRight.CausesValidation = false;
             this.barDockControlRight.Dock = System.Windows.Forms.DockStyle.Right;
-            this.barDockControlRight.Location = new System.Drawing.Point(1213, 30);
+            this.barDockControlRight.Location = new System.Drawing.Point(910, 24);
             this.barDockControlRight.Manager = this.barManager1;
-            this.barDockControlRight.Margin = new System.Windows.Forms.Padding(4);
-            this.barDockControlRight.Size = new System.Drawing.Size(0, 638);
+            this.barDockControlRight.Size = new System.Drawing.Size(0, 515);
             // 
             // txtTenNVL
             // 
             this.txtTenNVL.BackColor = System.Drawing.SystemColors.Control;
-            this.txtTenNVL.Font = new System.Drawing.Font("Lexend Deca", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtTenNVL.Location = new System.Drawing.Point(213, 135);
-            this.txtTenNVL.Margin = new System.Windows.Forms.Padding(4);
+            this.txtTenNVL.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtTenNVL.Location = new System.Drawing.Point(160, 110);
             this.txtTenNVL.Name = "txtTenNVL";
-            this.txtTenNVL.Size = new System.Drawing.Size(397, 41);
+            this.txtTenNVL.Size = new System.Drawing.Size(299, 32);
             this.txtTenNVL.TabIndex = 60;
             // 
             // label5
@@ -351,27 +337,26 @@
             this.label5.AutoSize = true;
             this.label5.BackColor = System.Drawing.SystemColors.ButtonFace;
             this.label5.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.label5.Font = new System.Drawing.Font("Lexend Deca", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.label5.Location = new System.Drawing.Point(45, 135);
-            this.label5.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.label5.Location = new System.Drawing.Point(34, 110);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(111, 39);
+            this.label5.Size = new System.Drawing.Size(88, 26);
             this.label5.TabIndex = 59;
             this.label5.Text = "Tên NVL";
             // 
             // pictureBox1
             // 
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(45, 365);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.pictureBox1.Location = new System.Drawing.Point(34, 297);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(569, 268);
+            this.pictureBox1.Size = new System.Drawing.Size(427, 218);
             this.pictureBox1.TabIndex = 65;
             this.pictureBox1.TabStop = false;
             // 
             // uc_BangKiemHang
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.Controls.Add(this.pictureBox1);
@@ -391,9 +376,8 @@
             this.Controls.Add(this.barDockControlBottom);
             this.Controls.Add(this.barDockControlTop);
             this.DoubleBuffered = true;
-            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "uc_BangKiemHang";
-            this.Size = new System.Drawing.Size(1213, 688);
+            this.Size = new System.Drawing.Size(910, 559);
             this.Load += new System.EventHandler(this.uc_BangKiemHang_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgvBangKiemHang)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.barManager1)).EndInit();
