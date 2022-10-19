@@ -47,12 +47,12 @@ namespace Sukiya.UI
             } 
         }
 
-        private void barButtonItem1_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        private void btnThemSua_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
         {
             try
             {
                 string MaMon = txtMaMon.Text.Trim();
-                
+
                 Mon mon = dbContext.Mon.Where
                     (x => x.MaMon.ToString() == txtMaMon.Text).FirstOrDefault();
                 if (mon == null)
@@ -63,9 +63,9 @@ namespace Sukiya.UI
                 }
                 mon.MaLM = int.Parse(txtMaLoaiMon.Text);
                 mon.TenMon = txtTenMon.Text;
-                mon.Gia = decimal.Parse( txtGia.Text);
+                mon.Gia = decimal.Parse(txtGia.Text);
                 mon.Size = txtKichThuoc.Text;
-                
+
                 dbContext.SaveChanges();
                 MessageBox.Show("Thêm/ Sửa OK!!");
                 BindGrid();
@@ -76,7 +76,7 @@ namespace Sukiya.UI
             }
         }
 
-        private void barButtonItem3_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        private void btnXoa_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
         {
             try
             {
@@ -97,7 +97,6 @@ namespace Sukiya.UI
 
             }
         }
-
         private void dgvMon_CellClick(object sender, DataGridViewCellEventArgs e)
         {
             DataGridViewRow row = this.dgvMon.Rows[e.RowIndex];
@@ -122,7 +121,6 @@ namespace Sukiya.UI
                 dgvMon.Rows[index].Cells[4].Value = item.Size;
             }
         }
-
         private void txtTimKiem_TextChanged(object sender, EventArgs e)
         {
             string search = txtTimKiem.Text.Trim();
