@@ -88,7 +88,7 @@
             // 
             this.label8.AutoSize = true;
             this.label8.Font = new System.Drawing.Font("Tahoma", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label8.Location = new System.Drawing.Point(35, 362);
+            this.label8.Location = new System.Drawing.Point(25, 378);
             this.label8.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(121, 28);
@@ -101,7 +101,7 @@
             this.label7.BackColor = System.Drawing.SystemColors.Control;
             this.label7.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.label7.Font = new System.Drawing.Font("Tahoma", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.Location = new System.Drawing.Point(27, 92);
+            this.label7.Location = new System.Drawing.Point(25, 111);
             this.label7.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(177, 30);
@@ -114,7 +114,7 @@
             this.label6.BackColor = System.Drawing.SystemColors.Control;
             this.label6.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.label6.Font = new System.Drawing.Font("Tahoma", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(25, 276);
+            this.label6.Location = new System.Drawing.Point(25, 294);
             this.label6.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(128, 30);
@@ -125,8 +125,8 @@
             // 
             this.txtTongTien.BackColor = System.Drawing.SystemColors.Control;
             this.txtTongTien.Font = new System.Drawing.Font("Tahoma", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtTongTien.Location = new System.Drawing.Point(272, 271);
-            this.txtTongTien.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtTongTien.Location = new System.Drawing.Point(308, 291);
+            this.txtTongTien.Margin = new System.Windows.Forms.Padding(4);
             this.txtTongTien.Name = "txtTongTien";
             this.txtTongTien.Size = new System.Drawing.Size(364, 35);
             this.txtTongTien.TabIndex = 64;
@@ -149,7 +149,7 @@
             this.txtMaNV.BackColor = System.Drawing.SystemColors.Control;
             this.txtMaNV.Font = new System.Drawing.Font("Tahoma", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtMaNV.Location = new System.Drawing.Point(272, -124);
-            this.txtMaNV.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtMaNV.Margin = new System.Windows.Forms.Padding(4);
             this.txtMaNV.Name = "txtMaNV";
             this.txtMaNV.Size = new System.Drawing.Size(364, 35);
             this.txtMaNV.TabIndex = 62;
@@ -160,7 +160,7 @@
             this.label4.BackColor = System.Drawing.SystemColors.Control;
             this.label4.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.label4.Font = new System.Drawing.Font("Tahoma", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(25, 33);
+            this.label4.Location = new System.Drawing.Point(25, 49);
             this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(156, 30);
@@ -173,7 +173,7 @@
             this.label3.BackColor = System.Drawing.SystemColors.Control;
             this.label3.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.label3.Font = new System.Drawing.Font("Tahoma", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(25, 151);
+            this.label3.Location = new System.Drawing.Point(25, 179);
             this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(224, 30);
@@ -186,7 +186,7 @@
             this.label2.BackColor = System.Drawing.SystemColors.Control;
             this.label2.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.label2.Font = new System.Drawing.Font("Tahoma", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(25, 212);
+            this.label2.Location = new System.Drawing.Point(25, 237);
             this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(121, 30);
@@ -210,8 +210,8 @@
             // 
             this.txtMaHD.BackColor = System.Drawing.SystemColors.Control;
             this.txtMaHD.Font = new System.Drawing.Font("Tahoma", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtMaHD.Location = new System.Drawing.Point(272, 30);
-            this.txtMaHD.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtMaHD.Location = new System.Drawing.Point(308, 48);
+            this.txtMaHD.Margin = new System.Windows.Forms.Padding(4);
             this.txtMaHD.Name = "txtMaHD";
             this.txtMaHD.Size = new System.Drawing.Size(364, 35);
             this.txtMaHD.TabIndex = 57;
@@ -220,8 +220,8 @@
             // 
             this.txtMaPGm.BackColor = System.Drawing.SystemColors.Control;
             this.txtMaPGm.Font = new System.Drawing.Font("Tahoma", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtMaPGm.Location = new System.Drawing.Point(272, 146);
-            this.txtMaPGm.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtMaPGm.Location = new System.Drawing.Point(308, 176);
+            this.txtMaPGm.Margin = new System.Windows.Forms.Padding(4);
             this.txtMaPGm.Name = "txtMaPGm";
             this.txtMaPGm.Size = new System.Drawing.Size(364, 35);
             this.txtMaPGm.TabIndex = 56;
@@ -230,8 +230,8 @@
             // 
             this.txtNgayLap.BackColor = System.Drawing.SystemColors.Control;
             this.txtNgayLap.Font = new System.Drawing.Font("Tahoma", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtNgayLap.Location = new System.Drawing.Point(272, 207);
-            this.txtNgayLap.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtNgayLap.Location = new System.Drawing.Point(308, 234);
+            this.txtNgayLap.Margin = new System.Windows.Forms.Padding(4);
             this.txtNgayLap.Name = "txtNgayLap";
             this.txtNgayLap.Size = new System.Drawing.Size(364, 35);
             this.txtNgayLap.TabIndex = 55;
@@ -241,7 +241,7 @@
             this.txtMaChucVu.BackColor = System.Drawing.SystemColors.Control;
             this.txtMaChucVu.Font = new System.Drawing.Font("Tahoma", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtMaChucVu.Location = new System.Drawing.Point(272, -60);
-            this.txtMaChucVu.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtMaChucVu.Margin = new System.Windows.Forms.Padding(4);
             this.txtMaChucVu.Name = "txtMaChucVu";
             this.txtMaChucVu.Size = new System.Drawing.Size(364, 35);
             this.txtMaChucVu.TabIndex = 54;
@@ -310,7 +310,7 @@
             this.barDockControlTop.Dock = System.Windows.Forms.DockStyle.Top;
             this.barDockControlTop.Location = new System.Drawing.Point(0, 0);
             this.barDockControlTop.Manager = this.barManager1;
-            this.barDockControlTop.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.barDockControlTop.Margin = new System.Windows.Forms.Padding(4);
             this.barDockControlTop.Size = new System.Drawing.Size(1604, 30);
             // 
             // barDockControlBottom
@@ -319,7 +319,7 @@
             this.barDockControlBottom.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.barDockControlBottom.Location = new System.Drawing.Point(0, 776);
             this.barDockControlBottom.Manager = this.barManager1;
-            this.barDockControlBottom.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.barDockControlBottom.Margin = new System.Windows.Forms.Padding(4);
             this.barDockControlBottom.Size = new System.Drawing.Size(1604, 20);
             // 
             // barDockControlLeft
@@ -328,7 +328,7 @@
             this.barDockControlLeft.Dock = System.Windows.Forms.DockStyle.Left;
             this.barDockControlLeft.Location = new System.Drawing.Point(0, 30);
             this.barDockControlLeft.Manager = this.barManager1;
-            this.barDockControlLeft.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.barDockControlLeft.Margin = new System.Windows.Forms.Padding(4);
             this.barDockControlLeft.Size = new System.Drawing.Size(0, 746);
             // 
             // barDockControlRight
@@ -337,14 +337,14 @@
             this.barDockControlRight.Dock = System.Windows.Forms.DockStyle.Right;
             this.barDockControlRight.Location = new System.Drawing.Point(1604, 30);
             this.barDockControlRight.Manager = this.barManager1;
-            this.barDockControlRight.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.barDockControlRight.Margin = new System.Windows.Forms.Padding(4);
             this.barDockControlRight.Size = new System.Drawing.Size(0, 746);
             // 
             // txtTimKiem
             // 
             this.txtTimKiem.Font = new System.Drawing.Font("Tahoma", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtTimKiem.Location = new System.Drawing.Point(272, 354);
-            this.txtTimKiem.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtTimKiem.Location = new System.Drawing.Point(308, 378);
+            this.txtTimKiem.Margin = new System.Windows.Forms.Padding(4);
             this.txtTimKiem.Name = "txtTimKiem";
             this.txtTimKiem.Size = new System.Drawing.Size(364, 35);
             this.txtTimKiem.TabIndex = 68;
@@ -364,7 +364,7 @@
             this.TongTien});
             this.dgvHoaDon.Dock = System.Windows.Forms.DockStyle.Right;
             this.dgvHoaDon.Location = new System.Drawing.Point(516, 30);
-            this.dgvHoaDon.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.dgvHoaDon.Margin = new System.Windows.Forms.Padding(4);
             this.dgvHoaDon.Name = "dgvHoaDon";
             this.dgvHoaDon.ReadOnly = true;
             this.dgvHoaDon.RowHeadersWidth = 51;
@@ -411,8 +411,8 @@
             // 
             this.txtMaNV1.BackColor = System.Drawing.SystemColors.Control;
             this.txtMaNV1.Font = new System.Drawing.Font("Tahoma", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtMaNV1.Location = new System.Drawing.Point(272, 92);
-            this.txtMaNV1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtMaNV1.Location = new System.Drawing.Point(308, 108);
+            this.txtMaNV1.Margin = new System.Windows.Forms.Padding(4);
             this.txtMaNV1.Name = "txtMaNV1";
             this.txtMaNV1.Size = new System.Drawing.Size(364, 35);
             this.txtMaNV1.TabIndex = 75;
@@ -443,7 +443,7 @@
             this.Controls.Add(this.barDockControlRight);
             this.Controls.Add(this.barDockControlBottom);
             this.Controls.Add(this.barDockControlTop);
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "uc_XemDoanhThu";
             this.Size = new System.Drawing.Size(1604, 796);
             this.Load += new System.EventHandler(this.uc_XemDoanhThu_Load);
