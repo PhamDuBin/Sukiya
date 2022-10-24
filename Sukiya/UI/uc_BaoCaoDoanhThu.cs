@@ -1,6 +1,9 @@
 ﻿using DevExpress.Utils.Extensions;
 using DevExpress.XtraCharts;
+using DevExpress.XtraPrinting.Preview;
+using DevExpress.XtraReports.UI;
 using Sukiya.Models;
+using Sukiya.Reports;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -16,6 +19,7 @@ namespace Sukiya.UI
 {
     public partial class uc_BaoCaoDoanhThu : UserControl
     {
+        List<HoaDon> listHoaDon = new List<HoaDon>();
         public uc_BaoCaoDoanhThu()
         {
             InitializeComponent();
@@ -23,14 +27,16 @@ namespace Sukiya.UI
 
         private void uc_BaoCaoDoanhThu_Load(object sender, EventArgs e)
         {
+
             SukiyaContextDB dbContext = new SukiyaContextDB();
-            List<HoaDon> listHoaDon = new List<HoaDon>();
             chartDoanhThu.ChartAreas["ChartArea1"].AxisX.Title = "Ngày";
             chartDoanhThu.ChartAreas["ChartArea1"].AxisY.Title = "VNĐ (ngàn đồng)";
             foreach (var item in dbContext.HoaDon)
             {
-                HoaDon hoaDon = dbContext.HoaDon.Where(x => x.NgayLap == item.NgayLap).FirstOrDefault();
-                listHoaDon.Add(hoaDon);
+                if (listHoaDon.Where(x => x.NgayLap == item.NgayLap).FirstOrDefault() == null)
+                {
+                    listHoaDon.Add(item);
+                }
             }
             foreach (var item in listHoaDon)
             {
@@ -50,14 +56,16 @@ namespace Sukiya.UI
 
         private void btnLoadBaoCao_Click(object sender, EventArgs e)
         {
+            listHoaDon = new List<HoaDon>();
             SukiyaContextDB dbContext = new SukiyaContextDB();
-            List<HoaDon> listHoaDon = new List<HoaDon>();
             chartDoanhThu.ChartAreas["ChartArea1"].AxisX.Title = "Ngày";
             chartDoanhThu.ChartAreas["ChartArea1"].AxisY.Title = "VNĐ (ngàn đồng)";
             foreach (var item in dbContext.HoaDon)
             {
-                HoaDon hoaDon = dbContext.HoaDon.Where(x => x.NgayLap == item.NgayLap).FirstOrDefault();
-                listHoaDon.Add(hoaDon);
+                if (listHoaDon.Where(x => x.NgayLap == item.NgayLap).FirstOrDefault() == null)
+                {
+                    listHoaDon.Add(item);
+                }
             }
             foreach (var item in listHoaDon)
             {
@@ -73,6 +81,15 @@ namespace Sukiya.UI
                 }
                 chartDoanhThu.Series["ChartDT"].Points.AddXY(item.NgayLap, item.TongTien);
             }
+        }
+
+        private void btnIn_Click(object sender, EventArgs e)
+        {
+            DoanhThu report = new DoanhThu();
+            DocumentViewer documentViewer = new DocumentViewer();
+            report.InitData(listHoaDon.ToList());
+            documentViewer.DocumentSource = report;
+            report.ShowPreviewDialog();
         }
     }
 }
