@@ -173,7 +173,7 @@ namespace Sukiya
             {
                 ucXemDoanhThu.BringToFront();
             }
-            lblTieuDe.Caption = "Xem Doanh Thu";
+            lblTieuDe.Caption = "Quản Lý Hóa Đơn";
         }
 
         private void ceBaoCaoDT_Click(object sender, EventArgs e)

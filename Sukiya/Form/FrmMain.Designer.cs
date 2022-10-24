@@ -62,9 +62,9 @@
             this.lblTieuDe});
             this.fluentDesignFormControl1.Location = new System.Drawing.Point(0, 0);
             this.fluentDesignFormControl1.Manager = this.fluentFormDefaultManager1;
-            this.fluentDesignFormControl1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.fluentDesignFormControl1.Margin = new System.Windows.Forms.Padding(4);
             this.fluentDesignFormControl1.Name = "fluentDesignFormControl1";
-            this.fluentDesignFormControl1.Size = new System.Drawing.Size(1359, 31);
+            this.fluentDesignFormControl1.Size = new System.Drawing.Size(1359, 39);
             this.fluentDesignFormControl1.TabIndex = 2;
             this.fluentDesignFormControl1.TabStop = false;
             this.fluentDesignFormControl1.TitleItemLinks.Add(this.lblTieuDe);
@@ -90,10 +90,10 @@
             this.TrangHienThiConterner.Appearance.Options.UseBackColor = true;
             this.TrangHienThiConterner.Dock = System.Windows.Forms.DockStyle.Fill;
             this.TrangHienThiConterner.Font = new System.Drawing.Font("Lexend Deca", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.TrangHienThiConterner.Location = new System.Drawing.Point(303, 31);
-            this.TrangHienThiConterner.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.TrangHienThiConterner.Location = new System.Drawing.Point(303, 39);
+            this.TrangHienThiConterner.Margin = new System.Windows.Forms.Padding(4);
             this.TrangHienThiConterner.Name = "TrangHienThiConterner";
-            this.TrangHienThiConterner.Size = new System.Drawing.Size(1056, 742);
+            this.TrangHienThiConterner.Size = new System.Drawing.Size(1056, 734);
             this.TrangHienThiConterner.TabIndex = 0;
             // 
             // accordionControl1
@@ -108,11 +108,11 @@
             this.ceLienHe,
             this.ceGioiThieu,
             this.ceDangXuat});
-            this.accordionControl1.Location = new System.Drawing.Point(0, 31);
-            this.accordionControl1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.accordionControl1.Location = new System.Drawing.Point(0, 39);
+            this.accordionControl1.Margin = new System.Windows.Forms.Padding(4);
             this.accordionControl1.Name = "accordionControl1";
             this.accordionControl1.ScrollBarMode = DevExpress.XtraBars.Navigation.ScrollBarMode.Touch;
-            this.accordionControl1.Size = new System.Drawing.Size(303, 742);
+            this.accordionControl1.Size = new System.Drawing.Size(303, 734);
             this.accordionControl1.TabIndex = 1;
             this.accordionControl1.ViewType = DevExpress.XtraBars.Navigation.AccordionControlViewType.HamburgerMenu;
             // 
@@ -129,7 +129,7 @@
             this.ceDanhMucMon.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("ceDanhMucMon.ImageOptions.SvgImage")));
             this.ceDanhMucMon.Name = "ceDanhMucMon";
             this.ceDanhMucMon.Style = DevExpress.XtraBars.Navigation.ElementStyle.Item;
-            this.ceDanhMucMon.Text = "Danh Mục Món Ăn";
+            this.ceDanhMucMon.Text = "Quản Lý Thực Đơn";
             this.ceDanhMucMon.Click += new System.EventHandler(this.ceDanhMucMon_Click);
             // 
             // ceQuanLiNhanVien
@@ -137,7 +137,7 @@
             this.ceQuanLiNhanVien.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("ceQuanLiNhanVien.ImageOptions.SvgImage")));
             this.ceQuanLiNhanVien.Name = "ceQuanLiNhanVien";
             this.ceQuanLiNhanVien.Style = DevExpress.XtraBars.Navigation.ElementStyle.Item;
-            this.ceQuanLiNhanVien.Text = "Quản Lí Nhân Viên";
+            this.ceQuanLiNhanVien.Text = "Quản Lý Nhân Viên";
             this.ceQuanLiNhanVien.Click += new System.EventHandler(this.ceQuanLiNhanVien_Click);
             // 
             // ceBaoCaoDoanhThu
@@ -161,7 +161,7 @@
             // 
             this.ceXemDT.Name = "ceXemDT";
             this.ceXemDT.Style = DevExpress.XtraBars.Navigation.ElementStyle.Item;
-            this.ceXemDT.Text = "Xem Doanh Thu";
+            this.ceXemDT.Text = "Quản Lý Hóa Đơn";
             this.ceXemDT.Click += new System.EventHandler(this.ceXemDT_Click);
             // 
             // ceQuanLiKhoHang
@@ -231,7 +231,7 @@
             // FormMain
             // 
             this.Appearance.Options.UseFont = true;
-            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 17F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 22F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1359, 773);
             this.ControlContainer = this.TrangHienThiConterner;
@@ -241,10 +241,10 @@
             this.FluentDesignFormControl = this.fluentDesignFormControl1;
             this.Font = new System.Drawing.Font("Lexend Deca", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
             this.IconOptions.Image = ((System.Drawing.Image)(resources.GetObject("FormMain.IconOptions.Image")));
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "FormMain";
             this.NavigationControl = this.accordionControl1;
-            this.Text = "Quản Lí Nhà Hàng Sukiya";
+            this.Text = "Quản Lý Nhà Hàng Sukiya";
             this.Load += new System.EventHandler(this.FormMain_Load);
             ((System.ComponentModel.ISupportInitialize)(this.fluentDesignFormControl1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.fluentFormDefaultManager1)).EndInit();
